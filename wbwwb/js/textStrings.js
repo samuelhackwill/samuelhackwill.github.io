@@ -360,7 +360,7 @@ var textStrings_FR = {
     
     // (bg_preload.png) Preload screen
     "playingTime"        : "temps de jeu: 5 minutes" ,
-    "warning"            : "attention: ce jeu\ncontient des scènes d'arrogance,\nde gens qui crient,\net de meurtres en série.\n il s'adresse donc \nà un public majeur averti." ,
+    "warning"            : "attention: ce jeu\ncontient des scènes d'arrogance,\nde gens qui crient,\net de meurtres en série.\n il s'adresse donc à un public averti." ,
     
     // (cam-instructions.png) Camera Instructions
     "pointAndClick"      : "POINT & CLICK" ,
