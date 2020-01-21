@@ -317,25 +317,25 @@ var textStrings_FR = {
     "tvOnTv"               : "Une télé...A la télé !",
     "cricky"               : "Petit criquet <3",
     "tooManyCrickets"      : "ok ça commence a faire pas mal de crickets",
-    "normalPeep"           : "simplement une personne normale",
-    "normalPeeps"          : "simplement des personnes normales",
+    "normalPeep"           : "juste une personne normale",
+    "normalPeeps"          : "c'est juste des personnes normales",
     "wowNothing"           : "Waaaa, rien du tout!",
     
     // Act 2
     "crazySquareAttacks"   : "UN CARRÉ FOU COMMET UN ATTENTAT",
     "justMissed"           : "oooooh flûte raté",
-    "somethingInteresting" : "(*baille* vraiment très intéressant.)",
+    "somethingInteresting" : "(*baille* mouais ok, osef)",
     "whoIsScreaming"       : "(où est la personne qui crie??)",
     "circleFearsSquares"   : "LES CERCLES ONT PEUR DES CARRÉS",
     "whoScaresThem"        : "(attendez on voit pas bien de qui il•elle a peur)",
-    "areTheyScared"        : "XXXX (il s'agit de les prendre *pendant* qu'un carré leur crie dessus)"       , // not used
+    "areTheyScared"        : "(il faudrait les prendre *pendant* qu'un carré leur crie dessus)"       , // not used
     "squaresSnubCircles"   : "LES CARRÉS SNOBENT LES CERCLES",
-    "areTheySnubbed"       : "XXXX (il s'agit de les prendre *pendant* qu'ils snobent un cercle)"              , // not used
+    "areTheySnubbed"       : "(il faudrait de les prendre *pendant* qu'ils snobent un cercle)"              , // not used
     "everyoneHates"        : "TOUT LE MONDE DÉTESTE TOUT LE MONDE !!!!",
     "almostEveryoneHates"  : "PRESQUE TOUT LE MONDE DÉTESTE TOUT LE MONDE ...",
     "squaresHateCircles"   : "LES CARRÉS DÉTESTENT LES CERCLES",
     "circlesHateSquares"   : "LES CERCLES DÉTESTENT LES CARRÉS",
-    "areTheyYelling"       : "XXXX (il s'agit de les prendre en train de se *hurler* dessus)"                   , // not used
+    "areTheyYelling"       : "(il faudrait de les prendre en train de se *hurler* dessus)"                   , // not used
     "nerdsNow"             : "que font ces nerds?",
     "schockedPeep"         : "pourquoi est-il•elle choqué•e?",
     "whatever"             : "peu importe",
@@ -348,12 +348,12 @@ var textStrings_FR = {
     // MANIFESTO
     "manifesto" : [
        //"as if you viewers want GOOD news"       ,
-       "qui suivrait les infos pour regarder des *gens qui s'entendent bien?*"   ,
-       "la paix c'est pas très excitant. Ce que les gens veulent, c'est du sang."      ,
+       "qui suit les infos pour recevoir de bonnes nouvelles?"   ,
+       "la paix c'est naze. L'audimat réclame du sang."      ,
        //"peace is boring. conflict gets clicks." ,
-       "et chaque histoire a besoin de tension, de conflit, alors..."     ,
+       "le journal de 20H sans conflit c'est comme du pain sans sel."     ,
        //"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
-       "DONNEZ AU PUBLIC CE QU'IL RÉCLAME."
+       "DONNE AU PUBLIC CE QU'IL RÉCLAME."
     ] ,
     
     // -- Strings currently in graphics resources --
