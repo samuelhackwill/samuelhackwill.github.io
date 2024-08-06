@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Ce document a été créé avec Syntext Serna Free. --><main>
+  <section>
+    <state txt="Salut." id="normal">
+      <choice txt="Bonjour, Jane." link="UAV_goal"/>
+      <choice txt="Bonjour, madame." link="UAV_goal"/>
+    </state>
+  </section>
+  <section>
+    <state txt="Wow ! Tu t'es battu avec le rasoir ?" id="shaving">
+      <choice txt="Je vais me faire offrir des cours de rasage pour mon anniversaire." link="UAV_goal"/>
+      <choice txt="Je me coupe par empathie. Ça m'aide à ne pas oublier ce que vivent les gars déployés au sol." link="UAV_goal"/>
+    </state>
+  </section>
+  <section>
+    <state txt="Tu es tombé du lit ?" id="bandaid">
+      <choice txt="J'ai eu un problème sur la route." link="UAV_goal"/>
+      <choice txt="J'ai dû maîtriser un objet hostile à l'aide de ma tête." link="UAV_goal"/>
+    </state>
+  </section>
+  <section>
+    <state txt="Dude, tu as pas l'air frais." id="messy">
+      <choice txt="Matin difficile." link="UAV_goal"/>
+      <choice txt="C'est la guerre, madame." link="UAV_goal"/>
+    </state>
+  </section>
+  <section>
+    <state txt="Je t'avais prévenu que je ne suis pas du matin ?" id="UAV_goal">
+      <choice txt="Je n'aurais jamais deviné, tu es superbe aujourd'hui.">
+        <state txt="Garde les yeux sur l'écran, la bleusaille" data="angry"/>
+        <state txt="Réception des ordres..."/>
+      </choice>
+      <choice txt="C'est le matin ? J'ai perdu la notion du temps.">
+        <state txt="Ouais, mon copain se plaignait tout le temps de ça.">
+          <choice txt="Il s'y est habitué maintenant ?">
+            <state txt="Non, ça n'a pas marché entre nous."/>
+          </choice>
+          <choice txt="Oui, ma femme s'en plaint aussi... elle dit que ça perturbe son sommeil.">
+            <state txt="S'ils ne sont pas militaires, c'est difficile de comprendre."/>
+          </choice>
+        </state>
+      </choice>
+    </state>
+  </section>
+  <section>
+    <state txt="Kirk26, ici le contrôle au sol." id="mission_conversation1" data="base"/>
+    <state txt="Nous venons de vous transmettre les coordonnées d'un suspect." data="base"/>
+    <state txt="Suivez cette cible, mais sans ouvrir le feu pour le moment." data="base"/>
+    <state txt="Pilote : reçu.">
+      <choice txt="Capteur : reçu.">
+        <state txt="Pourquoi ce gars est-il suspect ?">
+          <choice txt="C'est un vrai méchant ou juste un fan d'Oussama ?">
+            <state txt="Ce n'est pas vraiment notre problème, n'est-ce pas ?"/>
+          </choice>
+          <choice txt="Il aurait oublié de payer les bonnes personnes ?">
+            <state txt="Nous ne sommes pas la mafia." data="angry"/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="C'est drôle, il n'a pas un comportement de personne suspecte">
+        <state txt="Oui, ben, peut-être qu'il a des pensées suspectes. ou des amis suspects."/>
+        <state txt="Tu connais la chanson..."/>
+        <state txt="...observer et attendre.">
+          <choice txt="C'est ça. Tant que ça peut servir à protéger les gars au sol.">
+            <state txt="C'est copié, Jake." data="smile"/>
+          </choice>
+          <choice txt="Si on t'avait dit que tu materais des vieux barbus pour gagner ta vie, tu en aurais pensé quoi?">
+            <state txt="Ha !" data="smile"/>
+          </choice>
+          <choice txt="Pas exactement l'aventure humaine qu'on voyait dans les pubs, hein ?">
+            <state txt="J'ai pas de problème avec ça."/>
+            <state txt="Tout le monde n'a pas besoin d'être le héros."/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="J'ai hâte de cartonner ce haji.">
+        <state txt="Hola cowboy, redescends d'un cran" data="angry"/>
+        <state txt="Si ça te démange à ce point, demande à être déployé en OPEX."/>
+      </choice>
+    </state>
+  </section>
+  <section>
+    <state txt="Ça faisait un moment que je ne t'avais pas vu..." id="mission_conversation2">
+      <choice txt="Je me suis pas mal ennuyé. Les robots ne n'étaient pas sensés nous remplacer ?">
+        <state txt="C'est certainement le sort que les cols blancs nous réservent.">
+          <choice txt="Alors nous perdrons nos emplois comme les pilotes de chasse avant nous." link="air_force"/>
+          <choice txt="Ce serait génial s'ils arrivaient à automatiser ce travail. Ce serait moins stressant.">
+            <state txt="Enfin à part pour les développeurs. C'est leur algorithme qui aura du sang sur les mains."/>
+          </choice>
+          <choice txt="Je plaisante. C'est quand même mieux qu'il y ait encore des humains dans la boucle.">
+            <state txt="Si tu veux mon avis, c'est nous, les humains, le maillon faible dans la chaîne de commandement."/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="Ton père va mieux ?">
+        <state txt="Ah... mhh, je dirais ni plus ni moins."/>
+        <state txt="Le problème ce n'est pas le fauteuil roulant, c'est ses accès de colère.">
+          <choice txt="Après une vie haute en couleurs dans l'Armée de l'air, il doit être triste que tout ça soit derrière lui." link="air_force"/>
+          <choice txt="Tu m'étonnes, à sa place ça me ferait chier aussi d'être coincé dans un fauteuil roulant.">
+            <state txt="Revenons au travail." data="angry"/>
+          </choice>
+          <choice txt="La colère est mauvaise conseillère.">
+            <state txt="C'est vrai." data="smile"/>
+            <state txt="Une tragédie comme celle de Black Hawk n'aurait jamais eu lieu si nous avions eu des drones."/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="J'étais tout le temps en binôme avec Kowalski ce mois-ci, la flemme.">
+        <state txt="Ha ha ! Ah oui, c'est un personnage. "/>
+        <state txt="Il connaissait mon père, donc il me laisse tranquille.">
+          <choice txt="Ton père a encore une sacrée influence, hein ?">
+            <state txt="C'est pour ça que j'ai pris ce poste." data="smile"/>
+            <state txt="Je n'avais pas envie de m'exposer."/>
+          </choice>
+          <choice txt="C'est utile d'avoir des amis haut placés.">
+            <state txt="Il me mène à la baguette."/>
+          </choice>
+        </state>
+      </choice>
+    </state>
+  </section>
+  <section>
+    <state txt="Est ce que tu révais de piloter des avions à réaction?" id="air_force">
+      <choice txt="Oui, et je n'aurais jamais pensé finir à la CIA.">
+        <state txt="Allez, on est des agents secrets ! C'est tout aussi cool, voire plus.">
+          <choice txt="Nous ne serons jamais là-haut, à recevoir des médailles.">
+            <state txt="On peut toujours inventer nos propres médailles fictionnelles. Vaillance face à l'ennui extrême."/>
+          </choice>
+          <choice txt="Parfois, le monde de l'espionage me fait peur.">
+            <state txt="Effrayé par la CIA ? On dirait un civil. Et pourquoi ça?">
+              <choice txt="Les assassinats illégaux.">
+                <state txt="*Bâillement* la convention de Genève, c'est so 20e siècle."/>
+              </choice>
+              <choice txt="Les guerres secrètes.">
+                <state txt="La plupart des gens sont pour. Mais ils ne veulent pas se salir les mains eux-mêmes, ils ne veulent pas d'une autre guerre en Irak."/>
+              </choice>
+              <choice txt="Non rien, c'est juste parfois frustrant de pas avoir tous les tenants et aboutissants."/>
+            </state>
+          </choice>
+          <choice txt="Une agence de renseignement ne devrait pas faire la guerre.">
+            <state txt="Ne t'inquiète pas, criminel de guerre, on est couverts."/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="Bien sûr, comme tout le monde ! J'avais 8 ans quand Top Gun est sorti au cinema.">
+        <state txt="Ah, Top Gun... les filles en uniforme, faire de la voltige de manière irresponsable en F-14...">
+          <choice txt="C'est de là que vient mon fétiche pour les uniformes. Maintenant tu comprends pourquoi je te regarde fermer ton col camioneur">
+            <state txt="Lourdingue..." data="angry"/>
+          </choice>
+          <choice txt="La CIA aussi peut se montrer irresponsable."/>
+        </state>
+      </choice>
+    </state>
+  </section>
+  <section>
+    <state txt="Bordel, nous n'étions pas autorisés à ouvrir le feu !" id="killed_insurgent" data="angry"/>
+    <state txt="Tu sais combien de formulaires on va devoir remplir ?" data="angry"/>
+  </section>
+  <section>
+    <state txt="Nous l'avons perdu..." id="lost_insurgent" data="angry"/>
+    <state txt="Tu t'es endormi ?" data="angry"/>
+  </section>
+  <section>
+    <state txt="Bon travail Kirk26, nous venons de recevoir une nouvelle tâche." id="mission_complete" data="base"/>
+    <state txt="Nous vous retirons de cette filature. Attendez nouvel ordre." data="base"/>
+    <state txt="Vous pouvez prendre une pause si vous le souhaitez."/>
+  </section>
+</main>
+```

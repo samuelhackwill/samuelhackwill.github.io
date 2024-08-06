@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><main>
+  <section>
+    <state txt="Cette bonne vieille Route 95..." id="drive">
+      <choice txt="... Je peux presque conduire sans les mains.">
+        <state txt="C'est comme si j'avais mis le pilote automatique." link="people"/>
+      </choice>
+      <choice txt="... Fluide et ensoleillée, comme toujours">
+        <state txt="Aucune complication, juste une trajectoire droite et claire." link="people"/>
+      </choice>
+      <choice txt="... Plus sûre qu'une route de montagne">
+        <state txt="Et puis aucune chance d'exploser sur une mine en allant au boulot." link="people"/>
+      </choice>
+    </state>
+    <state txt="Pas un chat, pas de priorités à droite surprise." id="people"/>
+    <state txt="Et le paysage...">
+      <choice txt="Vide, déprimant, monotone...">
+        <state txt="...le genre de panorama qui nous laisse seul avec nos pensées." data="@depressing"/>
+      </choice>
+      <choice txt="Vierge, sobre, dépouillé...">
+        <state txt="...le genre de panorama qui favorise la concentration." data="@uplifting"/>
+      </choice>
+    </state>
+    <state txt="Je me demande si..." id="relations">
+      <choice txt="...C'était bien aujourd'hui que Mikey avait rendez-vous avec le docteur?">
+        <state txt="J'aurais dû demander à Cath avant de partir.">
+          <choice txt="Est ce qu'il va continuer à lui prescrire de la Ritaline?">
+            <state txt="Il y a des millions d'enfants diagnostiqués TDAH qui en prennent...">
+              <choice txt="...et si tous ces enfants n'étaient pas vraiment malades?">
+                <state txt="Nous vivons dans une ère hyperactive."/>
+                <state txt="Nos cerveaux ont juste besoin d'un petit coup de pouce pour supporter toutes ces stimulations." data="@uplifting"/>
+              </choice>
+              <choice txt="...et c'est l'école qui nous a suggéré de le faire">
+                <state txt="C'est leur métier, ils savent ce qu'ils font."/>
+                <state txt="Ils ne se permettraient pas de m'expliquer comment moi, je devrais faire mon boulot."/>
+              </choice>
+              <choice txt="Seigneur, qu'est ce que nous avons fait...">
+                <state txt="Bidouiller les cerveaux de nos enfants..."/>
+                <state txt="aujourd'hui l'exubérance et la curiosité sont considérés comme des pathologies." data="@depressing"/>
+              </choice>
+            </state>
+          </choice>
+          <choice txt="Mais ça va aller. Les enfants sont coriaces.">
+            <state txt="Il va s'en sortir...">
+              <choice txt="L'enfance est une période compliquée pour tout le monde.">
+                <state txt="Mais il y a pire : l'Adolescence."/>
+                <state txt="et puis on découvre les femmes et la bière"/>
+                <state txt="et alors tout rentre dans l'ordre."/>
+              </choice>
+              <choice txt="Il est du genre geek.">
+                <state txt="Ça va devenir une sorte de génie introverti..."/>
+                <state txt="...il lancera sa startup en Californie..."/>
+                <state txt="...il deviendra millionaire."/>
+              </choice>
+            </state>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="...C'est Jane mon binôme aujourd'hui.">
+        <state txt="C'est sûr qu'elle est plus agréable à regarder que Richardson...">
+          <choice txt="...C'est un plaisir d'être sous ses ordres">
+            <state txt="Elle a une façon si ferme de désigner ses cibles."/>
+          </choice>
+          <choice txt="Pff... Richardson...">
+            <state txt="...il passe son temps à dire qu'on devrait covoiturer...">
+              <choice txt="A la limite si Jane était aussi dans la voiture.">
+                <state txt="Mais bon pour ça il faudrait déjà qu'il nettoie son épave."/>
+              </choice>
+              <choice txt="merde, je me tape déjà suffisemment ses mythos au travail.">
+                <state txt="Si je l'entends une fois de plus se mettre en scène dans des histoires d'&quot;opérations clandestines&quot; je crois que je vais vomir."/>
+              </choice>
+              <choice txt="Et puis j'aime avoir ma voiture privée.">
+                <state txt="C'est pas pour ça qu'on se bat?"/>
+                <state txt="Covoiturer. Et puis quoi encore. Il se prend pour qui, Greta Thunberg?"/>
+              </choice>
+            </state>
+          </choice>
+        </state>
+      </choice>
+    </state>
+    <state txt="Il faut que je fasse réparer ma radio." id="karaoke"/>
+    <state txt="J'ai cette satanée chanson dans la tête." data="music"/>
+    <state txt="Je suis pas sûr de bien connaître les paroles"/>
+    <state txt="Mais... personne ne m'entendra chanter dans ma voiture, n'est-ce-pas?"/>
+  </section>
+</main>
