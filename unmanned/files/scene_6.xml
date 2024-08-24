@@ -52,7 +52,7 @@
           <choice txt="C'est cool, on est un couple ouvert.">
             <state txt="Je suis prête à parier que si je lui pose la question elle ne me dira pas la même chose."/>
           </choice>
-          <choice txt="Sur le papier, en tout cas. ">
+          <choice txt="Sur le papier, en tout cas.">
             <state txt="Quoi, &quot;Ma femme ne me comprend pas&quot;?">
               <choice txt="Parfois, j'ai l'impression qu'elle ne me respecte même pas.">
                 <state txt="Oh... c'est... triste." data="flirtPlus">
@@ -86,8 +86,8 @@
   </section>
   <section>
     <state txt="Eh! qu'est ce qu'il fait?" id="engage"/>
-    <state txt="La Cible est en train d'installer un Engin Explosif Improvisé. Nous avons une identification positive."/>
-    <state txt="Demande la permission d'ouvrir le feu."/>
+    <state txt="La cible est en train d'installer un engin explosif improvisé. Nous avons une identification positive."/>
+    <state txt="Demandons la permission d'attaquer."/>
     <state txt="Bien reçu. Vous êtes autorisé à faire feu." data="base"/>
     <state txt="Tireur, lancez la procédure d'initiation du missile.">
       <choice txt="Tireur : reçu, missile activé.">
@@ -95,13 +95,13 @@
           <choice txt="Tireur : acquisition de la cible.">
             <state txt="Tirez quand vous êtes prêt." data="procedure">
               <choice txt="Reçu."/>
-              <choice txt="Est-ce qu'on est sûr que c'est bien un engin explosif improvisé qu'il est en train de manipuler?" link="drop"/>
+              <choice txt="Est-ce qu'on est sûrs que c'était une bombe?" link="drop"/>
             </state>
           </choice>
           <choice txt="Tireur : négatif." link="drop"/>
         </state>
       </choice>
-      <choice txt="Est-ce qu'on est sûr que c'est notre gars?" link="drop"/>
+      <choice txt="Est-ce qu'on est sûrs que c'est notre gars?" link="drop"/>
     </state>
   </section>
   <section>
@@ -118,7 +118,7 @@
     <state txt="On est pas en train de jouer aux jeux vidéo de ton gosse." data="angry"/>
   </section>
   <section>
-    <state txt="Bordel, nous n'avions pas d'autorisation pour faire feu?" id="UAV2_failed" data="angry"/>
+    <state txt="Bordel, nous n'avions pas d'autorisation pour faire feu!" id="UAV2_failed" data="angry"/>
     <state txt="C'est une violation grave." data="angry"/>
   </section>
   <section>

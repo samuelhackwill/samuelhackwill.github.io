@@ -31,7 +31,7 @@
   <section>
     <state txt="Je viens te chercher, Oussama... pour la 54e fois!" id="second_turn"/>
     <state txt="...je dois trouver un kit de soin...">
-      <choice txt="Bam, je l'ai vicos!">
+      <choice txt="Bam, tu l'as vicos!">
         <state txt="Plus personne ne dit ça, Papa."/>
       </choice>
       <choice txt="Alors, ça a été ta journée à l'école?">
@@ -71,8 +71,8 @@
   </section>
   <section>
     <state txt="Punaise, je suis mort." id="switch"/>
-    <state txt="Ça ne peut pas t'arriver au travail, hein?">
-      <choice txt="C'est vrai qu'on ne peut pas vraiment mourir à cause de l'ennui." link="bored"/>
+    <state txt="Ça ne peut pas t'arriver au travail, ça, hein?">
+      <choice txt="C'est vrai que l'ennui ne tue pas." link="bored"/>
       <choice txt="Ha! Non, on ne peut pas se faire tuer.">
         <state txt="C'est comme si tu trichais?">
           <choice txt="C'est ça, j'ai des vies illimitées. Si un drone est abattu, on en achète un nouveau.">
@@ -88,7 +88,7 @@
         </state>
       </choice>
     </state>
-    <state txt="Je m'ennuie. On a quoi comme autres jeux?" id="bored"/>
+    <state txt="Bon, on a quoi d'autre comme jeu?" id="bored"/>
     <state txt="Ah, celui-là on l'a jamais fini."/>
     <state txt="À ton tour." data="new_game"/>
   </section>
@@ -98,7 +98,7 @@
       <choice txt="C'est des nazis.">
         <state txt="Ah ouais, des nazis. Les nazis sont pires que les communistes, non?">
           <choice txt="Oui, ce sont les pires." link="grandpa"/>
-          <choice txt="Oui. Mais les terroriste d'aujourd'hui sont plus tordus." link="grandpa"/>
+          <choice txt="Oui. Mais les terroristes d'aujourd'hui sont encore plus tordus." link="grandpa"/>
           <choice txt="Non, les communistes resteront toujours nos ennemis n°1." link="grandpa"/>
         </state>
         <state txt="Papy en a tué plein, non? C'était quoi son arme préférée?" id="grandpa">
@@ -119,7 +119,7 @@
                   <choice txt="Mieux que les pilotes classiques. On a besoin de voir s'ils plantent des bombes ou quoi.">
                     <state txt="Est-ce que tu peux voir leurs visages?">
                       <choice txt="Parfois."/>
-                      <choice txt="Non, mais ce n'est pas nécéssairement utile de toutes façons"/>
+                      <choice txt="Non, mais ce n'est pas nécéssairement utile de toutes façons."/>
                     </state>
                   </choice>
                   <choice txt="Pas vraiment, en fin de compte ce sont juste nos cibles."/>
@@ -132,7 +132,7 @@
           </choice>
           <choice txt="Le fusil sniper.">
             <state txt="Oui, c'est le plus précis. En plus, tu ne prends moins de dégâts à distance.">
-              <choice txt="C'est bon ça. Pas besoin de prendre des risques inutiles."/>
+              <choice txt="Pas besoin de prendre des risques inutiles."/>
               <choice txt="Sauf si ton ennemi a aussi un fusil sniper.">
                 <state txt="Non, ça n'arrive jamais dans ce jeu."/>
               </choice>
@@ -152,7 +152,7 @@
     <state txt="Comment t'as fait? C'est un truc de fou!"/>
   </section>
   <section>
-    <state txt="À mon tour!" id="sunday_with_date"/>
+    <state txt="À mon tour." id="sunday_with_date"/>
     <state txt="Tu est toujours d'accord de réparer mon vélo dimanche?">
       <choice txt="On devait faire ça dimanche? Je suis pas disponible.">
         <state txt="...ah. Je... je regarderai un tutoriel sur internet alors." data="bad_dad">
@@ -170,7 +170,7 @@
     </state>
   </section>
   <section>
-    <state txt="À mon tour" id="sunday_without_date"/>
+    <state txt="À mon tour." id="sunday_without_date"/>
     <state txt="Tu m'aiderais à réparer mon vélo dimanche?">
       <choice txt="Ça dépend. Il y a le match.">
         <state txt="D'accord. Je... je regarderai un tutoriel sur internet alors." data="bad_dad"/>

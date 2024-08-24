@@ -47,7 +47,7 @@
     <state txt="Nous venons de vous transmettre les coordonnées d'un suspect." data="base"/>
     <state txt="Suivez cette cible, mais sans ouvrir le feu pour le moment." data="base"/>
     <state txt="Pilote : reçu.">
-      <choice txt="Capteur : reçu.">
+      <choice txt="Tireur : reçu.">
         <state txt="Pourquoi ce gars est-il suspect?">
           <choice txt="C'est un vrai méchant ou juste un fan d'Oussama?">
             <state txt="Ce n'est pas vraiment notre problème, n'est-ce pas?"/>
@@ -163,6 +163,6 @@
   <section>
     <state txt="Bon travail Kirk26, nous venons de recevoir une nouvelle tâche." id="mission_complete" data="base"/>
     <state txt="Nous vous retirons de cette filature. Attendez nouvel ordre." data="base"/>
-    <state txt="Vous pouvez prendre une pause si vous le souhaitez."/>
+    <state txt="Tu peux prendre ta pause si tu veux."/>
   </section>
 </main>
