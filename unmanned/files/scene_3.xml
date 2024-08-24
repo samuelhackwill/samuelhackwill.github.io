@@ -6,18 +6,18 @@
         <state txt="C'est comme si j'avais mis le pilote automatique." link="people"/>
       </choice>
       <choice txt="... Fluide et ensoleillée, comme toujours">
-        <state txt="Aucune complication, juste une trajectoire droite et claire." link="people"/>
+        <state txt="Pas de complications, juste une trajectoire rectiligne." link="people"/>
       </choice>
-      <choice txt="... Plus sûre qu'une route de montagne">
-        <state txt="Et puis aucune chance d'exploser sur une mine en allant au boulot." link="people"/>
+      <choice txt="... Pas comme les routes en Afgha...">
+        <state txt="Aucune chance d'être tué par une bombe artisanale sur mon pendulaire." link="people"/>
       </choice>
     </state>
-    <state txt="Pas un chat, pas de priorités à droite surprise." id="people"/>
+    <state txt="Pas un chat, pas de virages en épingle." id="people"/>
     <state txt="Et le paysage...">
       <choice txt="Vide, déprimant, monotone...">
-        <state txt="...le genre de panorama qui nous laisse seul avec nos pensées." data="@depressing"/>
+        <state txt="...le genre de panorama qui nous rappelle l'indifférence de la Nature." data="@depressing"/>
       </choice>
-      <choice txt="Vierge, sobre, dépouillé...">
+      <choice txt="Majestueux, sobre, inspirant...">
         <state txt="...le genre de panorama qui favorise la concentration." data="@uplifting"/>
       </choice>
     </state>
@@ -30,9 +30,9 @@
                 <state txt="Nous vivons dans une ère hyperactive."/>
                 <state txt="Nos cerveaux ont juste besoin d'un petit coup de pouce pour supporter toutes ces stimulations." data="@uplifting"/>
               </choice>
-              <choice txt="...et c'est l'école qui nous a suggéré de le faire">
+              <choice txt="...et Mikey en fait partie, d'après le conseil des profs">
                 <state txt="C'est leur métier, ils savent ce qu'ils font."/>
-                <state txt="Ils ne se permettraient pas de m'expliquer comment moi, je devrais faire mon boulot."/>
+                <state txt="Ils ne se permettraient pas de m'expliquer, à moi, comment je devrais faire mon boulot."/>
               </choice>
               <choice txt="Seigneur, qu'est ce que nous avons fait...">
                 <state txt="Bidouiller les cerveaux de nos enfants..."/>
@@ -64,14 +64,14 @@
           <choice txt="Pff... Richardson...">
             <state txt="...il passe son temps à dire qu'on devrait covoiturer...">
               <choice txt="A la limite si Jane était aussi dans la voiture.">
-                <state txt="Mais bon pour ça il faudrait déjà qu'il nettoie son épave."/>
+                <state txt="Mais bon pour ça il faudrait déjà qu'il passe un coup d'aspirateur dans son épave."/>
               </choice>
-              <choice txt="merde, je me tape déjà suffisemment ses mythos au travail.">
-                <state txt="Si je l'entends une fois de plus se mettre en scène dans des histoires d'&quot;opérations clandestines&quot; je crois que je vais vomir."/>
+              <choice txt="Mais je me tape déjà suffisemment ses mythos au travail.">
+                <state txt="Si je l'entends encore une fois se mettre en scène dans des histoires d'&quot;opérations clandestines&quot; je crois que je vais vomir."/>
               </choice>
               <choice txt="Et puis j'aime avoir ma voiture privée.">
                 <state txt="C'est pas pour ça qu'on se bat?"/>
-                <state txt="Covoiturer. Et puis quoi encore. Il se prend pour qui, Greta Thunberg?"/>
+                <state txt="Covoiturer. Et puis quoi encore. Il se prend pour qui, Al Gore?"/>
               </choice>
             </state>
           </choice>
@@ -79,8 +79,8 @@
       </choice>
     </state>
     <state txt="Il faut que je fasse réparer ma radio." id="karaoke"/>
-    <state txt="J'ai cette satanée chanson dans la tête." data="music"/>
-    <state txt="Je suis pas sûr de bien connaître les paroles"/>
-    <state txt="Mais... personne ne m'entendra chanter dans ma voiture, n'est-ce-pas?"/>
+    <state txt="J'ai cette chanson stupide dans la tête." data="music"/>
+    <state txt="Je ne me rappelle pas bien des paroles"/>
+    <state txt="... mais je suis tout seul dans ma voiture, qui va m'entendre?"/>
   </section>
 </main>
