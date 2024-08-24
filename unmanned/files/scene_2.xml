@@ -39,7 +39,7 @@
           </choice>
         </state>
       </choice>
-      <choice txt="C'est le fuseau horaire des Talibans. Ça détruit la qualité du sommeil."/>
+      <choice txt="C'est le fuseau horaire Taliban. Ça détruit la qualité du sommeil."/>
     </state>
     <state txt="Ah, le rasage..." id="shaving" data="shaving">
       <choice txt="...quel bonheur.">
