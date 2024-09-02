@@ -2,8 +2,8 @@ bienvenue sur cette page? qui contient des liens? vers des trucs?
 
 ## traductions 
 
-[We become what we behold](/wbwwb/), de Nicky Case (2019)
-[Unmanned](/unmanned/), de Molleindustria & Jim Munroe
+- [We become what we behold](/wbwwb/), de Nicky Case (2019)
+- [Unmanned](/unmanned/), de Molleindustria & Jim Munroe
 (2012)
 
 ## textes
