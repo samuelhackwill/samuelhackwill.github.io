@@ -4,7 +4,7 @@ Mais oui c'est bien elle c'est la 9e itération de la newsletter de Samuel Hackw
 
 ![Carol Saba traite les députés de païens](</news/9/media/carol saba 2.PNG>)
 
-<sub>Carol Saba, porte-parole de l'assemblée des évêques Orthodoxes de France, partage un passage de son livre préféré</sub>
+<sub>Carol Saba nous lit un passage de son livre préféré sous le regard bienveillant et pastoral de ses voisins catholiques</sub>
 
 Mais more on that later. La dernière fois que je vous ai parlé c'était début 2023. Qu'ai-je fait depuis?
 
@@ -14,7 +14,7 @@ Mais more on that later. La dernière fois que je vous ai parlé c'était début
 
 J'ai été invité à installer une pièce pendant 10 jours aux Halles de Schaerbeek (Bruxelles), à l'occasion du "Grand Marché", un évènement à destination non pas du "_public habituel des Halles_" mais plutôt à destination des personnes géographiquement proches du théâtre, c'est-à-dire les voisines voisins de Schaerbeek (qui, en dépit de cette proximité spatiale, sont plutôt ce qu'on appelle traditionnellement les publics "_éloignés_" de la culture institutionnelle). Mon envie a été d'installer un Cybercafé aux Halles, avec des vrais ordinateurs dedans. Jacob (Lyon) a conçu et fabriqué à cet effet un magnifique bureau dodécagonal en carton, et j'ai dessiné 8 fonds d'écrans pour les ordinateurs, un peu sur le mode du fanzine, avec du texte, des dessins et des icônes de bureau customisés renvoyant vers une sélection de jeux et de sites web, incluant notamment ma version française d'un jeu assez célèbre de Paolo Pedercini & Jim Munroe qui n'avait jamais été traduit (vous pouvez y jouer [ici](samuelhackwill.github.io/unmanned)). On a également utilisé le cybercafé pour accueillir les conférences de [Lori Roussey](https://datarights.ngo/) (au sujet du RGPD) et de [Kevin Zanin](https://kevinzanin.com/) (au sujet de QAnon et des e-Girls). Je pense que tout le monde en a eu pour son argent, entre le public vétéran qui a pu découvrir mes digressions sauvages sur les progrès récents de la soi-disant intelligence artificielle, Ivan Illich, la téléphonie, les représentations de la mort dans les jeux d'Amiga, et d'autre part ce groupe d'amis (âge : de 7 à 12 ans) qui est revenu _tous les jours_ pour jouer à Roblox. J'étais très content de l'ambiance "cybercafé" qui m'a semblé fidèle à ma propre expérience de ces espaces pendant ma propre enfance.
 
-![un des écrans du cybercafé](P1000794.JPG)
+![un des écrans du cybercafé](/news/9/media/P1000794.JPG)
 
 ### musique.nousparlions.com (mai 2023)
 
@@ -29,7 +29,8 @@ On retrospect, c'était un exercice d'écriture intéressant, j'aime bien compos
 
 j'ai conçu un site web pour le club travail (composé à ce moment-ci de Mathilde Maillard, Thomas Bris, Lucie Caouder, Olaf Defoort) à la rentrée 2023. C'est une sorte de [test de personnalité](www.guichet.clubtravail.be) axé sur la thématique du travail, avec une surprise à la fin! C'est le premier site que j'ai fait avec Tailwind, very nice (Tailwind c'est une librairie pour définir le _style_ d'une page web, avec une approche euh pas orthodoxe. Traditionnellement dans le développement web, tout le code concernant l'apparence de la page web est stocké dans un _fichier séparé_, qui contient du code CSS, alors qu'avec Tailwind on fout tout directement dans le code HTML! Berk! c'est comme si tu avais appris toute ta vie qu'il fallait trois assiettes différentes pour l'entrée, le repas et le dessert, et là quelqu'un déboule et te montre que tu peux retourner ton assiette pour y mettre ta tarte aux pommes). Je suis également en train de fabriquer un site web plus classique pour ma coopérative d'artichtes, l'Amicale (cette fois c'est l'occasion de découvrir Figma. C'est un éditeur WYSIWYG pour fabriquer des sites web, et c'est de la grosse balle notamment parce que c'est _multijoueur par défaut_, c'est à dire qu'on peut y dessiner, en live, à plusieurs. Freaking nice pour faire des prototypes en équipe.)
 
-![capture d'écran, interface de Figma](</news/9/media/Capture d’écran 2024-07-20 à 17.50.52.png>)
+![capture d'écran, interface de Figma](</news/9/media/Capture d’écran 2024-07-20 à 17.52.05.png>)
+<sub>sofia teillet sofia teillet sofia teillet</sub>
 
 ## Arts vivants
 ### création : Tryhard (avril 25)
@@ -37,7 +38,7 @@ j'ai conçu un site web pour le club travail (composé à ce moment-ci de Mathil
 Je suis en train d'écrire une performance-pour-100-pointeurs-de-souris, ça s'appelle Tryhard. Ce que je peux vous dire à ce sujet : on a fait le tout premier playtest à la Bellone en Décembre (23), on a été pré-sélectionnés pour le prix "Scènes Vivantes, scènes numériques" à Avignon cet été, et on va faire une nouvelle série de playtests à Lille cette saison. Les premières seront accueillies au [théâtre de l'Elysée](https://lelysee.com/evenement/tryhard/) (c'est à Lyon), ça sera du 1 au 4 Avril, veneiiii
 
 ![slides, tryhard](</news/9/media/2024-08-22 11.07.50.jpg>)
-<sub>ci-dessus une vue des slides que j'ai utilisé pour le pitch de Tryhard à Avignon (suivant le format Pecha Kucha, 20 slides, 20 secondes/slide).</sub>
+<sub>ci-dessus une vue du papier que j'ai gardé dans ma poche pendant trois jours pour préparer mon intervention à Avignon. Oui c'est Douglas Engelbart à droite j'ai le droit personne sait qui c'est dans les arts vivants</sub>
 
 ### la tournée du tiret du six
 
@@ -52,12 +53,14 @@ J'ai le bonheur d'exercer épisodiquement depuis 7 ans la fonction de cantinier 
 
 J'ai décidé assez tôt dans le processus que je cuisinerais _tout seul_ (spoiler alert : je n'y serais jamais arrivé sans toute l'aide que j'ai reçue[^cuisine]), histoire de voir si c'était possible. J'ai aussi eu la lubie de faire des foccacias au levain cuites au feu de bois, ce qui était quand même un peu foireux vu les quantités nécessaires (la fermentation au levain impose un rythme avec lequel on peut pas *trop* tricher). La veille du jour J j'ai perdu 3 précieuses heures à discuter en buvant des cafés avec Julien parce que why not, et au fond ce qui s'est passé c'est qu'au bout d'un moment je n'ai plus eu d'autre choix que de faire une _nuit blanche de cuisine_, un concept encore inconnu de moi et que je suis heureux d'avoir rencontré dans ma vie, mais si possible plus jamais ça. Il y a eu un moment de prise de conscience un peu angoissant vers 3 heures du matin, j'avais mal aux pieds, au dos, à la nuque, il y avait 12 saladiers remplis de pâte à foccacia qui s'impatientaient sur la table, un 7e continent de vaisselle dans l'évier et autour de l'évier, 200 tomates à éplucher, 50 tartes à préparer, le premier batch de toum (crème à l'ail) n'avait pas pris, et en faisant un calcul rapide j'ai constaté que je ne pouvais absolument plus m'arrêter de travailler pendant les prochaines ~36 heures si je voulais avoir une chance d'y arriver, en comptant un budget de pauses (y compris pour manger) de 5 à 10 minutes en total. It was a blast et je le referais sans aucune hésitation (je m'y prendrai un peu différemment tout de même). J'ai appris beaucoup de choses, et notamment que les tomates que vous achetez chez l'épicier (4€/Kg) sont acquises pour 0,80€/Kg au marché de gros. Et que la Bretagne est un gros exportateur de tomates manifestement?
 
-![foccacia](</news/9/media/2023-06-25 20.39.56.jpg>)
+![cuisine](</news/9/media/cuisine.jpg>)
+
+<sub>la cuisine où j'ai fait ma nuit blanche, à Berchem. Matez-moi tout cet espace! j'ai certainement marché plusieurs kilomètres au cours de la nuit.</sub>
 
 
 ### Carnet d'agonie (automne 23)
 
-L'année dernière pour la première fois de ma vie j'ai réussi à m'astreindre à un rythme quotidien d'écriture pendant un mois, c'était vraiment très excitant et je peux confirmer ce que j'ai entendu time and again, à savoir qu'écrire c'est plus facile quand on le fait tous les jours. Mon point de départ, c'était d'écrire une sorte de pastiche de Thomas Bernhard. J'ai dû suspendre mon travail en 2024 parce que j'avais d'autres choses à faire, mais je reprendrai l'écriture l'été prochain.
+L'année dernière pour la première fois de ma vie j'ai réussi à m'astreindre à un rythme quotidien d'écriture pendant un mois, c'était vraiment très excitant et je peux confirmer ce que j'ai entendu time and again, à savoir qu'écrire c'est plus facile quand on le fait tous les jours. Mon point de départ, c'était d'écrire une sorte de pastiche de Thomas Bernhard. J'ai dû suspendre mon travail en 2024 parce que j'ai d'autres choses à faire, mais je reprendrai l'écriture l'été prochain.
 
 ![commits, carnet d'agonie](</news/9/media/logs ecriture.png>)
 
@@ -224,7 +227,7 @@ Olivier Falorni prend la parole en premier. Falorni est un élu des charentes ma
 
 Il y a plusieurs séquences saisissantes dans les débats de 2021, notamment ce petit moment de flex transpartisan où Falorni, qui a pourtant perdu, fait le chauffeur de salle et demande aux députés de tout bord d'applaudir des députés de son choix (il fait notamment applaudir Caroline Fiat, LFI, la première aide-soignante de l'AN, dont on va reparler un peu plus bas) ou ce moment de lol où Aurore Bergé, toujours au top, critique le projet de loi en citant Michel Houellebecq, se dernier s'étant fendu d'un texte inepte dans la presse nationale en opposition à la dépénalisation de l'euthanasie [^houelle].
 
-On peut dire que ça fait donc au moins 11 ans que Falorni se cogne contre ce mur. S'adressant aux religieux, il leur rappelle grosso modo qu'ils se sont bien fait défoncer en 1789 et qu'il faudrait pas trop qu'ils fassent les malins. Mais que par ailleurs il est content qu'il viennent parler ici parce que c'est bien la preuve que "la république est forte", et que "la foi ne fait plus la loi". Il dit que la république a "*conquis* de haute lutte" que les citoyen.ne.s aient le droit de ne pas souffrir, le droit d'être protégés contre l'acharnement thérapeutique, et aient le droit d'avorter. Il termine en formulant assez maladroitement sa question au panel des religieux : est ce qu'il n'y a pour vous aucune situation où l'euthanasie puisse être justifiée?
+On peut dire que ça fait donc au moins 11 ans que Falorni se cogne contre ce mur. S'adressant aux religieux, il leur rappelle grosso modo qu'ils se sont bien fait défoncer en 1789 et qu'il faudrait pas trop qu'ils fassent les malins. Mais que par ailleurs il est content qu'il viennent parler ici parce que c'est bien la preuve que "la république est forte", et que "la foi ne fait plus la loi". Il dit que la république a "*conquis* de haute lutte" le droit de ne pas souffrir, le droit d'être protégés contre l'acharnement thérapeutique, le droit d'avorter. Il termine en formulant assez maladroitement sa question au panel des religieux : est ce qu'il n'y a pour vous aucune situation où l'euthanasie puisse être justifiée?
 
 Les autres rapporteurs posent d'autres questions, notamment "la sédation profonde et continue jusqu'à la mort[^sed], c'est pas une aide à mourir ça pour vous, bande d'inconséquents?" (Laurence Cristol, Laurence Maillart-Méhaignerie), et "vous allez dire quoi à vos croyants si la loi passe huh?" (Didier Martin).
 
@@ -302,11 +305,16 @@ et la dernière parole de la table ronde revient à Antony Boussemart, qui dit q
 
 ## la réponse de samuel aux religieux et députés
 
-scrogneugneu je vé i écrir
+(à écrire, demain peut-être? who knows, not me)
 
 <!-- Il dit ensuite "la vie est sacrée" (son de buzzer négatif), puis un argument qui a l'air raisonnable mais est en fait crypto-religieux. Il dit : "pour nous les bouddhistes tous les moments de la vie sont une occasion d'apprentissage" (donc, même l'agonie), et on pourrait croire qu'il parle de "l'école de la vie", ça a l'air gentiment laïc, mais à mon avis il profite de l'ambiguïté du mot pour mettre sous le tapis le fait que l'apprentissage dont il parle a pour visée d'améliorer sa situation dans le cadre du cycle des réincarnations (donc c'est un argument confessionnel, pas rationnel). Il dit aussi, comme tout le monde, comme les députés RN, comme les députés LR, comme les autres religieux, que l'aide à mourir risquait de créer des situations d'abus et des pressions sur les personnes vulnérables, sous-entendu, que cette loi va renforcer les inégalités sociales, qu'elle est validiste (le mot n'a jamais été prononcé), voire qu'elle est le premier pas vers une société eugéniste où on mange nos vieux. Je reviendrai sur cet argument touuuut à la fin. -->
 
-## notes
+
+-------
+
+merci à *Michèle Planche* et à *Stéphanie Aflalo* pour leurs relectures et pour absolument tout le reste, notamment le fait de m'avoir donné la vie, et le fait de la rendre belle.
+
+## Notes 
 
 [^diffsuicide]: la différence entre les deux c'est que dans le premier cas vous vous administrez tout.e seul.e le produit létal, alors que dans le second cas, vous êtes incapacité.e et c'est une tierce personne qui doit vous piquer, appuyer sur un bouton, etc.
 
@@ -322,17 +330,15 @@ scrogneugneu je vé i écrir
 
 [^nitch]: "Voyez les croyants de toute foi ! Qui haïssent-ils le plus ? Celui qui brise les tables de leurs valeurs, le destructeur, le criminel. Mais celui-là, c'est le créateur." Dit Zarathoustra, dit Nietzsche. Quand la personne citée par Carol Saba parle de "renversement des valeurs", elle pense forcément à Nietzsche, qui en a fait le projet central de sa philosophie (*Die Umwertung aller Werte*, la *réévaluation de toutes les valeurs*). En gros Nitch di que la tradition idéaliste - dans la philosophie et les religions - est une réaction déçue et haineuse face aux réalités matérielles de la vie. En gros, Jésus et Platon n'aimaient pas la vie et ils ont réussi à gâcher la fête pour toute l'humanité en imposant des valeurs, qui ne sont pas de bonnes valeurs pour au moins deux raisons, c'est qu'elles sont issues de leur seum (autrement nommé *pessimisme romantique* par Nietzsche) et qu'elles ont une vocation universaliste (alors que Nietzsche défend une *idiosyncrasie* des valeurs). Si vous voulez parler avec une vraie spécialiste je vous encourage à m'inviter au restaurant et j'essayerai de faire venir Stéphanie.
 
-[^houelle]: Houellebecq, la pire race de Nihiliste ; de ceux qui ont *encore secrètement des valeurs*, qu'ils tentent de dissimuler sous un épais manteau de cynisme. Mais les odeurs nauséabondes de leur nostalgie catholique [finissent toujours par remonter à la surface](https://michelhouellebecq.com/2022/09/06/contre-euthanasie/).
+[^houelle]: Houellebecq, la pire race de Nihiliste ; de ceux qui ont *encore secrètement des valeurs*, qu'ils tentent de dissimuler sous un épais manteau de cynisme. Mais leur nostalgie catholique [finit toujours par remonter à la surface](https://michelhouellebecq.com/2022/09/06/contre-euthanasie/).
 
-Je pense qu'une personne qui se vante publiquement d'utiliser une petite clochette chez lui pour réclamer du sexe auprès de sa compagne ne devrait pas avoir le droit monter sur les épaules de Kant, de balancer de *l’impératif catégorique* dans la presse nationale, et se réclamer du déontologisme. C'est trop commode de se cacher derrière Kant quand on veut défendre ses pulsions catholiques et d'utiliser Schopenhauer quand on veut fumer du crack. Calling bullshit on this guy
+<!-- Je pense qu'une personne qui se vante publiquement d'utiliser une petite clochette chez lui pour réclamer du sexe auprès de sa compagne ne devrait pas avoir le droit monter sur les épaules de Kant, de balancer de *l’impératif catégorique* dans la presse nationale, et se réclamer du déontologisme. C'est trop commode de se cacher derrière Kant quand on veut défendre ses pulsions catholiques et d'utiliser Schopenhauer quand on veut fumer du crack. Calling bullshit on this guy -->
 
 [^fiat]: je ne sais pas à quoi elle fait référence, [voici sa prise de parole](https://x.com/LCP/status/1380171329614266369)
 
 [^psy]: le patient, sous hospitalisation volontaire depuis trois semaines, avait vu son psychiatre le matin même, qui avait décidé de prolonger son hospitalisation sous contrainte, et de lui interdire toute visite. Le patient s'était ensuite réfugié dans une voiture devant l’hôpital avec son assistance sociale ("qui était devenue sa maîtresse" [dit le journal](https://france3-regions.francetvinfo.fr/nouvelle-aquitaine/deux-sevres/niort/infirmiere-tuee-a-thouars-30-ans-requis-contre-joachim-25-ans-psychotique-2999963.html)). Le psychiatre a envoyé deux infirmières pour aller le chercher, c'est alors que le patient sort de la voiture, armé d'un couteau, et qu'il frappe Elodie Multon au torse. Elle décède quelques heures plus tard de ses blessures. Le psychiatre, messieurs dames les jurés, est parti en vacances le soir même en Afrique avec sa famille, décidant de ne rien changer à son planning, "prenant son train à Saumur puis son avion à Roissy", précise ouest-france.
 
-[^silence]: [wikipedia](https://fr.wikipedia.org/wiki/Liste_des_minutes_de_silence_observ%C3%A9es_par_l%27Assembl%C3%A9e_nationale_fran%C3%A7aise#Agents_de_l'%C3%89tat_morts_en_service)
-
-coucou c'est moi qui ait ajouté la section "Tentatives infructueuses!" bon ça a peut-être été retiré depuis.
+[^silence]: [wikipedia](https://fr.wikipedia.org/wiki/Liste_des_minutes_de_silence_observ%C3%A9es_par_l%27Assembl%C3%A9e_nationale_fran%C3%A7aise#Agents_de_l'%C3%89tat_morts_en_service) <= coucou c'est moi qui ait ajouté la section "Tentatives infructueuses!" bon ça a peut-être été retiré depuis.
 
 [^double]: elle parle, sans la nommer, de la "doctrine du double effet" ; ce qui est recherché dans la sédation c'est d'apaiser la douleur *même si celle-ci peut favoriser le décès*. C'est l'argument légal qui permet aux médecins de se couvrir. Le fonctionnement est le suivant : on constate que le patient a mal, on augmente la dose de morphine. On constate (ou on fait semblant de constater) que la dose n'est pas suffisante, et donc on augmente la dose de manière itérative sur plusieurs jours, jusqu'à atteindre une dose soi-disant fatale. Je ne suis pas médecin mais en tout cas je suis assez convaincu par la réponse que Beloucif fait ensuite à Cristol (bon rappellons aussi que c'est vraiment son coeur de métier, alors qu'elle est oncologue), à savoir que la morphine est un des médicaments les mieux tolérés et que le delta entre une dose thérapeutique et une dose létale est parmi les plus importants (un petite dose de Morphine fait un grand effet sur un patient naïf, mais il faut augmenter *massivement* les doses pour retrouver le même effet au cours d'un traitement sur la durée). Ce qui tue les héroïnomanes c'est quand ils se sont progressivement habitués à des doses importantes (à cause de l'"accoutumance"), qu'ils interrompent leur "traitement" brutalement, et qu'au moment où ils retrouvent les moyens d'acquérir ou de trouver de l'héro à nouveau, ils reprennent la dose massive à laquelle leur organisme s'est déshabitué au cours de leur sevrage. Ce n'est en aucun cas ce qui se passe à l'hôpital puisque les doses de morphine sont toujours augmentées progressivement (c'est ce qu'on appelle la "titration").
 
@@ -356,7 +362,3 @@ coucou c'est moi qui ait ajouté la section "Tentatives infructueuses!" bon ça 
 <!--
 Pour en revenir à la vidéo intitulée "table ronde avec les représentants du culte", Oui j'ai regardé le live, oui je suis abonné à la chaîne youtube de la chaîne parlementaire, oui j'épluche mes tomates, c'est comme ça. La vérité c'est que je m'intéresse à ce projet de loi parce que j'ai perdu ma grand-mère il y a deux ans, que ma grand-mère avait voté Macron au premier tour en 2017 parce que la proposition d'un texte de loi sur l'aide active à mourir faisait partie des promesses de campagne (celle-ci, comme d'autres, n'a pas été tenue) d'Emmanuel Macron, et parce qu'enfin ce texte est la victime collatérale de la dissolution parlementaire décidée par le même Emmanuel Macron, le texte devait être soumis au vote dans le courant du mois de Juin,
  -->
-
--------
-
-merci à *Michèle Planche* et à *Stéphanie Aflalo* pour leurs relectures et pour absolument tout le reste, notamment le fait de m'avoir donné la vie, et le fait de la rendre belle.
