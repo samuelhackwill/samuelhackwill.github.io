@@ -1,3 +1,8 @@
+---
+toc: true
+toc_sticky: true
+---
+
 Chères et chers tous toutes,
 
 Mais oui c'est bien elle c'est la 9e itération de la newsletter de Samuel Hackwill! Avec des notes de bas de page! il est fou!. Cette fois ci je vais vous donner quelques nouvelles et aussi vous faire un résumé de ce qui s'est passé dans une certaine commission spéciale de l'assemblée nationale (française), intitulée "table ronde avec les représentants du culte" sur Youtube. Dans cette vidéo, sept leaders de la vie religieuse officielle de notre pays ont donné leur avis sur un projet de loi, le projet de loi sur la _fin de vie_, c'était en Avril 2024. 
