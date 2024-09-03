@@ -29,7 +29,7 @@ On retrospect, c'était un exercice d'écriture intéressant, j'aime bien compos
 
 j'ai conçu un site web pour le club travail (composé à ce moment-ci de Mathilde Maillard, Thomas Bris, Lucie Caouder, Olaf Defoort) à la rentrée 2023. C'est une sorte de [test de personnalité](www.guichet.clubtravail.be) axé sur la thématique du travail, avec une surprise à la fin! C'est le premier site que j'ai fait avec Tailwind, very nice (Tailwind c'est une librairie pour définir le _style_ d'une page web, avec une approche euh pas orthodoxe. Traditionnellement dans le développement web, tout le code concernant l'apparence de la page web est stocké dans un _fichier séparé_, qui contient du code CSS, alors qu'avec Tailwind on fout tout directement dans le code HTML! Berk! c'est comme si tu avais appris toute ta vie qu'il fallait trois assiettes différentes pour l'entrée, le repas et le dessert, et là quelqu'un déboule et te montre que tu peux retourner ton assiette pour y mettre ta tarte aux pommes). Je suis également en train de fabriquer un site web plus classique pour ma coopérative d'artichtes, l'Amicale (cette fois c'est l'occasion de découvrir Figma. C'est un éditeur WYSIWYG pour fabriquer des sites web, et c'est de la grosse balle notamment parce que c'est _multijoueur par défaut_, c'est à dire qu'on peut y dessiner, en live, à plusieurs. Freaking nice pour faire des prototypes en équipe.)
 
-![capture d'écran, interface de Figma](</news/9/media/Capture d’écran 2024-07-20 à 17.52.05.png>)
+![capture d'écran, interface de Figma](</news/9/media/figma.png>)
 <sub>sofia teillet sofia teillet sofia teillet</sub>
 
 ## Arts vivants
