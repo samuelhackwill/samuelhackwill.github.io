@@ -22,8 +22,17 @@ Mais more on that later. La dernière fois que je vous ai parlé c'était début
 J'ai été invité à installer une pièce pendant 10 jours aux Halles de Schaerbeek (Bruxelles), à l'occasion du "Grand Marché", un évènement à destination non pas du "_public habituel des Halles_" mais plutôt à destination des personnes géographiquement proches du théâtre, c'est-à-dire les voisines voisins de Schaerbeek (qui, en dépit de cette proximité spatiale, sont plutôt ce qu'on appelle traditionnellement les publics "_éloignés_" de la culture institutionnelle). Mon envie a été d'installer un Cybercafé aux Halles, avec des vrais ordinateurs dedans. Jacob (Lyon) a conçu et fabriqué à cet effet un magnifique bureau dodécagonal en carton, et j'ai dessiné 8 fonds d'écrans pour les ordinateurs, un peu sur le mode du fanzine, avec du texte, des dessins et des icônes de bureau customisés renvoyant vers une sélection de jeux et de sites web, incluant notamment ma version française d'un jeu assez célèbre de Paolo Pedercini & Jim Munroe qui n'avait jamais été traduit (vous pouvez y jouer [ici](samuelhackwill.github.io/unmanned)). On a également utilisé le cybercafé pour accueillir les conférences de [Lori Roussey](https://datarights.ngo/) (au sujet du RGPD) et de [Kevin Zanin](https://kevinzanin.com/) (au sujet de QAnon et des e-Girls). Je pense que tout le monde en a eu pour son argent, entre le public vétéran qui a pu découvrir mes digressions sauvages sur les progrès récents de la soi-disant intelligence artificielle, Ivan Illich, la téléphonie, les représentations de la mort dans les jeux d'Amiga, et d'autre part ce groupe d'amis (âge : de 7 à 12 ans) qui est revenu _tous les jours_ pour jouer à Roblox. J'étais très content de l'ambiance "cybercafé" qui m'a semblé fidèle à ma propre expérience de ces espaces pendant ma propre enfance.
 
 ![une vue d'ensemble du cybercafé](/news/9/media/dodeca.jpg)
+
+<br/>
+
 ![un des écrans du cybercafé](/news/9/media/ludo.JPG)
+
+<br/>
+
 ![un autre écran du cybercafé](/news/9/media/dune.JPG)
+
+<br/>
+
 ![un icone avec TUX](/news/9/media/illich.JPG)
 
 ### musique.nousparlions.com 
@@ -32,7 +41,13 @@ J'ai été invité à installer une pièce pendant 10 jours aux Halles de Schaer
 en mai 2023 j'ai écrit 5 histoires courtes micro-animées pour le festival de musique La Brèche à Aix-les-bains, en réponse à l'invitation d'Antoine, le co-directeur du festival, qui m'a donné carte blanche dans la conception d'une _petite-forme-pour-internet_. Ce que j'ai créé, en utilisant ce que j'ai appris ces dernières années sur le dessin SVG, les animations CSS, et Javascript, sont des sortes de romans graphiques auto-hébergés. Vous pouvez les lire [ici](https://musique.nousparlions.com).
 
 ![croquis, musique.nousparlions.com](</news/9/media/bravo.PNG>)
+
+<br/>
+
 ![capture d'écran, musique.nousparlions.com](</news/9/media/car.jpg>)
+
+<br/>
+
 ![accueil, musique.nousparlions.com](</news/9/media/musique-home.PNG>)
 
 <!-- 
