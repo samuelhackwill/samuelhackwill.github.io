@@ -3,13 +3,15 @@ remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
+head_scripts             : 
+   - /nutshell.js
 locale                   : "fr-FR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Samuel Hackwill"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Samuel Hackwill"
-description              : "Yo here you'll find stuff i decided to host on microsoft-owned servers for some reason."
+description              : "yo."
 url                      : "https://samuelhackwill.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "samuelhackwill/samuelhackwill.github.io"
