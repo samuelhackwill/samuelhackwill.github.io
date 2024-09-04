@@ -16,13 +16,15 @@ Mais more on that later. La dernière fois que je vous ai parlé c'était début
 
 # What's up
 ## Arts visuels
-### Cybercafé @ Halles de Schaerbeek (juin 24)
+### Cybercafé @ Halles de Schaerbeek 
+(juin 24)
 
 J'ai été invité à installer une pièce pendant 10 jours aux Halles de Schaerbeek (Bruxelles), à l'occasion du "Grand Marché", un évènement à destination non pas du "_public habituel des Halles_" mais plutôt à destination des personnes géographiquement proches du théâtre, c'est-à-dire les voisines voisins de Schaerbeek (qui, en dépit de cette proximité spatiale, sont plutôt ce qu'on appelle traditionnellement les publics "_éloignés_" de la culture institutionnelle). Mon envie a été d'installer un Cybercafé aux Halles, avec des vrais ordinateurs dedans. Jacob (Lyon) a conçu et fabriqué à cet effet un magnifique bureau dodécagonal en carton, et j'ai dessiné 8 fonds d'écrans pour les ordinateurs, un peu sur le mode du fanzine, avec du texte, des dessins et des icônes de bureau customisés renvoyant vers une sélection de jeux et de sites web, incluant notamment ma version française d'un jeu assez célèbre de Paolo Pedercini & Jim Munroe qui n'avait jamais été traduit (vous pouvez y jouer [ici](samuelhackwill.github.io/unmanned)). On a également utilisé le cybercafé pour accueillir les conférences de [Lori Roussey](https://datarights.ngo/) (au sujet du RGPD) et de [Kevin Zanin](https://kevinzanin.com/) (au sujet de QAnon et des e-Girls). Je pense que tout le monde en a eu pour son argent, entre le public vétéran qui a pu découvrir mes digressions sauvages sur les progrès récents de la soi-disant intelligence artificielle, Ivan Illich, la téléphonie, les représentations de la mort dans les jeux d'Amiga, et d'autre part ce groupe d'amis (âge : de 7 à 12 ans) qui est revenu _tous les jours_ pour jouer à Roblox. J'étais très content de l'ambiance "cybercafé" qui m'a semblé fidèle à ma propre expérience de ces espaces pendant ma propre enfance.
 
 ![un des écrans du cybercafé](/news/9/media/P1000794.JPG)
 
-### musique.nousparlions.com (mai 2023)
+### musique.nousparlions.com 
+(mai 2023)
 
 en mai 2023 j'ai écrit 5 histoires courtes micro-animées pour le festival de musique La Brèche à Aix-les-bains, en réponse à l'invitation d'Antoine, le co-directeur du festival, qui m'a donné carte blanche dans la conception d'une _petite-forme-pour-internet_. Ce que j'ai créé, en utilisant ce que j'ai appris ces dernières années sur le dessin SVG, les animations CSS, et Javascript, sont des sortes de romans graphiques auto-hébergés. Vous pouvez les lire [ici](https://musique.nousparlions.com).
 
@@ -31,7 +33,8 @@ en mai 2023 j'ai écrit 5 histoires courtes micro-animées pour le festival de m
 <!-- 
 On retrospect, c'était un exercice d'écriture intéressant, j'aime bien composer des dialogues, et j'aime bien travailler à l'intersection du dessin, du code et du texte. Ceci étant, la forme à laquelle je parviens n'est ni une bd, ni un film, ni un jeu vidéo ; elle a un peu les fesses entre ces trois chaises. Je me questionne sur l'efficacité de ce format, qui ne se prête pas très bien au _partage_, alors même qu'il a été conçu pour internet : l'expérience est un peu cachée derrière plusieurs couches de complexité (de _friction_) : il faut aller sur *mon* site, cliquer une fois, puis faire avancer soi-même le texte jusqu'au bout. On ne peut pas l'imprimer, on ne peut pas le mettre sur d'autres réseaux sociaux sans avoir à le transformer en *vidéo*, ce que je ne veux pas faire (un des intérêts du format SVG+CSS c'est qu'il ne pèse quasiment rien ; soit 1/2 MB en moyenne pour chaque scène que j'ai dessinée, alors qu'une vidéo dont la durée correspondrait au temps nécessaire pour lire le texte pèserait au moins 100 fois plus lourd). Mes prochaines itérations essayeront d'apporter des réponses à ces questions. je cherche actuellement une bourse d'écriture pour continuer à alimenter le corpus avec d'autres histoires courtes. La prochaine fois j'écrirai sans doute des dialogues à choix multiples. J'ai envie d'écrire sur l'art subventionné, le nationalisme, et quels sont les arguments _politiques_ qui ont été fait dans l'histoire pour justifier l'utilité sociale de l'art. hehe J'ai encore à formuler des hypothèses sur pourquoi cette façon d'écrire et de publier des textes est intéressante et unique, j'ai la sensation qu'il y a un potentiel énorme à ce format de "commentaire social auto-hébergé", qui me place dans la filiation d'un corpus d'oeuvres qui vont des jeux flash des années 2000 à d'autres tentatives plus contemporaines comme les jeux de Nicky Case ou plus francophonement, du mini-jeu qui avait été fait à l'occasion de la campagne du Nouveau Front Populaire là pis c'est bien fait franchement regardez https://docgeraud.itch.io/barrage-populaire J'aime beaucoup faire ça, n'hésitez pas à m'en commander d'autres, j'ai envie d'en écrire plein! Je pense que la prochaine collection concernera les liens entre l'art subventionné et le *nationalisme*, et que je vais rendre les dialogues interactifs (texte à choix multiples). Je me pose plein de questions d'_ergonomie_, à la fois je suis fier et content de proposer une expérience 100% sur mon site à moi et pas sur un réseau social à la noix, mais ça créé une friction ah, j'ai plein de chose à vous dire là dessus mais je veux pas vous tenir la jambe. Bon donc pour vous décrire le truc c'est tout simplement un site web avec une collection de dessins *SVG*, c'est à dire des dessins qui sont stockés dans votre ordinateur sous forme de formules mathématiques, et non pas de coordonnées de pixels, la distinction est importante, et ces dessins sont animés en utilisant des animations CSS, c'est à dire à nouveau du code informatique, et alors tout ça fait que ces sites web sont très très légers. Si, pour parvenir au même résultat, j'avais utilisé une suite logicielle de dessin animé pour exporter une vidéo de ces dialogues, On retrospect, je trouve que c'était un exercice d'écriture intéressant, j'aime bien que ce soit du dessin et du code et du texte. Ceci étant, la forme à laquelle j'arrive n'est ni une bd, ni un film, ni un jeu vidéo, mais un peu tout ça à la fois. Je me questionne sur l'efficacité de ce format, qui ne se prête pas très bien au _partage_ sur internet : l'oeuvre est un peu cachée derrière plusieurs couches de complexité (de _friction_) : il faut aller sur *mon* site, cliquer une fois, puis faire avancer soi-même le texte jusqu'au bout. On ne peut pas l'imprimer, on ne peut pas le mettre sur d'autres réseaux sociaux sans avoir à le transformer en *vidéo*, ce qui ne fait aucun sens du point de vue technique -->
 
-### sites web (novembre 23)
+### sites web 
+(novembre 23)
 
 j'ai conçu un site web pour le club travail (composé à ce moment-ci de Mathilde Maillard, Thomas Bris, Lucie Caouder, Olaf Defoort) à la rentrée 2023. C'est une sorte de [test de personnalité](www.guichet.clubtravail.be) axé sur la thématique du travail, avec une surprise à la fin! C'est le premier site que j'ai fait avec Tailwind, very nice (Tailwind c'est une librairie pour définir le _style_ d'une page web, avec une approche euh pas orthodoxe. Traditionnellement dans le développement web, tout le code concernant l'apparence de la page web est stocké dans un _fichier séparé_, qui contient du code CSS, alors qu'avec Tailwind on fout tout directement dans le code HTML! Berk! c'est comme si tu avais appris toute ta vie qu'il fallait trois assiettes différentes pour l'entrée, le repas et le dessert, et là quelqu'un déboule et te montre que tu peux retourner ton assiette pour y mettre ta tarte aux pommes). Je suis également en train de fabriquer un site web plus classique pour ma coopérative d'artichtes, l'Amicale (cette fois c'est l'occasion de découvrir Figma. C'est un éditeur WYSIWYG pour fabriquer des sites web, et c'est de la grosse balle notamment parce que c'est _multijoueur par défaut_, c'est à dire qu'on peut y dessiner, en live, à plusieurs. Freaking nice pour faire des prototypes en équipe.)
 
@@ -39,7 +42,8 @@ j'ai conçu un site web pour le club travail (composé à ce moment-ci de Mathil
 <sub>sofia teillet sofia teillet sofia teillet</sub>
 
 ## Arts vivants
-### création : Tryhard (avril 25)
+### création : Tryhard 
+(avril 25)
  
 Je suis en train d'écrire une performance-pour-100-pointeurs-de-souris, ça s'appelle Tryhard. Ce que je peux vous dire à ce sujet : on a fait le tout premier playtest à la Bellone en Décembre (23), on a été pré-sélectionnés pour le prix "Scènes Vivantes, scènes numériques" à Avignon cet été, et on va faire une nouvelle série de playtests à Lille cette saison. Les premières seront accueillies au [théâtre de l'Elysée](https://lelysee.com/evenement/tryhard/) (c'est à Lyon), ça sera du 1 au 4 Avril, veneiiii
 
@@ -50,10 +54,11 @@ Je suis en train d'écrire une performance-pour-100-pointeurs-de-souris, ça s'a
 
 On a joué à l'espace Malraux (Chambéry) en mai, et dans la très belle salle de fêtes de Fives (dans la métropole Lilloise) en Janvier (2024). C'étaient deux dates importantes pour moi puisqu'elles m'ont donné l'occasion de présenter mon travail à mes ami.e.s d'enfance (en Savoie) et à mes ami.e.s de non-enfance (dans le Nord). 
 
-On jouera peut-être à Lille *intra*muros cette saison, le cas échéant je vous ferai signe sur ce très bon site web : https://www.instagram.com/sauce_riche/
+On jouera peut-être à Lille *intra*muros cette saison, le cas échéant je vous ferai signe sur ce [très bon site web](https://www.instagram.com/sauce_riche/)
 
 ## Miscellanées
-### J'ai fait à manger pour 500 personnes (juin 23)
+### J'ai fait à manger pour 500 personnes 
+(juin 23)
 
 J'ai le bonheur d'exercer épisodiquement depuis 7 ans la fonction de cantinier amateur pour le [cinéma Nova](https://www.nova-cinema.org/), à Bruxelles. Il y a exactement un an, mes camarades m'ont demandé de faire à manger pour une soirée de projections en plein air pour laquelle iels attendaient 200 personnes par jour pendant deux jours. Je me suis dit hein 400 personnes vont venir voir du cinéma expérimental, n'importe quoi, et puis en fait il y a bien eu 500+ mangeurs et mangeuses qui se sont présenté.e.s à notre stand à cette occasion.
 
@@ -64,7 +69,8 @@ J'ai décidé assez tôt dans le processus que je cuisinerais _tout seul_ (spoil
 <sub>la cuisine où j'ai fait ma nuit blanche, à Berchem. Matez-moi tout cet espace! j'ai certainement marché plusieurs kilomètres au cours de la nuit.</sub>
 
 
-### Carnet d'agonie (automne 23)
+### Carnet d'agonie 
+(automne 23)
 
 L'année dernière pour la première fois de ma vie j'ai réussi à m'astreindre à un rythme quotidien d'écriture pendant un mois, c'était vraiment très excitant et je peux confirmer ce que j'ai entendu time and again, à savoir qu'écrire c'est plus facile quand on le fait tous les jours. Mon point de départ, c'était d'écrire une sorte de pastiche de Thomas Bernhard. J'ai dû suspendre mon travail en 2024 parce que j'ai d'autres choses à faire, mais je reprendrai l'écriture l'été prochain.
 
@@ -74,8 +80,8 @@ L'année dernière pour la première fois de ma vie j'ai réussi à m'astreindre
 
 voilà c'est tout pour les nouvelles! N'hésitez pas à sortir de la salle si vous voulez faire pipi parce que là je vais vous mettre un tunnel
 
-# x. Un Bouddhiste, un musulman, un protestant, deux catholiques et un orthodoxe sont à l'assemblée nationale
-## Le contexte
+# Un Bouddhiste, un musulman, un protestant, deux catholiques et un orthodoxe sont à l'assemblée nationale
+## Contexte
 
 Le projet de loi sur la fin de vie a pour objet l'ouverture d'un nouveau droit pour vous et moi, celui de recevoir une aide active à mourir. Bien que le suicide assisté et l'euthanasie[^diffsuicide] aient été dépénalisés dans de nombreux pays[^pays], à l'heure actuelle, en France, tout ce que les docteurs ont le droit de faire face à une situation d'agonie, c'est éventuellement d'accepter la suspension des soins (à condition que le pronostic vital du malade soit objectivement engagé à court terme - c'est à dire quelques jours). Tout geste ayant pour objet de provoquer directement votre décès est strictement proscrit. Les soignants qui transgressent cet interdit sont régulièrement poursuivis en justice[^justice]. Ça peut sembler positif : yay les docteurs n'ont pas le droit de nous tuer sur un coup de tête! mais ça a aussi pour conséquence que les personnes qui *désirent* qu'on abrège leurs souffrances se retrouvent face à un mur, et aux justifications plus ou moins paternalistes, voire carrément métaphysiques, des institutions médicales. De nombreuses évaluations récentes, de la Cour des comptes (2023) au Comité Consultatif National d'Éthique (2022) en passant par la convention citoyenne sur la fin de vie (2022), sont toutes parvenues à la conclusion que le cadre légal actuel de la fin de vie n'était pas satisfaisant.
 
@@ -309,7 +315,7 @@ Beloucif : il raconte une histoire, répondant à la question de Christophe Benz
 
 et la dernière parole de la table ronde revient à Antony Boussemart, qui dit qu'en gros, si les religions placent leur réfléxion sur le temps long, les bouddhistes sont sur un temps ennnncooooreeee plusssss looooong parce que la réincarnation. 
 
-## la réponse de samuel aux religieux et députés
+## réponse de samuel à la vidéo youtube
 
 (à écrire, demain peut-être? who knows, not me)
 
@@ -318,7 +324,7 @@ et la dernière parole de la table ronde revient à Antony Boussemart, qui dit q
 
 -------
 
-merci à *Michèle Planche* et à *Stéphanie Aflalo* pour leurs relectures et pour absolument tout le reste, notamment le fait de m'avoir donné la vie, et le fait de la rendre belle.
+merci à Michèle Planche et à [Stéphanie Aflalo](https://www.instagram.com/stephanie.aflalo/) pour leurs relectures et pour absolument tout le reste, notamment le fait de m'avoir donné la vie, et le fait de la rendre belle.
 
 ## Notes 
 
