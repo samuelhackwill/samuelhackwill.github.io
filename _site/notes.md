@@ -1,3 +1,7 @@
+## test
+
+woohooo à bas les notes de bas de page, vive les notes de milieu de page! j'utilise le script de [:Nicky Case](https://fr.wikipedia.org/wiki/Nicky_Case) qui est un génie généreux.
+
 ## diffsuicide
 la différence entre les deux c'est que dans le premier cas vous vous administrez tout.e seul.e le produit létal, alors que dans le second cas, vous êtes incapacité.e et c'est une tierce personne qui doit vous piquer, appuyer sur un bouton, etc.
 
@@ -8,13 +12,15 @@ notamment parmi les plus connnus : Frédéric Chaussoy dans l'affaire [:Vincent 
 on parle de *projet* de loi quand c'est l’exécutif qui dépose un texte à l'assemblée, et de *proposition* quand ce sont les législateurs qui se font à manger tout seuls. Parce que c'est notre propositionnnn
 
 ## grimetz
-La première fois que j'ai vu cette salle, c'est dans [cette vidéo](https://youtu.be/ln6ztJDqj4M?feature=shared), sur laquelle je suis tombé parce que je faisais une recherche au sujet des exclusions temporaires de députés ([qui sont rares ; pour l'heure il n'y en a eu que 4 dans l'histoire de la 5e république - dont 3 depuis 2022 hehe](https://projetarcadie.com/content/les-sanctions-des-deputes)). Je suis preneur si vous avez d'autres histoires de politiciens qui [garent mal leur voiture](https://www.larepubliquedespyrenees.fr/faits-divers/insolite/bedous-jean-lassalle-se-gare-pour-voir-le-match-et-bloque-le-train-pau-bedous-5205820.php?csnt=19185173b97), je fais une collection.
+La première fois que j'ai vu cette salle, c'est dans [:cette vidéo](https://youtu.be/ln6ztJDqj4M?feature=shared), sur laquelle je suis tombé parce que je faisais une recherche au sujet des exclusions temporaires de députés ([qui sont rares ; pour l'heure il n'y en a eu que 4 dans l'histoire de la 5e république - dont 3 depuis 2022 hehe](https://projetarcadie.com/content/les-sanctions-des-deputes)). Je suis preneur si vous avez d'autres histoires de politiciens qui [garent mal leur voiture](https://www.larepubliquedespyrenees.fr/faits-divers/insolite/bedous-jean-lassalle-se-gare-pour-voir-le-match-et-bloque-le-train-pau-bedous-5205820.php?csnt=19185173b97), je fais une collection.
 
 ## urgo 
 le groupe Urgo a été condamné pour ces pratiques en 2023 et a reçu une amende ridiculissime d'1,2 millions d'euros *dont 600 000 avec sursis*. Leur chiffre d'affaire étant de 800 millions d'euros environ, l'amende représente donc ~0,001% de leurs produits annuels bruts. À titre de comparaison quand moi Samuel je reçois une amende de stationnement ça représente ~0,15% de mes produits annuels bruts, et donc l'amende est 100 fois plus sévère dans mon cas on pourrait dire? Je dis pas ça pour minimiser le fait que c'est pas bien de mal se garer hein. Bon après, quoi, Urgo a certes corrompu les pharmaciens mais ils vendent de l'Humex-rhume, pas du Fentanyl. Ah mais l'Humex-rhume ça peut causer des AVC me dit Stéphanie.
 
 ## pdf
-[lel](https://x.com/forthrighter/status/1594710095719432192)
+<!-- [lel](https://x.com/forthrighter/status/1594710095719432192) -->
+![convert to pdf](</news/9/media/pdf.png>)
+
 
 ## nitch 
 "Voyez les croyants de toute foi ! Qui haïssent-ils le plus ? Celui qui brise les tables de leurs valeurs, le destructeur, le criminel. Mais celui-là, c'est le créateur." Dit Zarathoustra, dit Nietzsche. Quand la personne citée par Carol Saba parle de "renversement des valeurs", elle pense forcément à Nietzsche, qui en a fait le projet central de sa philosophie (*Die Umwertung aller Werte*, la *réévaluation de toutes les valeurs*). En gros Nitch di que la tradition idéaliste - dans la philosophie et les religions - est une réaction déçue et haineuse face aux réalités matérielles de la vie. En gros, Jésus et Platon n'aimaient pas la vie et ils ont réussi à gâcher la fête pour toute l'humanité en imposant des valeurs, qui ne sont pas de bonnes valeurs pour au moins deux raisons, c'est qu'elles sont issues de leur seum (autrement nommé *pessimisme romantique* par Nietzsche) et qu'elles ont une vocation universaliste (alors que Nietzsche défend une *idiosyncrasie* des valeurs). Si vous voulez parler avec une vraie spécialiste je vous encourage à m'inviter au restaurant et j'essayerai de faire venir Stéphanie.
@@ -28,7 +34,7 @@ Houellebecq, la pire espèce de Nihiliste ; de ceux qui ont *encore secrètement
 je ne sais pas à quoi elle fait référence, [voici sa prise de parole](https://x.com/LCP/status/1380171329614266369)
 
 ## psy 
-le patient, sous hospitalisation volontaire depuis trois semaines, avait vu son psychiatre le matin même, qui avait décidé de prolonger son hospitalisation sous contrainte, et de lui interdire toute visite. Le patient s'était ensuite réfugié dans une voiture devant l’hôpital avec son assistance sociale ("qui était devenue sa maîtresse" [dit le journal](https://france3-regions.francetvinfo.fr/nouvelle-aquitaine/deux-sevres/niort/infirmiere-tuee-a-thouars-30-ans-requis-contre-joachim-25-ans-psychotique-2999963.html)). Le psychiatre a envoyé deux infirmières pour aller le chercher, c'est alors que le patient sort de la voiture, armé d'un couteau, et qu'il frappe Elodie Multon au torse. Elle décède quelques heures plus tard de ses blessures. Le psychiatre, messieurs dames les jurés, est parti en vacances le soir même en Afrique avec sa famille, décidant de ne rien changer à son planning, "prenant son train à Saumur puis son avion à Roissy", précise ouest-france.
+le patient, sous hospitalisation volontaire depuis trois semaines, avait vu son psychiatre le matin même, qui avait décidé de prolonger son hospitalisation sous contrainte, et de lui interdire toute visite. Le patient s'était ensuite réfugié dans une voiture devant l’hôpital avec son assistante sociale ("qui était devenue sa maîtresse" [dit le journal](https://france3-regions.francetvinfo.fr/nouvelle-aquitaine/deux-sevres/niort/infirmiere-tuee-a-thouars-30-ans-requis-contre-joachim-25-ans-psychotique-2999963.html)). Le psychiatre a envoyé deux infirmières pour aller le chercher, c'est alors que le patient sort de la voiture, armé d'un couteau, et qu'il frappe Elodie Multon au torse. Elle décède quelques heures plus tard de ses blessures. Le psychiatre, messieurs dames les jurés, est parti en vacances le soir même en Afrique avec sa famille, décidant de ne rien changer à son planning, "prenant son train à Saumur puis son avion à Roissy", précise ouest-france.
 
 ## silence 
 [wikipedia](https://fr.wikipedia.org/wiki/Liste_des_minutes_de_silence_observ%C3%A9es_par_l%27Assembl%C3%A9e_nationale_fran%C3%A7aise#Agents_de_l'%C3%89tat_morts_en_service) <= coucou c'est moi qui ait ajouté la section "Tentatives infructueuses!" bon ça a peut-être été retiré depuis.
@@ -50,7 +56,7 @@ notamment en Europe : aux Pays-bas, en Belgique, au Luxembourg, en Suisse, en Au
 merciiiiiiiiiiiii à vous, Kevin (qui tenait la caisse et est parvenu à garder la face malgré les impitoyables _40_ minutes de queue que nous avons infligé sans pitié à notre clientèle pendant le coup de feu), Sara et Camille (qui pelaient les tomates pour le carpaccio, malgré les protestations de la foule absolument sous le choc quand elle arrivait au bout de la queue et constatait cet état de fait) Stéphanie (qui a relevé le soldat Kevin samedi et a mis de l'ordre dans l'organisation moyenâgeuse de notre chaîne de production, divisant le temps d'attente au moins par 6 je dirais), l'ASBL BLED 1082 (qui m'a généreusement prêté une cuisine professionnelle et un four romain), et Alain Féaux (qui a chauffé le four romain en question).
 
 ## odoul 
-Les meilleurs clashs ne sont pas à l'assemblée nationale, ils sont dans le conseil régional de Bourgogne Franche-comté. https://www.lejsl.com/france-monde/2019/11/17/video-voile-au-conseil-regional-julien-odoul-recoit-une-mise-au-point-cinglante
+Ce n'est pas à l'assemblée nationale qu'on trouve les [clashs de meilleure qualité](https://www.lejsl.com/france-monde/2019/11/17/video-voile-au-conseil-regional-julien-odoul-recoit-une-mise-au-point-cinglante).
 
 ## sed 
 c'est le soin qui ressemble le plus à l'euthanasie qui est pratiqué aujourd'hui à l'hopital (et notamment dans les unités de soins palliatifs). Le principe, c'est qu'on vous endort en attendant que votre coeur s'arrête en gros. Le cadre d'application de la sédation profonde est très restreint : cela ne concerne que les personnes dont le pronostic vital est objectivement engagé à court terme (quelques jours), ou qui sont sujets à des douleurs réfractaires, ou qui sont en train de se vider de leur sang, ou qui sont en train de s'étouffer.
