@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Ce document a été créé avec Syntext Serna Free. --><main>
+  <section>
+    <state txt="Salut." id="call"/>
+    <state txt="" data="wife"/>
+    <state txt="Tout va bien?"/>
+    <state txt="" data="wife"/>
+    <state txt="Non, juste la routine ici."/>
+    <state txt="" data="wife">
+      <choice txt="As-tu pensé à prendre du café et du lait?">
+        <state txt="" data="wait"/>
+        <state txt="" data="wife"/>
+        <state txt="OK donc je vais juste devoir faire la queue à l'épicerie après une longue journée de travail, alors, cool." data="jerk" link="2nd"/>
+      </choice>
+      <choice txt="Qu'est-ce que le docteur a dit à propos de Mikey?">
+        <state txt="" data="wait"/>
+        <state txt="" data="wife"/>
+        <state txt="Alors il a réduit la dose?"/>
+        <state txt="" data="wife">
+          <choice txt="C'est Absurde! Tu lui avait pourtant bien dit pour la scène que Mikey nous a fait l'autre fois au centre commercial?">
+            <state txt="" data="wife"/>
+            <state txt="Sérieusement, à quoi ça sert que je paie ce type si tu ne lui donne même pas les infos?" data="jerk" link="2nd"/>
+          </choice>
+          <choice txt="C'est bien. C'est probablement juste qu'il s'ennuie à l'école...">
+            <state txt="...et une chose est sûre c'est qu'il va devoir apprendre à gérer ça."/>
+            <state txt="Même un bon travail peut être ennuyeux."/>
+            <state txt="" data="wife">
+              <choice txt="Je travaille avec Jane aujourd'hui.">
+                <state txt="" data="wife"/>
+                <state txt="Hmm? Non, je t'ai déjà parlé de Jane, j'en suis sûr." data="jerk" link="2nd"/>
+              </choice>
+              <choice txt="Ça me fait plaisir d'entendre ta voix.">
+                <state txt="" data="wife"/>
+                <state txt="Oui, plus plaisir même que de tuer des terroristes."/>
+                <state txt="" data="wife"/>
+                <state txt=" Mais bon, ici, c'est surtout le temps que je tue, comme tu sais." link="2nd"/>
+              </choice>
+            </state>
+          </choice>
+        </state>
+      </choice>
+    </state>
+  </section>
+  <section>
+    <state txt="" id="2nd" data="wife"/>
+    <state txt="Non, je serai à la maison vers minuit, comme d'habitude.">
+      <choice txt="Ce serait bien si tu pouvais sortir du lit en silence pour une fois...">
+        <state txt="...au lieu de piétiner comme un éléphant." data="jerk" link="3rd"/>
+      </choice>
+      <choice txt="Est-ce que je t'ai réveillé cette nuit?">
+        <state txt="" data="wait"/>
+        <state txt="" data="wife"/>
+        <state txt="Super. Je sais que c'est pas toujours rigolo d'avoir à se lever pour emmener Mikey à l'école, alors..."/>
+        <state txt="...c'est tant mieux si tu as pu faire une nuit complète." link="3rd"/>
+      </choice>
+    </state>
+  </section>
+  <section>
+    <state txt="Je vais devoir y retourner..." id="3rd"/>
+    <state txt="" data="wife"/>
+    <state txt='"Où est-ce que je fais voler mon jouet"?'>
+      <choice txt="C'est secret... mais ça rime avec Taliban.">
+        <state txt="" data="wait"/>
+        <state txt="" data="wife"/>
+        <state txt="Je sais aussi où c'est." link="end_call"/>
+      </choice>
+      <choice txt="Jouet? Un jouet c'est ce que tu conduis pour aller au travail, chérie.">
+        <state txt="...et si on était pas là il n'y aurait certainement pas de pétrole pour le faire rouler." data="jerk" link="end_call"/>
+      </choice>
+      <choice txt="Ça te dépasse pas mal tout ça, pas vrai?">
+        <state txt="" data="wait"/>
+        <state txt="" data="wife"/>
+        <state txt="Femme, je suis le GARDIEN des CIEUX." id="jerk"/>
+        <state txt="Je suis les YEUX et la FOUDRE." data="jerk" link="end_call"/>
+      </choice>
+    </state>
+  </section>
+  <section>
+    <state txt="Bon, je dois m'y remettre. Je t'aime." id="end_call"/>
+    <state txt="" data="wife"/>
+    <state txt="Je dois y aller, à plus tard."/>
+  </section>
+  <section>
+    <state txt="*tousse*" id="cough"/>
+    <state txt="" data="wife"/>
+    <state txt="Fumer? Moi?">
+      <choice txt="Non, un insecte vient de voler dans ma bouche.">
+        <state txt="Je n'ai pas fumé depuis des mois." link="end_call"/>
+      </choice>
+      <choice txt="J'ai dit que j'ESSAYERAIS d'arrêter.">
+        <state txt="" data="wait"/>
+        <state txt="" data="wife"/>
+        <state txt="Mon travail est peut-être un peu stressant, pardon..." data="jerk" link="end_call"/>
+      </choice>
+    </state>
+  </section>
+</main>

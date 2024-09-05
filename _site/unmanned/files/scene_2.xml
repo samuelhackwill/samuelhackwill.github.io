@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><main>
+  <section>
+    <state txt="Une nouvelle journée..." id="welcome">
+      <choice txt="...Un nouvel ennemi neutralisé.">
+        <state txt="C'est presque trop facile..."/>
+      </choice>
+      <choice txt="...Une nouvelle prime d'heures sup.">
+        <state txt="Avec dans mon viseur...">
+          <choice txt="...une promotion?">
+            <state txt="gagner en expérience, monter en niveau... comme dans un jeu de guerre. Sauf que c'est pas un jeu" id="promotion"/>
+          </choice>
+          <choice txt="...un nouveau jouet pour le fiston?">
+            <state txt="C'est jour de paie, je vais m'arrêter à GameCash. On pourra jouer à deux."/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="...Un pas de plus vers la tombe.">
+        <state txt="Enfin ça vaut mieux que de sauter sur une mine en OPEX.">
+          <choice txt="Est fou celui qui préfère une lente agonie à une mort héroïque et soudaine"/>
+          <choice txt="Repose en paix, Markus."/>
+        </state>
+      </choice>
+    </state>
+    <state txt="J'ai fait un rêve absurde cette nuit." id="nightmare" data="nightmare">
+      <choice txt="Nos rêves peuvent être révélateurs...">
+        <state txt="Peut-être que ce que je veux...">
+          <choice txt="...c'est d'être puni.">
+            <state txt="Tu ne tueras point, etc etc." data="deep"/>
+            <state txt="O Seigneur, je ne fais que suivre les ordres."/>
+          </choice>
+          <choice txt="...c'est de m'enfuir.">
+            <state txt="Je voudrais être le mec de la pub qui gagne à l'Euromillions. Au revoir président..." data="deep"/>
+            <state txt="plutôt que de rester bloqué sous le salaire médian toute ma vie."/>
+          </choice>
+          <choice txt="...c'est de faire face à l'ennemi.">
+            <state txt="Plutôt que de distribuer des bombes à distance" data="deep"/>
+            <state txt="depuis mon fauteuil de bureau"/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="C'est le fuseau horaire Taliban. Ça détruit la qualité du sommeil."/>
+    </state>
+    <state txt="Ah, le rasage..." id="shaving" data="shaving">
+      <choice txt="...quel bonheur.">
+        <state txt="On redécouvre son visage tous les matins...">
+          <choice txt="On transforme le chaos en ordre.">
+            <state txt="Une vraie peau de bébé : aucune éraflure, griffure, coupure..."/>
+            <state txt="C'est un art qui se perd." link="college"/>
+          </choice>
+          <choice txt="C'est quand je me rase que j'ai les pensées les plus profondes et les plus subtiles...">
+            <state txt="C'est presque une méditation." link="college"/>
+          </choice>
+          <choice txt="Une magnifique tradition masculine qui se transmet de père en fils">
+            <state txt="Un défi toujours renouvelé malgré son apparente simplicité." link="civilization"/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="...quelle putain de corvée.">
+        <state txt="Et c'est dangereux par dessus le marché!">
+          <choice txt="Un seul faux mouvement...">
+            <state txt="Et je suis un masque de sang."/>
+            <state txt="Pas étonnant que ces lâches portent la barbe." link="civilization"/>
+          </choice>
+          <choice txt="parfois je fais semblant que c'est un jeu...">
+            <state txt="avec un but simple, des choix limités"/>
+            <state txt="et des sanctions immédiates mais pas fatales pour chaque erreur." link="college"/>
+          </choice>
+          <choice txt="Il faut faire attention...">
+            <state txt="Vers le bas. Pas trop doucement. Pas trop vite." link="college"/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="...c'est un véritable challenge.">
+        <state txt="Ces barbus en sont incapables."/>
+        <state txt="Barbares paresseux." link="civilization"/>
+      </choice>
+    </state>
+    <state txt="La dernière fois que j'ai porté la barbe, c'était à la fac." id="college">
+      <choice txt="Quand j'ai rencontré Cath...">
+        <state txt="Elle adorait ma barbe. Ma barbe de montagnard."/>
+        <state txt="Maintenant elle ne supporte plus ne serait-ce qu'une barbe d'un jour."/>
+        <state txt="Qu'est ce qui est arrivé à notre amour?" data="deep"/>
+      </choice>
+      <choice txt="Ces putain de terroristes ont aussi réussi à tuer mon couple.">
+        <state txt="Comme les gays ont tué la moustache."/>
+        <state txt="Aujourd'hui, qui peut porter une moustache sans se ridiculiser? À part un flic?"/>
+      </choice>
+      <choice txt="Mikey m'aurait aimé avec la barbe.">
+        <state txt="Quand il était bébé il aimait bien que je le chatouille avec mon menton."/>
+        <state txt="C'est fou ce qu'il a grandi."/>
+      </choice>
+    </state>
+    <state txt="Se raser, c'est la civilisation." id="civilization">
+      <choice txt="C'est le visage qu'on présente au monde...">
+        <state txt="après l'avoir soigneusement excisé"/>
+        <state txt="de toute excroissance disgrâcieuse."/>
+      </choice>
+      <choice txt="toute Civilisation nécéssite d'être entretenue.">
+        <state txt="quotidiennement."/>
+        <state txt="ce n'est jamais un acquis." data="deep"/>
+      </choice>
+      <choice txt="Prennez les Vikings.">
+        <state txt="Ce n'est qu'à partir du moment où ils ont commencé à se raser"/>
+        <state txt="Qu'ils ont découvert l'arme de domination mondiale suprème : Ikea."/>
+      </choice>
+    </state>
+  </section>
+</main>

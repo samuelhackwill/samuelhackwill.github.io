@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Ce document a été créé avec Syntext Serna Free. --><main>
+  <section>
+    <state txt="Kirk26, Votre cible a quitté le bâtiment." id="UAV2_goal" data="base"/>
+    <state txt="Continuez à la suivre et tentez de procéder à son identification." data="base"/>
+    <state txt="Pilote : c'est copié."/>
+    <state txt="J'ai entendu dire que les insurgés croient que nous avons peur de les affronter au sol.">
+      <choice txt="Il vaut mieux être lâche une minute que mort pour l'éternité.">
+        <state txt="Qui peut juger du bien et du mal dans ce bordel de guerre Asymétrique?" link="weekend"/>
+      </choice>
+      <choice txt="Quelque part c'est sans doute mieux pour eux de se raconter ça.">
+        <state txt="Exact." link="weekend"/>
+      </choice>
+      <choice txt="Oui parce que c'est vrai que ça demande beaucoup de courage de poser des bombes et de décapiter des civils.">
+        <state txt="Civils, insurgés, combattants ennemis... ils devraient inventer un logiciel de reconnaissance pour ça.">
+          <choice txt="Comme dit le manuel : tuez tout le monde et laissez Dieu faire le tri au paradis.">
+            <state txt="Notre Dieu." link="weekend"/>
+          </choice>
+          <choice txt="Espérons que l'IA ait fait des progrès d'ici à ce que les méchants n'envoient leurs propres drones sur New York.">
+            <state txt="Ou pas. Adieu les snobs de la côte est."/>
+            <state txt="On va avoir du mal à leur demander des financements si il devait se passer un truc du genre." link="weekend"/>
+          </choice>
+        </state>
+      </choice>
+    </state>
+    <state txt="Tu as prévu un truc ce week-end?" id="weekend">
+      <choice txt="Non. Pourquoi, tu veux qu'on se voie?">
+        <state txt="Ce n'est pas ce que... je voulais dire..." data="blush" link="youremarried"/>
+      </choice>
+      <choice txt="J'ai mon gamin ce week-end. Je vais sans doute me retrouver à jouer à la console avec lui.">
+        <state txt="C'est amusant. Vous jouez à des jeux de guerre?">
+          <choice txt="Oui, comme ça il comprend ce que je fais ici.">
+            <state txt="Est-ce qu'il respecte les règles d'engagement?" id="voice">
+              <choice txt="Ha ha! t'es drôle (en plus d'être jolie).">
+                <state txt="Euh..." data="blush" link="youremarried"/>
+              </choice>
+              <choice txt="Non, ces jeux ne sont pas très réalistes."/>
+            </state>
+          </choice>
+          <choice txt="Est ce que je devrais plutôt lui offrir les Sims, ou un truc de fille dans le genre?">
+            <state txt="Ils font vraiment des jeux vidéo pour les filles de nos jours, pas vrai?"/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="Tu est en train de me proposer un rancard?">
+        <state txt="Ah, mais pourquoi je me donne de la peine avec ton genre, bande de tarés." data="angry"/>
+        <state txt="Vous êtes tous les mêmes."/>
+        <state txt="Je veux dire, tu es marié, non?" id="youremarried">
+          <choice txt="Oui, je suis marié, pas castré.">
+            <state txt="Tu es un grossier personnage." data="angry"/>
+          </choice>
+          <choice txt="C'est cool, on est un couple ouvert.">
+            <state txt="Je suis prête à parier que si je lui pose la question elle ne me dira pas la même chose."/>
+          </choice>
+          <choice txt="Sur le papier, en tout cas.">
+            <state txt="Quoi, &quot;Ma femme ne me comprend pas&quot;?">
+              <choice txt="Parfois, j'ai l'impression qu'elle ne me respecte même pas.">
+                <state txt="Oh... c'est... triste." data="flirtPlus">
+                  <choice txt="Oui."/>
+                  <choice txt="Peut-être qu'il est temps de commencer un nouveau chapitre...">
+                    <state txt="Euh..." data="blush"/>
+                  </choice>
+                </state>
+              </choice>
+              <choice txt="C'est juste une mauvaise passe, on va se refaire.">
+                <state txt="Hm."/>
+              </choice>
+            </state>
+          </choice>
+        </state>
+      </choice>
+    </state>
+  </section>
+  <section>
+    <state txt="Alors, on se tient au courant pour ce week-end?" id="flirt">
+      <choice txt="A fond!">
+        <state txt="Cool." data="date"/>
+      </choice>
+      <choice txt="Euh, on verra.">
+        <state txt="D'accord." data="date"/>
+      </choice>
+      <choice txt="Non mais laisse tomber, c'est impossible.">
+        <state txt="Bien sûr, je comprends."/>
+      </choice>
+    </state>
+  </section>
+  <section>
+    <state txt="Eh! qu'est ce qu'il fait?" id="engage"/>
+    <state txt="La cible est en train d'installer un engin explosif improvisé. Nous avons une identification positive."/>
+    <state txt="Demandons la permission d'attaquer."/>
+    <state txt="Bien reçu. Vous êtes autorisé à faire feu." data="base"/>
+    <state txt="Tireur, lancez la procédure d'initiation du missile.">
+      <choice txt="Tireur : reçu, missile activé.">
+        <state txt="Laser?">
+          <choice txt="Tireur : acquisition de la cible.">
+            <state txt="Tirez quand vous êtes prêt." data="procedure">
+              <choice txt="Reçu."/>
+              <choice txt="Est-ce qu'on est sûrs que c'était une bombe?" link="drop"/>
+            </state>
+          </choice>
+          <choice txt="Tireur : négatif." link="drop"/>
+        </state>
+      </choice>
+      <choice txt="Est-ce qu'on est sûrs que c'est notre gars?" link="drop"/>
+    </state>
+  </section>
+  <section>
+    <state txt="Pilote : on décroche, nous avons un problème ici." id="drop" data="dropping"/>
+    <state txt="Contôle au sol : bien reçu, nous transmettons le commandement au groupe 23." data="base"/>
+    <state txt="C'est quoi ton problème...?" data="angry"/>
+  </section>
+  <section>
+    <state txt="C'est traité." id="UAV2_success"/>
+    <state txt="Bon boulot."/>
+  </section>
+  <section>
+    <state txt="Les règles d'engagement, ça te dit quelque chose?" id="UAV2_procedure" data="angry"/>
+    <state txt="On est pas en train de jouer aux jeux vidéo de ton gosse." data="angry"/>
+  </section>
+  <section>
+    <state txt="Bordel, nous n'avions pas d'autorisation pour faire feu!" id="UAV2_failed" data="angry"/>
+    <state txt="C'est une violation grave." data="angry"/>
+  </section>
+  <section>
+    <state txt="Mais j'y crois pas, tu l'as perdu?" id="UAV2_lost" data="angry"/>
+    <state txt="Tu t'es endormi?" data="angry"/>
+  </section>
+  <section>
+    <state txt="Impact. Cible manquée." id="UAV2_wasted"/>
+    <state txt="Et voilà 75 000 dollars qui partent en fumée."/>
+  </section>
+  <section>
+    <state txt="Les règles d'engagement, ça te dit quelque chose?" id="UAV2_wasted_and_procedure" data="angry"/>
+    <state txt="Et tu viens de jeter 75 000 dollars par la fenêtre." data="angry"/>
+  </section>
+  <section>
+    <state txt="Cible manquée. Nous n'avons plus de missiles." id="missed target"/>
+    <state txt="Contrôle au sol : passage de la cible au groupe suivant."/>
+    <state txt="Bon..."/>
+  </section>
+</main>

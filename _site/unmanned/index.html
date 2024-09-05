@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>Unmanned: un jeu de Molleindustria et Jim Munroe</title>
+    <link rel="image_src" href="http://unmanned.molleindustria.org/fb-thumbnail.jpg" />
+    <meta property="og:image" content="http://unmanned.molleindustria.org/fb-thumbnail.jpg" />
+
+    <meta
+      name="description"
+      content="Endossez le rôle du tout nouveau genre de soldat : celui qui bombarde des sols étrangers de 9 à 17 et retrouve sa famille en banlieue tous les soirs. Dans Unmanned, il n'y a que des conflits intérieurs - le seul sang que vous versez est le vôtre, en vous rasant. Mais cette nouvelle façon de faire la guerre n'implique-t-elle pas un nouveau type de dommage collatéraux?" />
+
+    <meta property="og:title" content="Unmanned" />
+    <meta
+      property="og:description"
+      content="Endossez le rôle du tout nouveau genre de soldat : celui qui bombarde des sols étrangers de 9 à 17 et retrouve sa famille en banlieue tous les soirs. Dans Unmanned, il n'y a que des conflits intérieurs - le seul sang que vous versez est le vôtre, en vous rasant. Mais cette nouvelle façon de faire la guerre n'implique-t-elle pas un nouveau type de dommage collatéraux?" />
+
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="swfobject.js"></script>
+    <script type="text/javascript">
+      function showFlash() {
+        document.getElementById("header").style.display = "none"
+        document.getElementById("flashContent").style.display = "block"
+
+        //document.ElementById("header").style.display =	 "none";
+
+        <!-- Set to minimum required Flash Player version or 0 for no version detection -->
+        var swfVersionStr = "10.1.52"
+        <!-- xiSwfUrlStr can be used to define an express installer SWF. -->
+        var xiSwfUrlStr = ""
+        var flashvars = {}
+        var params = {}
+        params.quality = "high"
+        params.bgcolor = "#000000"
+        params.play = "true"
+        params.loop = "true"
+        params.wmode = "window"
+        params.scale = "showall"
+        params.menu = "false"
+        params.devicefont = "false"
+        params.salign = ""
+        params.allowscriptaccess = "sameDomain"
+        params.allowFullScreen = "true"
+        var attributes = {}
+        attributes.id = "unmanned"
+        attributes.name = "unmanned"
+        attributes.align = "middle"
+        swfobject.createCSS("html", "height:100%; width:100%; background-color: #000000;")
+
+        swfobject.embedSWF("unmanned.swf", "flashContent", "100%", "80%", swfVersionStr, xiSwfUrlStr, flashvars, params, attributes)
+      }
+    </script>
+
+    <style type="text/css" media="screen">
+      html,
+      body {
+        height: 100%;
+        background-color: #000;
+      }
+      body {
+        margin-top: 20px;
+        padding: 0;
+      }
+      .hide {
+        display: none;
+      }
+      .container {
+        /*margin:auto; 
+		margin-left:10%;
+		margin-right:10%;
+		width:80%;
+		background-color:#33C;*/
+      }
+
+      .txtcontainer a {
+        color: #ccc;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .txtcontainer a:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+      .txtcontainer {
+        max-width: 800px;
+        /*padding:5px;*/
+        padding-top: 20px;
+        color: #999;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 12px;
+
+        margin: auto;
+        /*float:right;*/
+      }
+
+      .downloads {
+        margin-top: 40px;
+        margin-right: 40px;
+
+        width: 141px;
+        float: right;
+      }
+
+      #flashContent {
+        display: none;
+      }
+
+      #header {
+        margin: auto;
+        width: 85%;
+        text-align: center;
+      }
+
+      #play {
+        display: block;
+        width: 540px;
+        height: 246px;
+        background: url("images/header_roll.png") no-repeat 0 0;
+        margin: auto;
+      }
+
+      #play:hover {
+        background-position: 0 -246px;
+      }
+
+      #play span {
+        position: absolute;
+        top: -999em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- SWFObject's dynamic embed method replaces this alternative HTML content for Flash content when enough JavaScript and Flash plug-in support is available. -->
+
+    <div id="header">
+      <a id="play" href="#" title="play" onclick="showFlash()">
+        <span>Jouer</span>
+      </a>
+    </div>
+
+    <div id="flashContent">
+      <a href="http://www.adobe.com/go/getflash">
+        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+      </a>
+      <p>This page requires Flash Player version 10.1.52 or higher.</p>
+    </div>
+
+    <div class="txtcontainer">
+      <!--
+        <div class="downloads"> <a href="unmanned_MAC.zip"><img src="images/mac_download.png" alt="mac" width="141" height="50" border="0" /></a><br />
+      <br />
+      <a href="unmanned_PC.zip"><img src="images/win_download.png" alt="" width="141" height="50" border="0" /></a>
+        </div>
+        -->
+      <div>
+        <p>
+          Endossez le rôle du tout nouveau genre de soldat : celui qui bombarde des sols étrangers de 9 à 17 et retrouve sa famille en banlieue tous les soirs. Dans Unmanned, il n'y a que des conflits intérieurs - le seul sang que vous versez est le vôtre, en vous rasant. Mais cette nouvelle façon de faire la guerre n'implique-t-elle pas un nouveau type de dommage collatéral?
+        </p>
+        <p>
+          <em>Se joue avec une souris</em>
+        </p>
+        <em><a href="video.mp4" target="_blank">Regarder le trailer</a></em>
+      </div>
+
+      <p>
+        Unmanned est un jeu de <a href="http://www.molleindustria.org/" target="_blank">Molleindustria</a>. <br />
+        <br />
+        Texte:
+        <a href="http://nomediakings.org/" target="_new">Jim Munroe</a><br />
+        <br />
+        Musique Originale:
+        <a href="http://jts3k.com/" target="_blank">Jesse Stiles</a>. <br />
+        <br />
+        Musiciens additionnels dans <em>Fried Chicken</em>: <br />
+        Guitare électrique:<strong> John King</strong>.<br />
+        Violon: <strong>Audrey Riley</strong>.<br />
+        Paroles: <strong>Queen</strong>. <br />
+        <br />
+
+        Traduction:
+        <a href="https://shh.ovh" target="_new">Samuel Hackwill</a><br />
+      </p>
+      <p>
+        Unmanned est sous <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/" target="_blank">License Creative Commons</a>. <a href="http://www.molleindustria.org/" target="_blank">Molleindustria</a> 2012.<br />
+        <br />
+        <br />
+      </p>
+    </div>
+  </body>
+</html>

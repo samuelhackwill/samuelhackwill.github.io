@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-size:14px;
+	font-family:trebuchet MS, Verdana, sans-serif;
+	color:#000;
+	line-height:20px;
+}
+
+h4 {
+	font-size:18px;
+	font:trebuchet MS, Verdana, sans-serif;
+	color:#C00;
+	line-height:20px;
+	margin-top:30px;
+	
+}
+
+
+.content {
+width:666px;
+margin:auto;
+padding-right:20px;
+text-align:justify;
+
+}
+
+.header {
+width:666px;
+height:50px;
+background-image:url(header.png);
+margin-bottom:10px;
+
+}
+
+a:link {
+	color:#900;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #900;
+}
+a:hover {
+	text-decoration: none;
+	color:#F60;
+}
+a:active {
+	text-decoration: none;
+	color:#999;
+}

@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<main>
+  <section>
+    <state txt="Ce jeu est tellement mieux que Contemporary Warfare 2!" id="first_turn"/>
+    <state txt="Le lance-grenades M230 est trop cool. Est-ce que tu en as un au boulot?">
+      <choice txt="Non, ça c'est pour la piétaille. Ton père est quand même un peu plus gradé que ça.">
+        <state txt="Ouais, toi tu as des armes encore plus puissantes, non?">
+          <choice txt="Oui. Aujourd'hui par exemple j'ai utilisé un missile Hellfire pour neutraliser un ennemi.">
+            <state txt="Trop bien."/>
+          </choice>
+          <choice txt="Mais notre meilleure arme reste le renseignement.">
+            <state txt="Ouais, 'l'œil dans le ciel' et tout et tout."/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="Tu veux dire le M320, c'est le tout dernier modèle.">
+        <state txt="Ouais ouais, le M320. Il est cheaté. Je parie que tu peux tuer, genre, dix terroristes d'un coup avec ça.">
+          <choice txt="Dans la vraie vie, ils ne s'agglutinent pas comme ça en groupes."/>
+          <choice txt="Ouais, on les fait exploser bien comme il faut."/>
+        </state>
+      </choice>
+    </state>
+    <state txt="Ils t'ont tué!" id="game_over1"/>
+    <state txt="À mon tour..."/>
+  </section>
+  <section>
+    <state txt="Oooh, nice!" id="mission_accomplished1"/>
+    <state txt="Après c'est à moi."/>
+  </section>
+  <section>
+    <state txt="Je viens te chercher, Oussama... pour la 54e fois!" id="second_turn"/>
+    <state txt="...je dois trouver un kit de soin...">
+      <choice txt="Bam, tu l'as vicos!">
+        <state txt="Plus personne ne dit ça, Papa."/>
+      </choice>
+      <choice txt="Alors, ça a été ta journée à l'école?">
+        <state txt="L'enfer, comme d'habitude.">
+          <choice txt="Les surdoués s'ennuient toujours en classe."/>
+          <choice txt="Et comment s'est passée la visite chez le médecin?">
+            <state txt="C'était débile. Il fallait lire une liste de mots en couleurs." data="good_dad"/>
+            <state txt="Comme si je ne savais pas lire ou..." link="doctor"/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="Qu'est-ce que le médecin a dit?">
+        <state txt="J'ai un truc du genre TDAH..." data="good_dad">
+          <choice txt="Il t'a fait faire un test?">
+            <state txt="Ouais, c'était débile. Il fallait lire plein de mots en couleur."/>
+            <state txt="Comme si je ne savais pas lire ou..." link="doctor"/>
+          </choice>
+          <choice txt="ça peut faire partie de tes symptomes.">
+            <state txt="Peu importe... " link="doctor"/>
+          </choice>
+        </state>
+      </choice>
+    </state>
+  </section>
+  <section>
+    <state txt="Papa, t'as vu ce tir?!" id="doctor">
+      <choice txt="Dinguerie!">
+        <state txt="Ça continue d'arriver..."/>
+      </choice>
+      <choice txt="Est-ce qu'il t'a dit qu'il fallait arrêter les jeux vidéo?">
+        <state txt="Il a dit qu'on devrait prendre Super Brain Gym... oh le tir abusé!" data="good_dad"/>
+      </choice>
+      <choice txt="Est-ce qu'il t'a dit de faire du sport, ou qu'il allait changer ton traitement?">
+        <state txt="Ouais, il a dit qu'il t'en parlerait. Merde!" data="good_dad"/>
+      </choice>
+    </state>
+  </section>
+  <section>
+    <state txt="Punaise, je suis mort." id="switch"/>
+    <state txt="Ça ne peut pas t'arriver au travail, ça, hein?">
+      <choice txt="C'est vrai que l'ennui ne tue pas." link="bored"/>
+      <choice txt="Ha! Non, on ne peut pas se faire tuer.">
+        <state txt="C'est comme si tu trichais?">
+          <choice txt="C'est ça, j'ai des vies illimitées. Si un drone est abattu, on en achète un nouveau.">
+            <state txt="Ah ouais, comme ces gens qui payent pour qu'on leur fasse de l'XP dans Warcraft." link="bored"/>
+          </choice>
+          <choice txt="Ce n'est pas de la triche. Nous avons une meilleure technologie, ce serait idiot de ne pas l'utiliser.">
+            <state txt="Pourquoi tu ne me laisses pas utiliser des hacks d'invulnérabilité alors?">
+              <choice txt="Parce que j'ai dit non." link="bored"/>
+              <choice txt="Parce que c'est pour les geeks." link="bored"/>
+              <choice txt="Un jeu perd son intérêt si on ne peut pas perdre." link="bored"/>
+            </state>
+          </choice>
+        </state>
+      </choice>
+    </state>
+    <state txt="Bon, on a quoi d'autre comme jeu?" id="bored"/>
+    <state txt="Ah, celui-là on l'a jamais fini."/>
+    <state txt="À ton tour." data="new_game"/>
+  </section>
+  <section>
+    <state txt="Je me souviens qu'on était bloqués à ce niveau, il est super difficile." id="third_turn"/>
+    <state txt="C'est effrayant de voir des communistes d'aussi près!">
+      <choice txt="C'est des nazis.">
+        <state txt="Ah ouais, des nazis. Les nazis sont pires que les communistes, non?">
+          <choice txt="Oui, ce sont les pires." link="grandpa"/>
+          <choice txt="Oui. Mais les terroristes d'aujourd'hui sont encore plus tordus." link="grandpa"/>
+          <choice txt="Non, les communistes resteront toujours nos ennemis n°1." link="grandpa"/>
+        </state>
+        <state txt="Papy en a tué plein, non? C'était quoi son arme préférée?" id="grandpa">
+          <choice txt="Il ne parlait pas de la guerre.">
+            <state txt="Pourquoi il en parlait pas?">
+              <choice txt="Il marmonnait des choses à propos de la gangrène."/>
+              <choice txt="Mamie disait qu'il avait perdu un de ses meilleurs amis au front."/>
+              <choice txt="Il n'aimait pas se vanter."/>
+            </state>
+          </choice>
+          <choice txt="Le couteau bowie.">
+            <state txt="Je déteste le couteau. C'est flippant le combat rapproché.">
+              <choice txt="À l'époque, ils pensaient que c'était honorable de faire face à l'ennemi au corps à corps.">
+                <state txt="C'est stupide..."/>
+              </choice>
+              <choice txt="J'aimerais voir ces salauds mourir, les uns après les autres.">
+                <state txt="Mais... est-ce que tu les vois de près, les terroristes que tu élimines?">
+                  <choice txt="Mieux que les pilotes classiques. On a besoin de voir s'ils plantent des bombes ou quoi.">
+                    <state txt="Est-ce que tu peux voir leurs visages?">
+                      <choice txt="Parfois."/>
+                      <choice txt="Non, mais ce n'est pas nécéssairement utile de toutes façons."/>
+                    </state>
+                  </choice>
+                  <choice txt="Pas vraiment, en fin de compte ce sont juste nos cibles."/>
+                  <choice txt="Oui. N'oublie pas que ton papa te surveille d'en haut, la prochaine fois que tu prépares une bêtise.">
+                    <state txt="Oh-oh..."/>
+                  </choice>
+                </state>
+              </choice>
+            </state>
+          </choice>
+          <choice txt="Le fusil sniper.">
+            <state txt="Oui, c'est le plus précis. En plus, tu ne prends moins de dégâts à distance.">
+              <choice txt="Pas besoin de prendre des risques inutiles."/>
+              <choice txt="Sauf si ton ennemi a aussi un fusil sniper.">
+                <state txt="Non, ça n'arrive jamais dans ce jeu."/>
+              </choice>
+            </state>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="Ouais, heureusement qu'ils ne sont plus là." link="grandpa"/>
+    </state>
+  </section>
+  <section>
+    <state txt="T'es mauvais, Papa! " id="game_over2"/>
+    <state txt="Je vais te montrer comment ça se joue."/>
+  </section>
+  <section>
+    <state txt="Purée, on à réussi à battre ce niveau!" id="mission_accomplished2"/>
+    <state txt="Comment t'as fait? C'est un truc de fou!"/>
+  </section>
+  <section>
+    <state txt="À mon tour." id="sunday_with_date"/>
+    <state txt="Tu est toujours d'accord de réparer mon vélo dimanche?">
+      <choice txt="On devait faire ça dimanche? Je suis pas disponible.">
+        <state txt="...ah. Je... je regarderai un tutoriel sur internet alors." data="bad_dad">
+          <choice txt="J'ai un rendez-vous avec quelqu'un du travail. Elle ne peut que Dimanche.">
+            <state txt="Elle...?"/>
+          </choice>
+          <choice txt="Oui. J'ai des trucs importants à faire.">
+            <state txt="D'accord. Je... je regarderai un tutoriel sur internet alors."/>
+          </choice>
+        </state>
+      </choice>
+      <choice txt="Dimanche? Bien sûr, fiston.">
+        <state txt="Merci papa." data="good_dad"/>
+      </choice>
+    </state>
+  </section>
+  <section>
+    <state txt="À mon tour." id="sunday_without_date"/>
+    <state txt="Tu m'aiderais à réparer mon vélo dimanche?">
+      <choice txt="Ça dépend. Il y a le match.">
+        <state txt="D'accord. Je... je regarderai un tutoriel sur internet alors." data="bad_dad"/>
+      </choice>
+      <choice txt="Allez tope là!">
+        <state txt="Merci papa." data="good_dad"/>
+      </choice>
+    </state>
+  </section>
+</main>
