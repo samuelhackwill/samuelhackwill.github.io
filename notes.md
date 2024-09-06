@@ -93,3 +93,7 @@ l'Ordre des médecins était [:opposé](https://www.youtube.com/watch?v=N0Ks0XNN
 ## amendement
 
 "ARTICLE 2 : Compléter l’alinéa 4 par la phrase suivante :« Ces maisons sont dotées de la personnalité morale de droit public ou de droit privé à but non lucratif. » [...] Dans un contexte de marchandisation et de financiarisation de plusieurs pans du secteur de la santé, il est indispensable de garantir qu’aucun profit ne puisse être réalisé sur les soins d’accompagnement et les séjours en maison d’accompagnement." [source](https://www.assemblee-nationale.fr/dyn/16/amendements/2462/FINVIE/1844)
+
+## Suisse
+
+il existe plusieurs associations en Suisse qui proposent l'euthanasie aux étrangers (c'est à dire aux non-Suisses). La dernière fois que je me suis renseigné, ça coûtait 10 000 CHF [source](https://pegasos-association.com/fr/).
