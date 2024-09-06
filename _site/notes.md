@@ -1,6 +1,6 @@
 ## test
 
-woohooo à bas les notes de bas de page, vive les notes de milieu de page! j'utilise le script de [:Nicky Case](https://fr.wikipedia.org/wiki/Nicky_Case) qui est un génie généreux.
+woohoo à bas les notes de bas de page, vive les notes de milieu de page! j'utilise le script de [:Nicky Case](https://fr.wikipedia.org/wiki/Nicky_Case) qui est une généreuse génie.
 
 ## diffsuicide
 la différence entre les deux c'est que dans le premier cas vous vous administrez tout.e seul.e le produit létal, alors que dans le second cas, vous êtes incapacité.e et c'est une tierce personne qui doit vous piquer, appuyer sur un bouton, etc.
@@ -60,3 +60,36 @@ Ce n'est pas à l'assemblée nationale qu'on trouve les [clashs de meilleure qua
 
 ## sed 
 c'est le soin qui ressemble le plus à l'euthanasie qui est pratiqué aujourd'hui à l'hopital (et notamment dans les unités de soins palliatifs). Le principe, c'est qu'on vous endort en attendant que votre coeur s'arrête en gros. Le cadre d'application de la sédation profonde est très restreint : cela ne concerne que les personnes dont le pronostic vital est objectivement engagé à court terme (quelques jours), ou qui sont sujets à des douleurs réfractaires, ou qui sont en train de se vider de leur sang, ou qui sont en train de s'étouffer.
+
+## suicides
+
+"Le taux de décès par suicide augmente fortement avec l’âge, surtout chez les hommes. En 2014, il s’élève à 7,5 décès pour 100 000 hommes âgés de 15 à 24 ans et à 59,4 après 74 ans." [source](https://drees.solidarites-sante.gouv.fr/sites/default/files/2021-02/fiche1-4.pdf)
+
+## pendaison
+
+"Comme les années précédentes, le mode de suicide le plus fréquent en 2014 est la pendaison (57 % [de l'ensemble des] suicides)" (ibid.)
+
+## reassur
+C'est un terme médical. Ce qui est intéressant, i guess, mais peut être que j'exagère, c'est que la définition du mot que j'ai trouvée est plus passive-agressive (ou paternaliste, if i may) en français qu'en anglais. "Reassurance is the removal of fears and concerns about illness." [source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5537438/). En Français : "Réassurance : Effet contraphobique d'un objet, d'une personne ou d'un animal *investis par le phobique d'un tel pouvoir*. Cette réduction de l'angoisse permet au patient de mieux affronter *la situation phobogène redoutée*." [source](https://www.academie-medecine.fr/le-dictionnaire/index.php?q=réassurance%20%28conduite%20de%29)
+
+## hopital
+trois quart des français.e.s meurent à l’hôpital ou en maison de retraite/EHPAD.
+
+![évolution des décès classés par lieu](</news/9/media/insee.png>)
+
+[source](https://www.insee.fr/fr/statistiques/3134763)
+
+## tierList
+
+![tier list des député.e.s](</news/9/media/tierList.png>)
+
+## convention
+
+"À 75,6% la Convention se positionne en faveur d’une aide active à mourir, considérant que le cadre légal en vigueur (loi Clayes-Leonetti de 2016) est insuffisant. Elle évoque par exemple la limite posée par la loi, dans l’état actuel, sur la pratique de la sédation profonde et continue." [source](https://www.vie-publique.fr/en-bref/288862-fin-de-vie-remise-des-conclusions-de-la-convention-citoyenne)
+
+## ivg
+l'Ordre des médecins était [:opposé](https://www.youtube.com/watch?v=N0Ks0XNNFsI) à l'IVG dans les années 70. Je connais mal l'histoire de la loi Veil mais les similarités avec le débat sur l'euthanasie sont nombreuses.
+
+## amendement
+
+"ARTICLE 2 : Compléter l’alinéa 4 par la phrase suivante :« Ces maisons sont dotées de la personnalité morale de droit public ou de droit privé à but non lucratif. » [...] Dans un contexte de marchandisation et de financiarisation de plusieurs pans du secteur de la santé, il est indispensable de garantir qu’aucun profit ne puisse être réalisé sur les soins d’accompagnement et les séjours en maison d’accompagnement." [source](https://www.assemblee-nationale.fr/dyn/16/amendements/2462/FINVIE/1844)
