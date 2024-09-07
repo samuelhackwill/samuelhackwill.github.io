@@ -97,3 +97,7 @@ l'Ordre des médecins était [:opposé](https://www.youtube.com/watch?v=N0Ks0XNN
 ## Suisse
 
 il existe plusieurs associations en Suisse qui proposent l'euthanasie aux étrangers (c'est à dire aux non-Suisses). La dernière fois que je me suis renseigné, ça coûtait 10 000 CHF [source](https://pegasos-association.com/fr/).
+
+<!-- ## déontologie
+
+La passion GIGN de Boussemart et la confiance qu'il affiche en pensant que c'est le lieu et le moment d'en parler ne me semble pas si déplacée en réalité. Pour moi le fantasme du soldat d'élite qui s'expose volontairement à un entraînement rigoureux (l'ascèse) et au danger (la tentation) n'est pas si éloigné d'une certaine image de la pratique spirituelle. Et effectivement pour moi c'est tout l'intérêt psychologique du [déontologisme](https://fr.wikipedia.org/wiki/Éthique_déontologique), car c'est certainement meilleur à la santé de se voir comme un soldat d'élite obéissant à un code de conduite exigeant, plutôt que comme une personne écrasée par le vide et impuissante face à son destin. De la même manière qu'il est souvent préférable de se jeter soi même dans une eau froide plutôt que de se faire doucher par autrui. huh -->
