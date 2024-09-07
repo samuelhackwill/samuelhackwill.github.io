@@ -15,7 +15,7 @@ description              : "yo."
 url                      : "https://samuelhackwill.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "samuelhackwill/samuelhackwill.github.io"
-teaser                   : "/news/9/media/trombo religieux.png"
+teaser                   : "https://samuelhackwill.github.io/news/9/media/trombo religieux.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
