@@ -1,9 +1,13 @@
 ---
 title: Un Bouddhiste, un musulman, un protestant, deux catholiques et un orthodoxe sont à l’assemblée nationale
 excerpt: C'est le 9e numéro de la newsletter de Samuel Hackwill! yiyyouyyooy
+description: C'est le 9e numéro de la newsletter de Samuel Hackwill! yiyyouyyooy
 layout: single
 toc: true
 toc_sticky: true
+og_image: /news/9/media/illich.JPG
+locale: "fr"
+header: /news/9/media/illich.JPG
 ---
 
 _temps de lecture : 45 minutes environ (ง •̀\_•́)ง_
