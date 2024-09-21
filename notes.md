@@ -56,7 +56,7 @@ elle parle, sans la nommer, de la "doctrine du double effet" ; ce qui est recher
 
 ## philo
 
-en effet il y a eu une seconde table ronde tout de suite après avec des religieux déguisés en philosophes et en sociologues, dont l'argumentaire était très similaire, au détail près que le mot "Dieu" était remplacé par le mot "Éthique". Leur seule mission était de vulgariser leur recherche ou celle d'autrui : ils n'ont donné que leurs opinions.
+en effet il y a eu une seconde table ronde tout de suite après avec d'autres religieux déguisés en philosophes et en sociologues, dont l'argumentaire était très similaire, au détail près que le mot "Dieu" était remplacé par le mot "Éthique". Leur seule mission aurait été de vulgariser leur recherche ou celle d'autrui, mais ils n'ont fait que distribuer leurs opinions.
 
 <!-- qu'on va avoir des graphiques, des statistiques, des exposés sur l'histoire de la philosophie, sur la sociologie du suicide, etc., mais en fait pas du tout, les soi-disant philosophes n'y ont donné que leurs *préconisations*, sans argumenter, sans vulgariser leur recherche ou celle d'autrui, et en l'absence de propositions articulés on s'est retrouvés avec les mêmes arguments avec le mot "Éthique" à la place du mot "transcendance" en gros. -->
 
