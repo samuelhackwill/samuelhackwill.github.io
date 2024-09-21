@@ -64,7 +64,7 @@ en effet il y a eu une seconde table ronde tout de suite après avec d'autres re
 
 ## pays
 
-notamment en Europe : aux Pays-bas, en Belgique, au Luxembourg, en Suisse, en Autriche, au Portugal et en Espagne.
+contrairement à d'autres pays dans le monde, notamment en Europe : les Pays-bas, la Belgique, le Luxembourg, la Suisse, l'Autriche, le Portugal et l'Espagne.
 
 ## cuisine
 
@@ -88,7 +88,11 @@ c'est le soin qui ressemble le plus à l'euthanasie qui est pratiqué aujourd'hu
 
 ## reassur
 
-C'est un terme médical. Ce qui est intéressant, i guess, mais peut être que j'exagère, c'est que la définition du mot que j'ai trouvée est plus passive-agressive (ou paternaliste, if i may) en français qu'en anglais. "Reassurance is the removal of fears and concerns about illness." [source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5537438/). En Français : "Réassurance : Effet contraphobique d'un objet, d'une personne ou d'un animal _investis par le phobique d'un tel pouvoir_. Cette réduction de l'angoisse permet au patient de mieux affronter _la situation phobogène redoutée_." [source](https://www.academie-medecine.fr/le-dictionnaire/index.php?q=réassurance%20%28conduite%20de%29)
+C'est un terme médical. Ce qui est intéressant, i guess, mais peut être que j'exagère, c'est que la définition du mot que j'ai trouvée est plus passive-agressive (ou paternaliste, if i may) en français qu'en anglais. "Reassurance is the removal of fears and concerns about illness." [source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5537438/). En Français : "Réassurance : Effet contraphobique d'un objet, d'une personne ou d'un animal _investis par le phobique d'un tel pouvoir_. Cette réduction de l'angoisse permet au patient de mieux affronter _la situation phobogène redoutée_." [source](https://www.academie-medecine.fr/le-dictionnaire/index.php?q=réassurance%20%28conduite%20de%29). Ou pour [:le dire autrement](/notes#4chan)
+
+## 4chan
+
+![4chan](/news/9/media/reassurance.png)
 
 ## hopital
 
@@ -135,3 +139,83 @@ Quant à vous, j'espère que votre quinquennat se passe comme vous le souhaitez 
 ## RN
 
 Si on prend l'exemple du seul RN, ils avaient 7 sièges en 2017, 88 en 2022, 142 aujourd'hui. Comment on appelle ça en mathématiques déjà?
+
+## evals
+
+notamment celles du [Comité Consultatif National d'Éthique](https://www.ccne-ethique.fr/sites/default/files/2022-09/Avis%20139%20Enjeux%20éthiques%20relatifs%20aux%20situations%20de%20fin%20de%20vie%20-%20autonomie%20et%20solidarité.pdf) (2022) et de la [convention citoyenne sur la fin de vie](https://conventioncitoyennesurlafindevie.lecese.fr/sites/cfv/files/CCFV_Rapportfinal.pdf) (2022).
+
+## don
+
+il est manifestement pas au courant qu'il est en train de trigger Agnès Firmin-Le Bodo dont le regard se perd dans le vide, aux prises avec un flash de toutes les bouteilles de champagne stockées dans son officine
+
+## palliatifs
+
+Les unités de soins palliatifs sont des espaces dédiés dans les hôpitaux où on accueille les personnes après l'arrêt des traitements curatifs. L'objectif n'est plus de soigner mais de donner du confort aux personnes qui n'ont plus d'espoir de guérison. Ce n'est pas du tout la même culture du soin que dans le reste de la fonction hospitalière. Il y a environ [2000](https://www.ccomptes.fr/sites/default/files/2023-10/20230705-soins-palliatifs.pdf) lits en unités de soins palliatifs sur l'ensemble du territoire français, et 20 départements n'en sont pas pourvus. À titre d'exemple, en Savoie, il y a 10 lits (pour une population de 400 000 personnes ; on est donc 40 000 par lit). Le projet de loi sur la fin de vie, précisai-je, comprend un volet avec soi-disant 1 milliard d'euros d'investissements / an pendant 10 ans dans les soins palliatifs.
+
+## tableau
+
+|                                                       | GIGN | DOCTEUR            | RELIGIEUX |
+| ----------------------------------------------------- | ---- | ------------------ | --------- |
+| porte un uniforme                                     | ✅   | ✅                 | ✅        |
+| fonctionnaire                                         | ✅   | ✅                 | ❌        |
+| s'engage pour la vie                                  | ✅   | ✅                 | ❌        |
+| peut donner la mort                                   | ✅   | ❌                 | ❌        |
+| peut donner la mort sans faire exprès                 | ❌   | ✅                 | ❌        |
+| 1H de cours d'éthique par semaine pendant les études  |  ❌  |  ✅                | ❌        |
+| peut citer la bible de mémoire                        | ❌   | ❌ (sauf Beloucif) |  ✅       |
+
+## appartient
+
+Je ne voudrais pas laisser entendre que tout débat sur le suicide assisté se résume à cette question ; certains points sociétaux soulevés par les religieux sont valides et méritent qu'on se penche dessus. Néanmoins, ma suspicion est que cette idée (inconsciente) que notre corps/notre vie ne nous appartient pas est toujours le moteur le plus puissant de l'opposition à la dépénalisation de l'euthanasie. Pro tip, si vous voulez avoir un débat avec quelqu'un sur la fin de vie je vous suggère de commencer par vérifier que vous êtes sur la même longueur d'onde au sujet de ce prémisse.
+
+## jpp
+
+🟠 Renaissance, Pas de Calais. Il a perdu son siège en 2024 face à Antoine Golliot, RN. C'est un médecin.
+
+## cb
+
+🟤 RN, Haute-Marne, réélu en 2024. Lui c'est un vrai, il a décrit publiquement dans un autre contexte l'IVG comme un "génocide de masse". Si le RN cherche à se dédiaboliser, pourquoi ils envoient ce genre de type dans la commission sur la fin de vie? Peut-être qu'il a promis de bien se tenir.
+
+## hc
+
+🔴 LFI, Haute-Garonne, réélu en 2024. Ses prises de parole à l'assemblée be like : j'ai eu 10/20 au devoir sur table mais comme la moyenne de classe est à 5/20 je me la pète.
+
+## ag
+
+🔵 LR, Doubs, réélue en 2024. À l'heure où j'écris ces lignes, on lit dans la presse qu'elle est pressentie au ministère de l'agriculture dans le gouvernement Barnier.
+
+## pv
+
+🟠 MODEM, Eure-et-Loire, il a perdu son siège en 2024 face à Roger Pécout, LR-RN, j'ai écrit dans mes notes : "je l'aime bien parce qu'il articule pas". C'est un pharmacien.
+
+## gj
+
+🔴 PS, Essonne, réélu en 2024.
+
+## nt
+
+🟠 MODEM, Vienne, réélu en 2024. C'est un médecin. Vous avez remarqué qu'il y a pas mal de médecins en politique?
+
+## sdg
+
+🟤 RN, Pyrénées orientales, elle a été réélue en 2024. C'est une préparatrice en pharmacie. Elle a été très active dans les travaux de la commission, en mode disque rayé sur le thème de la "pente glissante" et l'euthanasie en Oregon.
+
+## mh
+
+🟤 RN, Tarn et Garonne, réélue en 2024. La personne en charge d'afficher le nom des députés lors de leurs prises de parole dans la vidéo semble galérer à mort pour se rappeler qui c'est, son nom s'affiche plus de 20 secondes après qu'elle ait commencé à parler.
+
+## ds
+
+🟢 Éco, Paris, c'est une des "frondeuses" LFI, de ceux qui se sont fait tej en 2024. Nonobstant, elle est réélue en 2024 au sein du parti Écologiste face à la candidate LFI. Elle claque 75% des voix au second tour lol
+
+## pj
+
+🔵 LR, Hauts-de-Seine, réélu en 2024. C'est un anesthésiste et un médecin urgentiste. Retournant travailler à l’hôpital pendant le covid, il était invité sur tous les plateaux de télé avec un stéthoscope autour du cou. Autre fun fact, alors qu'il était maire de la Garenne-Colombes, il s'est auto-attaqué en justice sur un bail de permis de construire. Un promoteur immobilier était venu avec un projet à la mairie, que lui - le maire - avait accepté, mais comme ce projet avait aussi pour conséquence de boucher la vue de sa maison à lui - le simple résident de la Garenne-Colombes - il a attaqué le maire en justice. Sauf que c'est lui le maire lol. Le promoteur immobilier lui aurait donné 97 000 euros et les choses se sont arrêtées là.
+
+## anne
+
+🟠 MODEM, Yvelines, suppléante de Jean-Noël Barrot, qui a été nommé ministre et donc elle l'a remplacé à l'assemblée? ah bon? iels ont été réélus en 2024.
+
+## sr
+
+🟢 Éco, Paris, réélue en 2024.
