@@ -10,7 +10,7 @@ locale: "fr"
 header: /news/9/media/illich.JPG
 ---
 
-_temps de lecture : [:60 minutes](/notes#hemais) environ (ง •̀\_•́)ง_
+_temps de lecture : [:55 minutes](/notes#hemais) environ (ง •̀\_•́)ง_
 
 Chères et chers tous toutes,
 
