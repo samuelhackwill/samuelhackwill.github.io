@@ -88,7 +88,11 @@ c'est le soin qui ressemble le plus à l'euthanasie qui est pratiqué aujourd'hu
 
 ## reassur
 
-C'est un terme médical. Ce qui est intéressant, i guess, mais peut être que j'exagère, c'est que la définition du mot que j'ai trouvée est plus passive-agressive (ou paternaliste, if i may) en français qu'en anglais. "Reassurance is the removal of fears and concerns about illness." [source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5537438/). En Français : "Réassurance : Effet contraphobique d'un objet, d'une personne ou d'un animal _investis par le phobique d'un tel pouvoir_. Cette réduction de l'angoisse permet au patient de mieux affronter _la situation phobogène redoutée_." [source](https://www.academie-medecine.fr/le-dictionnaire/index.php?q=réassurance%20%28conduite%20de%29). Ou pour [:le dire autrement](/notes#4chan)
+C'est un terme médical. Ce qui est intéressant, i guess, mais peut être que j'exagère, c'est que la définition du mot que j'ai trouvée est plus passive-agressive (ou paternaliste, if i may) en français qu'en anglais. "Reassurance is the removal of fears and concerns about illness.", dit l'anglais. [source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5537438/) "Réassurance : Effet contraphobique d'un objet, d'une personne ou d'un animal _investis par le phobique d'un tel pouvoir_. Cette réduction de l'angoisse permet au patient de mieux affronter _la situation phobogène redoutée_.", dit le français. [source](https://www.academie-medecine.fr/le-dictionnaire/index.php?q=réassurance%20%28conduite%20de%29).
+
+## apais
+
+[:C'est à dire:](/notes#4chan). On peut aussi entendre le témoignage de personnes âgées qui se sont fait perquisitionner parce qu'elles avaient acheté des barbituriques sur internet dans cet épisode des [pieds sur terre](https://www.radiofrance.fr/franceculture/podcasts/les-pieds-sur-terre/barbituriques-et-vieilles-dentelles-5268043), et elles décrivent le même effet dans leurs témoignages.
 
 ## 4chan
 
@@ -182,7 +186,7 @@ Je ne voudrais pas laisser entendre que tout débat sur le suicide assisté se r
 
 ## ag
 
-🔵 LR, Doubs, réélue en 2024. À l'heure où j'écris ces lignes, on lit dans la presse qu'elle est pressentie au ministère de l'agriculture dans le gouvernement Barnier.
+🔵 LR, Doubs, réélue en 2024. Hé c'est notre nouvelle ministre de l'agriculture. You read it first here
 
 ## pv
 
@@ -219,3 +223,7 @@ Je ne voudrais pas laisser entendre que tout débat sur le suicide assisté se r
 ## sr
 
 🟢 Éco, Paris, réélue en 2024.
+
+## tbernard
+
+Ce sont en réalité les médecins qui sont confus sur leur rôle dans la société car ils pensent que les malades et les agonisants doivent se mettre en quatre et renoncer à leurs droits pour que les médecins puissent exercer leur métier en accord avec leurs convictions de médecins. Les médecins oublient que les malades n'ont pas décidé d'être malades, alors que les médecins ont décidé d'être médecins. Pour moi les médecins devraient accepter l'idée raisonnable que les malades ne sont pas là pour leur faire plaisir et si une [:large majorité](/notes#convention) de français.e.s désire avoir accès à des technologies médicales, les médecins doivent se mettre au service de cette majorité de français.e.s.
