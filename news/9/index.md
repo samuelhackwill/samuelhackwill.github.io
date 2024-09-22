@@ -10,7 +10,7 @@ locale: "fr"
 header: /news/9/media/illich.JPG
 ---
 
-_temps de lecture : 45 minutes environ (ง •̀\_•́)ง_
+_temps de lecture : [:60 minutes](/notes#hemais) environ (ง •̀\_•́)ง_
 
 Chères et chers tous toutes,
 
@@ -80,7 +80,7 @@ _<sub>sofia teillet sofia teillet sofia teillet</sub>_
 - création : Tryhard
   (avril 25)
 
-Je suis en train d'écrire une performance-pour-100-pointeurs-de-souris, ça s'appelle Tryhard. Ce que je peux vous dire à ce sujet : on fait une soirée playtest au cinéma Méliès de Villeneuve-d'Ascq ce jeudi 5 Décembre à 18H, les premières seront accueillies chez nos ami.e.s du [théâtre de l'Elysée](https://lelysee.com/evenement/tryhard/) (Lyon) du 1 au 4 Avril, et une série se profile au MAIF social club (Paris) l'été prochain du 19 au 21 Juin. Veneiiii
+Je suis en train d'écrire une performance-pour-100-pointeurs-de-souris, ça s'appelle Tryhard. Ce que je peux vous dire à ce sujet : on va faire une soirée playtest au cinéma Méliès de Villeneuve-d'Ascq ce jeudi 5 Décembre à 18H, les premières seront accueillies chez nos ami.e.s du [théâtre de l'Elysée](https://lelysee.com/evenement/tryhard/) (Lyon) du 1 au 4 Avril, et une série se profile au MAIF social club (Paris) l'été prochain du 19 au 21 Juin. Veneiiii
 
 ![gif](/news/9/media/giftry.gif)
 
