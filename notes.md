@@ -192,7 +192,7 @@ Je ne voudrais pas laisser entendre que tout débat sur le suicide assisté se r
 
 🟠 MODEM, Eure-et-Loire, il a perdu son siège en 2024 face à Roger Pécout, LR-RN, j'ai écrit dans mes notes : "je l'aime bien parce qu'il articule pas". C'est un pharmacien.
 
-## gj
+## jg
 
 🔴 PS, Essonne, réélu en 2024.
 
@@ -227,3 +227,7 @@ Je ne voudrais pas laisser entendre que tout débat sur le suicide assisté se r
 ## tbernard
 
 Ce sont en réalité les médecins qui sont confus sur leur rôle dans la société car ils pensent que les malades et les agonisants doivent se mettre en quatre et renoncer à leurs droits pour que les médecins puissent exercer leur métier en accord avec leurs convictions de médecins. Les médecins oublient que les malades n'ont pas décidé d'être malades, alors que les médecins ont décidé d'être médecins. Pour moi les médecins devraient accepter l'idée raisonnable que les malades ne sont pas là pour leur faire plaisir et si une [:large majorité](/notes#convention) de français.e.s désire avoir accès à des technologies médicales, les médecins doivent se mettre au service de cette majorité de français.e.s.
+
+## hemais
+
+Alors, quoi, vous arrivez de mon mail et sur mon mail il y avait écrit "temps de lecture estimé, 45 minutes" et pis finalement c'est 55 minutes? Finement observé. La raison c'est que je me suis dit qu'il fallait rajouter un petit forfait de 10 minutes pour les notes de bas de page (qui sont absentes du mail). Bon après si vous lisez absolument tout les liens, les rapports du CCNE et de la cour des comptes, les articles wikipedia sur chaque député.e, l'épisode des pieds sur terre etc vous en avez au moins pour un ou deux jours je dirais.
