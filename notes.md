@@ -165,7 +165,7 @@ Les unités de soins palliatifs sont des espaces dédiés dans les hôpitaux où
 | s'engage pour la vie                                  | ✅   | ✅                 | ❌        |
 | peut donner la mort                                   | ✅   | ❌                 | ❌        |
 | peut donner la mort sans faire exprès                 | ❌   | ✅                 | ❌        |
-| 1H de cours d'éthique par semaine pendant les études  |  ❌  |  ✅                | ❌        |
+| 1H de cours d'éthique par semaine pendant ses études  |  ❌  |  ✅                | ❌        |
 | peut citer la bible de mémoire                        | ❌   | ❌ (sauf Beloucif) |  ✅       |
 
 ## appartient
