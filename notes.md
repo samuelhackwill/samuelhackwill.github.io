@@ -196,7 +196,7 @@ Je ne voudrais pas laisser entendre que tout débat sur le suicide assisté se r
 
 🔴 PS, Essonne, réélu en 2024.
 
-## nt
+## turquois
 
 🟠 MODEM, Vienne, réélu en 2024. C'est un médecin. Vous avez remarqué qu'il y a pas mal de médecins en politique?
 

@@ -334,7 +334,7 @@ Contrairement aux rapporteurs, les députés ne sont que des députés ; le bon 
 
 [:Jérôme Guedj](/notes#jg) : il embrouille Carol Saba (☦️), puis accuse les religieux d'hypocrisie parce qu'on les avait pas entendus soi-disant défendre la Vie à l'époque des débats sur l'abolition de la peine de mort (avant 1981 donc).
 
-[:Nicolas Turquois](/notes#nt) : il dit que malgré son parcours personnel de foi, il a été déçu et choqué par les prises de parole du panel. "Ce qui fait avancer, c'est le doute, et je n'ai entendu que des certitudes", dit-il. Sa question : il demande à Boussemart d'expliquer exactement ses insinuations au sujet des pressions sur les personnes vulnérables.
+[:Nicolas Turquois](/notes#turquois) : il dit que malgré son parcours personnel de foi, il a été déçu et choqué par les prises de parole du panel. "Ce qui fait avancer, c'est le doute, et je n'ai entendu que des certitudes", dit-il. Sa question : il demande à Boussemart d'expliquer exactement ses insinuations au sujet des pressions sur les personnes vulnérables.
 
 [:Sandrine Dogor-Such](/notes#sdg) : 56% des personnes qui ont recours à l'euthanasie en Orgeon sont des personnes isolées. Sa question : c'est quoi votre avis là dessus?
 
