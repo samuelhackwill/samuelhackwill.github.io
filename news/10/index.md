@@ -16,6 +16,8 @@ c'est le dixième numéro de cette newsletter soi-disant biannuelle. Bienvenue �
 
 La dernière fois que je vous ai écrit, c'était en Septembre 2024 et je vous avais parlé beaucoup trop en détail du projet de loi sur la fin de vie en france, et ce que les représentants du culte avaient à en dire. Et ce qu'ils ont a en dire, c'est que la vie est la propriété de dieu donc pas touche minouche. Enfin, pour être plus spécifique, c'est ce qu'a dit le représentant des Orthodoxes de France. Les autres étaient moins maladroits et ont mieux réussi à faire semblant que leurs arguments jouaient sur un plan rationnel. Les débats sur le projet de loi, qui avait été interrompus par la dissolution de l'assemblée nationale, ont repris ce mois de Mai. Le texte sera voté mardi, et ensuite ça sera au tour du Sénat de l'examiner. A mon avis : ça va passer. A mon avis : le cadre d'application de la loi est insuffisant et devra être élargi.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GA5Q0531-Eg?si=dPXqF42TbZjYvvjp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <!--
  (grosso modo : la vie est la propriété de dieu donc pas touche minouche. Bon ils ont pas vraiment dit ça mais c'est ce qui se cache derrière leurs arguments pseudo-rationnels).
 
