@@ -1,3 +1,15 @@
+---
+title: 60 FPS
+excerpt: C'est le 10e numéro de la newsletter de Samuel Hackwill! yiyyouyyooy
+description: C'est le 9e numéro de la newsletter de Samuel Hackwill! yiyyouyyooy
+layout: single
+toc: true
+toc_sticky: true
+og_image: /news/10/media/montage.jpeg
+locale: "fr"
+header: /news/10/media/montage.jpeg
+---
+
 Chères et chers camarades,
 
 c'est le dixième numéro de cette newsletter soi-disant biannuelle. Bienvenue à celleux qui nous rejoignent.
@@ -15,7 +27,7 @@ Bon mais j'ai lu un peu les textes en diagonale et de toutes façons ce n'est pa
 
 Cette fois je veux vous raconter un peu comment j'ai fabriqué _Tryhard_, ma performance pour 56 pointeurs de souris, qui m'a occupé ces derniers mois, et je profite de l'occasion pour vous inviter aux prochaines représentations qui ont lieu à [Paris du 19 au 21 Juin, au MAIF Social Club](https://programmation.maifsocialclub.fr/evenements/tryhard/) (c'est dans le marais, rue de Turenne). Come say hi!
 
-![montage pour les premières au Théâtre de l'Elysée, Lyon](/Users/samuel/Library/CloudStorage/Dropbox/newsletter/10/montage.jpeg)
+![montage pour les premières au Théâtre de l'Elysée, Lyon](/news/10/media/montage.jpeg)
 
 Je suis content parce que je n'étais pas 100% sûr que j'allais y arriver quand je me suis mis en route, il y a un an. J'ai rencontré plein de problèmes artistiques et techniques passionnants.
 
@@ -58,7 +70,7 @@ total <44ms.
 
 en pratique, la latence que j'observe dans mon système varie d'un facteur 2, woops! Il y a donc une latence d'environ 100ms entre le moment où on bouge la souris et le moment où ce mouvement est répercuté sur le pointeur. Pour obtenir une estimation de la latence, j'ai filmé mon écran et ma main au ralenti avec mon téléphone (240 images / seconde), et j'ai utilisé ffmpeg pour décomposer la vidéo en fichiers jpg, 1 image / frame. J'ai ensuite compté les images où le pointeur glande après que j'eusse percuté la souris de ma paume irascible
 
-<!-- ![Démonstration de la latence : le pointeur de souris bouge après un délai](/Users/samuel/Library/CloudStorage/Dropbox/newsletter/10/latency.mov)
+<!-- ![Démonstration de la latence : le pointeur de souris bouge après un délai](/news/10/media/latency.mov)
 _désolé souris_ -->
 
 Quoi qu'il en soit c'était une latence parfaitement acceptable pour mes besoins. Elle est perceptible, mais en réalité le plus important pour qu'un jeu où on a besoin de bouger rapidement son curseur dans un espace 2D soit confortable, c'est que la latence soit constante et prévisible. Ce qui nous amène à ma deuxième dite bête noire informatique.
@@ -67,12 +79,12 @@ Quoi qu'il en soit c'était une latence parfaitement acceptable pour mes besoins
 
 La première fois que j'ai fait un test en conditions réelles avec 14 raspberry pi répartis dans un gradin et des humains au bout de chaque souris (en Décembre 2024), j'ai rencontré un problème plutôt inquiétant : il y avait manifestement une très forte variation de latence dans le déplacement des pointeurs à l'écran. On le voit dans cette vidéo :
 
-<!-- ![Ma première rencontre avec le jitter](/Users/samuel/Library/CloudStorage/Dropbox/newsletter/10/jitter.mov)
+<!-- ![Ma première rencontre avec le jitter](/news/10/media/jitter.mov)
 _bro_ -->
 
 plusieurs pointeurs ont un comportement saccadé, certains à tel point qu'ils disparaissent subitement hors-cadre. Cette fois-ci on ne parle pas seulement d'un problème qui est désagréable, mais qui rend tout à fait impossible de retrouver et de suivre son curseur à l'écran. J'étais 100% obligé de résoudre ce problème si je voulais qu'il y ait un moment dans la performance où tout le monde joue ensemble.
 
-<!-- ![Je réplique le bug du jitter à la maison : certains pointeurs ont un déplacement saccadé](/Users/samuel/Library/CloudStorage/Dropbox/newsletter/10/jitter2.mov)
+<!-- ![Je réplique le bug du jitter à la maison : certains pointeurs ont un déplacement saccadé](/news/10/media/jitter2.mov)
 à gauche! à droite! -->
 
 Dans la mesure où je ne pouvais pas séquestrer le public pendant un mois pour tester et modifier le système avec elleux, j'ai dû mettre en place un environnement de test automatisé pour comprendre d'où ces variations de latence venaient. Dans la vidéo on voit le _jitter_ en action : certains curseurs font subitement une sorte de pause pendant que les autres ont un déplacement fluide. Long story short, le _jitter_ survenait parce que les raspberry étaient connectés ensemble en wi-fi, que j'utilisais un pauvre routeur sans antenne posé dans le fond de la salle, et que les corps humains dans la salle, qu'il faut considérer comme des gros sacs d'eau, ne sont pas gentils avec les ondes wifi (ils les bloquent). Les micro-ordinateurs répartis dans la salle avaient donc du mal a maintenir une connection stable avec le serveur, à part celui qui était juste à côté du routeur, ce qui explique pourquoi _quelques_ curseurs à l'écran ont un déplacement parfaitement fluide.
@@ -83,13 +95,13 @@ J'ai donc mis tous les rasps en connection filaire et le problème était 100% r
 
 Comme on l'a dit plus haut, tout programme affichant des choses sur un écran dispose d'un budget de 16,66 millisecondes pour faire tous ses calculs (si on veut que ça soit fluide et good-looking. Enfin, "fluide" dans la mesure où ce programme est affiché par un vidéoprojecteur ou un moniteur 60Hz, qui produit donc 60 images par seconde. Le budget est encore plus réduit si on désire produire des effets visuels au maximum des capacités d'affichage d'un moniteur 240Hz par exemple). Quand un calcul prend plus de temps que 16,66 millisecondes, il va bloquer l'affichage pendant 1 frame, ce qui veut dire que le navigateur produit maintenant 59 images / secondes, sniff. Si cette situation se répète ou que des calculs bloquent l'affichage pendant plusieurs frames, l'image peut devenir saccadée. En fait c'est exactement le même symptôme que le jitter, mais qui a des causes différentes! (Dans le cas du jitter, c'est la connection qui bug, alors que dans le cas qu'on est en train de décrire, il s'agit plutôt d'une surcharge des capacités de calcul de l'ordinateur). Levez la main si vous aimez les ordinateurs.
 
-<!-- ![Une souris qui créé plein de souris](/Users/samuel/Library/CloudStorage/Dropbox/newsletter/10/autoclic.mov)
+<!-- ![Une souris qui créé plein de souris](/news/10/media/autoclic.mov)
 _quand 56 personnes font ça en même temps, malheureusement ça pète tout._
  -->
 
 J'ai rencontré des problèmes de ralentissement de mon framerate lors d'une séquence de Tryhard où je permet au public d'enfanter de nouveaux curseurs. L'écran se retrouve alors absolument rempli de petits curseurs animés qui cliquent tous frénétiquement. Ça n'a l'air de rien mais c'était beaucoup trop violent pour le navigateur web! Ou plutôt, c'était violent parce que c'était _codé_ d'une certaine façon qui n'était pas nécessairement optimisée.
 
-<!-- ![Dev Tools](/Users/samuel/Library/CloudStorage/Dropbox/newsletter/10/fps.png)
+<!-- ![Dev Tools](/news/10/media/fps.png)
 une vue des outils de performance de Google Chrome. Pour y accéder = F12, puis cliquez sur "performance". Sur l'image j'étais en train d'auditer une séquence assez chère en calculs où je fais tomber plein de CAPTCHAs du ciel. On voit des captures d'écran de ce que le navigateur affiche dans la deuxième ligne en partant du haut. -->
 
 J'ai utilisé les outils de Google Chrome pour auditer mon code et essayer de comprendre si j'avais de la marge de manoeuvre pour le rendre plus efficace. Dans Chrome, on peut enregistrer une session de navigation, et exporter les données brutes au format json (c'est une sorte de gros fichier texte). J'ai collé ce fichier dans _gloups_ chatGPT pour qu'il l'analyse et me donne des pistes sur les parties les plus gourmandes en calculs de mon code. Pour autant que je puisse en juger, c'était une méthode très efficace et j'ai amélioré les parties les plus bancales de ma base de code. Néanmoins les gains en performance n'étaient pas suffisants et j'ai dû abandonner la séquence de la saturation de curseurs (il aurait fallu prendre une approche trop différente et entièrement reprendre de zéro, en utilisant d'autres langages et d'autres logiques).
