@@ -71,7 +71,7 @@ Le stack (c'est à dire ce qu'on a appelé tout à l'heure "sandwich technique")
 
 Pour délirer j'ai essayé de mesurer la latence approximative qu'il y a dans Tryhard (la version actuelle), de la manière suivante : j'ai filmé mon écran au ralenti avec mon téléphone (240 images / seconde), et j'ai utilisé [ffmpeg](https://fr.wikipedia.org/wiki/FFmpeg) pour décomposer la vidéo en fichiers jpeg, 1 image / frame. J'ai ensuite compté les images avec les doigts de ma main entre le moment où je frappe ma souris et le moment où le pointeur se décide à bouger (j'ai compté 28 frames, donc ça fait une latence de 28 x (1000/240) = ~104 ms). Not _that_ bad.
 
-C'est une latence parfaitement acceptable pour mes besoins. Elle est perceptible, mais en réalité le plus important pour un jeu où on a besoin de bouger rapidement son curseur dans un espace 2D, c'est que la latence soit _constante_ et donc _prévisible_. Il vaut mieux qu'il y ait un peu de latence tout le temps mais sans grande variation, que très peu de latence most of the time avec des gros pics intempestifs. C'est la définition même du deuxième grand méchant problème informatique que j'ai rencontré : le jitter (cad des variations de latence).
+C'est une latence parfaitement acceptable pour mes besoins. Elle est perceptible, mais en réalité le plus important pour un jeu où on a besoin de bouger rapidement son curseur dans un espace 2D, c'est que la latence soit _constante_ et donc _prévisible_. Il vaut mieux qu'il y ait un peu de latence tout le temps mais sans grande variation, que très peu de latence most of the time avec des gros pics intempestifs. C'est la définition même du deuxième grand méchant problème informatique que j'ai rencontré : le jitter.
 
 <!--
 mon estimation de latence pour chaque couche de mon infrastructure était la suivante :
@@ -102,7 +102,7 @@ ci-dessus j'ai mis une tite flèche rouge à côté d'un curseur particulièreme
 
 ci-dessus j'ai mis une tite flèche à côté d'un autre curseur (EMO), pour qui tout se passe plutôt bien initialement, mais à un moment il semble tétanisé, avant de sauter subitement à une autre position. C'est ça le jitter.
 
-La majorité des pointeurs ont un comportement saccadé. Cette fois-ci on ne parle pas seulement d'un problème qui est désagréable, mais qui rend tout à fait impossible de repérer et de suivre son curseur à l'écran. J'étais 100% obligé de résoudre ce problème si je voulais qu'il y ait un moment dans la performance où tout le monde joue ensemble.
+La majorité des pointeurs ont un comportement saccadé. Cette fois-ci on ne parle pas seulement d'un problème qui est désagréable, mais qui rend tout à fait impossible de repérer et de suivre son curseur à l'écran. J'étais obligé de résoudre ce problème si je voulais qu'il y ait un moment dans la performance où tout le monde joue ensemble.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dd-tWj8EB-c?si=aNuHfIR-uX5kArK6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -116,8 +116,8 @@ J'ai donc mis tous les rasps en connection filaire et le problème était 100% r
 
 Le dernier problème que j'ai rencontré est arrivé assez tard dans le projet. Je travaillais sur une séquence où chaque souris pouvait enfanter de nouvelles souris, saturant progressivement l'écran avec plein de petites souris. Ça n'a l'air de rien mais c'était beaucoup trop violent pour le navigateur web! Ou plutôt, c'était violent parce que c'était _codé_ d'une certaine façon qui n'était pas nécessairement optimisée. J'ai observé un ralentissement du framerate, c'est à dire que toutes les animations devenaient saccadées et pas fluides.
 
-![Une souris qui créé plein de souris](/news/10/media/autoclic.mov)
-_believe it or not, quand 56 personnes font ça en même temps, ça finit par tout péter. A partir de 800 pointeurs environ._
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tAeU1XIyIP8?si=C0JLlOEYWCuM64Pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Là il n'y a pas de problème parce que je fais ça tout seul dans mon coin ; mais quand je l'ai fait en live pendant une sortie de résidence avec une vingtaine de personnes ça a tout pété
 
 Ce phénomène survient parce que tout programme voulant afficher des choses sur un écran dispose d'un budget de 16,66 millisecondes pour faire tous ses calculs (si on veut que ça soit fluide et good-looking. Enfin, "fluide" dans la mesure où ce programme est affiché par un vidéoprojecteur ou un moniteur 60Hz, qui produit donc 60 images par seconde. Le budget est encore plus réduit si on désire produire des effets visuels au maximum des capacités d'affichage d'un moniteur 240Hz, qui produit 240 images par seconde).
 
@@ -128,7 +128,7 @@ Quand les calculs prennent plus de temps que 16,66 millisecondes, il vont bloque
 ![Dev Tools](/news/10/media/fps.png)
 une vue des outils de performance de Google Chrome. Pour y accéder = F12, puis cliquez sur "performance". Sur l'image j'étais en train d'auditer une séquence assez chère en calculs où je fais tomber plein de CAPTCHAs du ciel. On voit des captures d'écran de ce que le navigateur affiche dans la deuxième ligne en partant du haut.
 
-J'ai utilisé les outils de Google Chrome pour auditer mon code et essayer de comprendre si j'avais de la marge de manoeuvre pour le rendre plus efficace. Dans Chrome, on peut enregistrer une session de navigation, et exporter les données brutes au format json (c'est une sorte de gros fichier texte). J'ai collé ce fichier dans _gloups_ chatGPT pour qu'il l'analyse et me donne des pistes sur les parties les plus gourmandes en calculs de mon code. J'ai alors entrepris plusieurs optimisations, mais les gains en performance n'étaient pas suffisants et j'ai dû abandonner la séquence de la saturation de curseurs (il aurait fallu prendre une approche trop différente et entièrement reprendre la base de code à partir de zéro, en utilisant d'autres langages et une logique toute autre).
+J'ai utilisé les outils de Google Chrome pour auditer mon code et essayer de comprendre si j'avais de la marge de manoeuvre pour le rendre plus efficace. Dans Chrome, on peut enregistrer une session de navigation, et exporter les données brutes au format json (c'est une sorte de gros fichier texte). J'ai collé ce fichier dans _gloups_ chatGPT pour qu'il l'analyse et me donne des pistes sur les parties les plus gourmandes en calculs de mon code. J'ai alors entrepris plusieurs optimisations, mais les gains en performance n'étaient pas suffisants et j'ai dû abandonner cette séquence (il aurait fallu prendre une approche trop différente et entièrement reprendre la base de code à partir de zéro, en utilisant d'autres langages et une logique toute autre).
 
 En informatique il n'y a pas de solution parfaite, mais que des _trade-offs_, c'est à dire des options qui ont du pour et du contre ; il faut trouver un équilibre entre coût, complexité du code, performance, etc.
 
