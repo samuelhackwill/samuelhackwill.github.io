@@ -20,7 +20,7 @@ Mais!
 
 Je n'ai pas assez parlé d'informatique la dernière fois donc, avec votre permission, parlons de code.
 
-![Stéphanie entourée de souris qui cliqueu cliqueu cliqueu](/news/10/media/playsteph.png)
+![Stéphanie entourée de souris qui cliqueu cliqueu cliqueu](/news/10/media/playsteph.jpg)
 
 ## Tryhard
 
@@ -94,7 +94,8 @@ J'ai donc mis tous les rasps en connection filaire et le problème était 100% r
 Le dernier problème que j'ai rencontré est arrivé assez tard dans le projet. Je travaillais sur une séquence où chaque souris pouvait enfanter de nouvelles souris, saturant progressivement l'écran avec plein de petites souris. Ça n'a l'air de rien mais c'était beaucoup trop violent pour le navigateur web! Ou plutôt, c'était violent parce que c'était _codé_ d'une certaine façon qui n'était pas nécessairement optimisée. J'ai observé un ralentissement du framerate, c'est à dire que toutes les animations devenaient saccadées et pas fluides.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tAeU1XIyIP8?si=C0JLlOEYWCuM64Pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-Là il n'y a pas de problème parce que je fais ça tout seul dans mon coin ; mais quand je l'ai fait en live pendant une sortie de résidence avec une vingtaine de personnes ça a tout pété
+
+_Là il n'y a pas de problème parce que je fais ça tout seul dans mon coin ; mais quand je l'ai fait en live pendant une sortie de résidence avec une vingtaine de personnes ça a tout pété_
 
 Ce phénomène survient parce que tout programme voulant afficher des choses sur un écran dispose d'un budget de 16,66 millisecondes pour faire tous ses calculs (si on veut que ça soit fluide et good-looking. Enfin, "fluide" dans la mesure où ce programme est affiché par un vidéoprojecteur ou un moniteur 60Hz, qui produit donc 60 images par seconde. Le budget est encore plus réduit si on désire produire des effets visuels au maximum des capacités d'affichage d'un moniteur 240Hz, qui produit 240 images par seconde).
 
@@ -115,6 +116,8 @@ Comme souvent en informatique, il n’y a pas de solution parfaite, mais des com
 
 C'est tout pour cette fois!
 
-Je profite de l'occasion pour remercier [Stéphanie Aflalo](https://www.instagram.com/stephanie.aflalo), qui m'a accompagné tout au long de l'écriture de la pièce, Étienne Boutin, qui m'a donné le courage de faire le premier prototype, et Diane Landais, qui a écrit une partie de la base de code, m'a conseillé et épaulé face aux 3 problèmes.
+Merci encore à [Stéphanie Aflalo](https://www.instagram.com/stephanie.aflalo), qui m'a accompagné tout au long de l'écriture de la pièce, Étienne Boutin, qui m'a donné le courage de faire le premier prototype, Thomas Riou qui a échafaudé la production de la pièce, et Diane Landais, qui a écrit une partie de la base de code, m'a conseillé et épaulé face aux 3 problèmes.
 
 <3 <3 <3
+
+merci également à : Julie Holin, Célestine Dahan, Marine Thevenet, Pierre Pedinotti, les playtesteur.euse.s, Cédric Jouniaux, les contributeur.ice.s de Meteor.js, les allié.e.s, Camille Lamy, Joonas “Fi”, Jacques-Daniel Pillon, Victor Pauly, Jacob Lyon.
