@@ -14,7 +14,7 @@ Chères et chers camarades,
 
 c'est le dixième numéro de cette newsletter soi-disant biannuelle. Bienvenue à celleux qui nous rejoignent.
 
-La dernière fois que je vous ai écrit, c'était en Septembre 2024. Je vous avait fait le compte-rendu détaillé d'une table ronde à l'Assemblée nationale où des représentants religieux ont donné leur avis au sujet du projet de loi sur la fin de vie. C'est [ici](https://samuelhackwill.github.io/news/9/#un-bouddhiste-un-musulman-un-protestant-deux-catholiques-et-un-orthodoxe-sont-à-lassemblée-nationale) si vous voulez vous y replonger. Les débats sur le projet de loi, qui avaient été interrompus par la dissolution de l'assemblée nationale, ont repris ce mois de Mai. Le texte sera voté à l'Assemblée aujourd'hui même (mardi 27 mai), et ensuite ça sera au tour du Sénat de l'examiner.
+La dernière fois que je vous ai écrit, c'était en Septembre 2024. Je vous avait fait le compte-rendu détaillé d'une table ronde à l'Assemblée nationale où des représentants religieux avaient donné leur avis au sujet du projet de loi sur la fin de vie. C'est [ici](https://samuelhackwill.github.io/news/9/#un-bouddhiste-un-musulman-un-protestant-deux-catholiques-et-un-orthodoxe-sont-à-lassemblée-nationale) si vous voulez vous y replonger. Les débats sur le projet de loi, qui avaient été interrompus par la dissolution de l'assemblée nationale, ont repris ce mois de Mai. Le texte sera voté à l'Assemblée aujourd'hui même (mardi 27 mai), et ensuite ça sera au tour du Sénat de l'examiner.
 
 Mais!
 
@@ -29,11 +29,12 @@ Cette saison j'ai passé beaucoup de temps à programmer des ordinateurs pour _T
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zJ4_k_tVlSc?si=4SX-Ngzw4bncGjvN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Je profite d'ailleurs de l'occasion pour
-1 - remercier les équipes du théâtre de l'Elysée (Lyon) qui m'ont si bien accueilli <3
-2 - vous inviter aux prochaines représentations de _Tryhard_ qui ont lieu à [Paris du 19 au 21 Juin, au MAIF Social Club](https://programmation.maifsocialclub.fr/evenements/tryhard/) (c'est dans le marais, rue de Turenne). Come say hi!
-3- Je vais aussi jouer en "Bretagne" (à Nantes) en Décembre!
 
-Écrire cette pièce était un challenge passionnant sur le plan technique et artistique. J'ai appris plein de choses. J'ai envie de partager avec vous les 3 obstacles _techniques_ les plus intéressants que j'ai rencontré en cours de route, et les méthodes que j'ai mises en place pour les résoudre ou les contourner.
+1. remercier les équipes du théâtre de l'Elysée (Lyon) qui m'ont si bien accueilli <3
+2. vous inviter aux prochaines représentations de _Tryhard_ qui ont lieu à [Paris du 19 au 21 Juin, au MAIF Social Club](https://programmation.maifsocialclub.fr/evenements/tryhard/) (c'est dans le marais, rue de Turenne)!
+3. Je vais aussi jouer en "Bretagne" (à Nantes) en Décembre, come say hi!
+
+Écrire cette pièce était un challenge passionnant sur le plan technique et expressif. J'ai appris plein de choses. J'ai envie de partager avec vous les 3 obstacles _techniques_ les plus intéressants que j'ai rencontré en cours de route, et les méthodes que j'ai mises en place pour les résoudre ou les contourner.
 
 ## Introduction
 
