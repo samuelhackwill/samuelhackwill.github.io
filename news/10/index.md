@@ -61,11 +61,13 @@ Je n'ai pas réussi à retrouver une bonne vidéo des distributeurs de billets S
 Mon but était éventuellement de faire mieux que le distributeur de billets de la gare de Lépin, et qu'il n'y ait pas une latence de 3000ms entre un mouvement de souris et sa répercussion à l'écran. Quand j'ai fait le tout premier prototype de Tryhard, j'ai constaté visuellement que la latence était tout à fait raisonnable (contre toute attente), alors je suis tout simplement passé à autre chose.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8Z8ORJYKFIU?si=jpboFxB_bpGyMVVj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+  
+  
 Le stack (qui est une autre façon de dire : "sandwich technique") était biennnn différent à cette époque, j'ai tout réécrit depuis. Vous pouvez checker cette conversation [ici](https://github.com/function61/screen-server/discussions/10) si vous savoir comment j'ai fabriqué le tout premier prototype, avec l'aide d'un développeur Finlandais et de mon ami Etienne Boutin, qui est dev également. À l'époque il y avait plein de couches de virtualisation en plus, c'était vraiment une usine à gaz. Mais ça m'a mis sur la bonne voie et c'était la confirmation que mon approche était plausible.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Cqm0_0RljFg?si=Jp-SbneHYh9f22H8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+  
+  
 J'ai essayé de mesurer la latence approximative qu'il y a dans Tryhard (dans sa version actuelle), de la manière suivante : j'ai filmé mon écran au ralenti avec un téléphone (240 images / seconde), et j'ai utilisé [ffmpeg](https://fr.wikipedia.org/wiki/FFmpeg) pour décomposer la vidéo en fichiers jpeg, 1 image / frame. J'ai ensuite compté les images avec les doigts de ma main entre le moment où je frappe ma souris et le moment où le pointeur se décide à bouger (j'ai compté 28 frames, donc ça fait une latence de 28 x (1000/240) = ~104 ms). Not _that_ bad.
 
 C'est une latence parfaitement acceptable pour mes besoins. Elle est perceptible, mais en réalité le plus important pour un jeu où on a besoin de bouger son curseur dans un espace 2D, c'est que la latence soit _constante_ et donc _prévisible_. Il est préférable qu'il y ait un peu de latence tout le temps mais sans grande variation, que très peu de latence most of the time avec des gros pics intempestifs. C'est la définition même du deuxième grand méchant problème informatique que j'ai rencontré : le jitter (variation de latence).
@@ -77,9 +79,8 @@ C'est une latence parfaitement acceptable pour mes besoins. Elle est perceptible
 La première fois que j'ai fait un test en conditions réelles avec 14 raspberry pi répartis dans les gradins du cinéma Méliès, à Villeneuve-d'Ascq, avec une quarantaine d'humains au bout de leurs souris, j'ai rencontré un problème plutôt inquiétant : les pointeurs ne se déplaçaient pas avec fluidité à l'écran. On le voit dans cette vidéo tournée par Julie Holin qui m'a filé la main sur cette résidence (merci Julie!) :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M6oVb8VxIsw?si=t9gcmfeq4j4JnqP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-_↑ fun fact : c'est Stéphanie qui est au bout de ce pointeur de souris!!!!! <3 <3 <3_
-
+  
+  
 ci-dessus j'ai mis une tite flèche à côté d'un curseur (EMO), pour qui tout se passe plutôt bien initialement, mais à un moment il semble tétanisé, avant de sauter subitement à une autre position. C'est ça le jitter. D'autres curseurs ont une latence qui varie encore plus vite, et la majorité d'entre eux n'ont pas un déplacement fluide.
 
 Cette fois-ci on ne parle pas seulement d'un problème qui est désagréable, mais qui rend tout à fait impossible de repérer et de suivre son curseur à l'écran. J'étais obligé de résoudre ce problème si je voulais qu'il y ait un moment dans la performance où tout le monde joue ensemble, et plus globalement si je voulais que l'expérience soit confortable.
