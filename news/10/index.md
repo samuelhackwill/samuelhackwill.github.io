@@ -31,6 +31,7 @@ Cette saison j'ai donc passé beaucoup de temps à programmer des ordinateurs po
 j'ai fait un teaser ici si vous voulez voir à quoi ça ressemble ↓
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zJ4_k_tVlSc?si=4SX-Ngzw4bncGjvN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br/>
 
 Écrire cette pièce était un challenge passionnant sur le plan technique et expressif. J'ai appris plein de choses! J'ai envie de partager avec vous les 3 obstacles _techniques_ les plus intéressants que j'ai rencontré en cours de route, et les méthodes que j'ai mises en place pour les résoudre ou les contourner.
 
@@ -61,13 +62,13 @@ Je n'ai pas réussi à retrouver une bonne vidéo des distributeurs de billets S
 Mon but était éventuellement de faire mieux que le distributeur de billets de la gare de Lépin, et qu'il n'y ait pas une latence de 3000ms entre un mouvement de souris et sa répercussion à l'écran. Quand j'ai fait le tout premier prototype de Tryhard, j'ai constaté visuellement que la latence était tout à fait raisonnable (contre toute attente), alors je suis tout simplement passé à autre chose.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8Z8ORJYKFIU?si=jpboFxB_bpGyMVVj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  
-  
+<br/>
+
 Le stack (qui est une autre façon de dire : "sandwich technique") était biennnn différent à cette époque, j'ai tout réécrit depuis. Vous pouvez checker cette conversation [ici](https://github.com/function61/screen-server/discussions/10) si vous savoir comment j'ai fabriqué le tout premier prototype, avec l'aide d'un développeur Finlandais et de mon ami Etienne Boutin, qui est dev également. À l'époque il y avait plein de couches de virtualisation en plus, c'était vraiment une usine à gaz. Mais ça m'a mis sur la bonne voie et c'était la confirmation que mon approche était plausible.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Cqm0_0RljFg?si=Jp-SbneHYh9f22H8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  
-  
+<br/>
+
 J'ai essayé de mesurer la latence approximative qu'il y a dans Tryhard (dans sa version actuelle), de la manière suivante : j'ai filmé mon écran au ralenti avec un téléphone (240 images / seconde), et j'ai utilisé [ffmpeg](https://fr.wikipedia.org/wiki/FFmpeg) pour décomposer la vidéo en fichiers jpeg, 1 image / frame. J'ai ensuite compté les images avec les doigts de ma main entre le moment où je frappe ma souris et le moment où le pointeur se décide à bouger (j'ai compté 28 frames, donc ça fait une latence de 28 x (1000/240) = ~104 ms). Not _that_ bad.
 
 C'est une latence parfaitement acceptable pour mes besoins. Elle est perceptible, mais en réalité le plus important pour un jeu où on a besoin de bouger son curseur dans un espace 2D, c'est que la latence soit _constante_ et donc _prévisible_. Il est préférable qu'il y ait un peu de latence tout le temps mais sans grande variation, que très peu de latence most of the time avec des gros pics intempestifs. C'est la définition même du deuxième grand méchant problème informatique que j'ai rencontré : le jitter (variation de latence).
@@ -80,8 +81,7 @@ La première fois que j'ai fait un test en conditions réelles avec 14 raspberry
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M6oVb8VxIsw?si=t9gcmfeq4j4JnqP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   
-  
-ci-dessus j'ai mis une tite flèche à côté d'un curseur (EMO), pour qui tout se passe plutôt bien initialement, mais à un moment il semble tétanisé, avant de sauter subitement à une autre position. C'est ça le jitter. D'autres curseurs ont une latence qui varie encore plus vite, et la majorité d'entre eux n'ont pas un déplacement fluide.
+_↑ ci-dessus j'ai mis une tite flèche à côté d'un curseur (EMO), pour qui tout se passe plutôt bien initialement, mais à un moment il semble tétanisé, avant de sauter subitement à une autre position. C'est ça le jitter. D'autres curseurs ont une latence qui varie encore plus vite, et la majorité d'entre eux n'ont pas un déplacement fluide._
 
 Cette fois-ci on ne parle pas seulement d'un problème qui est désagréable, mais qui rend tout à fait impossible de repérer et de suivre son curseur à l'écran. J'étais obligé de résoudre ce problème si je voulais qu'il y ait un moment dans la performance où tout le monde joue ensemble, et plus globalement si je voulais que l'expérience soit confortable.
 
@@ -143,33 +143,13 @@ Je précise ici que tout n'est pas de la faute de Javascript, qui demeure un lan
 
 Anyways! Concluons : il me restait 30 jours pour terminer la pièce, les effets visuels les plus importants fonctionnaient bien et à 60Hz (que je ne vous montre pas pour pas vous spoiler!), j'ai donc décidé de renoncer à la séquence qui était trop gourmande en calculs. Pour que cette séquence fonctionne bien, j'aurais dû profondément changer mon approche, peut-être même utiliser des langages différents, mais quoi qu'il en soit replonger pendant des semaines dans ma base de code pour la réécrire (on parle de "Refactoring").
 
-<!-- J'ai utilisé les outils de Google Chrome pour analyser mon code et essayer de comprendre si j'avais de la marge de manoeuvre pour le rendre plus efficace. -->
-
-<!-- Dans Chrome, on peut enregistrer une session de navigation, et exporter les données brutes au format json (c'est une sorte de gros fichier texte, qu'on appelle une _trace_). J'ai collé ce fichier dans _gloups_ chatGPT pour tenter d'identifier les parties les plus gourmandes en calculs de mon programme. J'ai alors entrepris plusieurs optimisations, mais les gains en performance n'étaient pas suffisants et j'ai dû abandonner cette séquence (pour obtenir une amélioration suffisante il aurait fallu entièrement reprendre la base de code à partir de zéro, en utilisant d'autres langages et une logique toute autre). -->
-<!--
-![Dev Tools](/news/10/media/fps.png)
-
-_ici j'étais en train d'auditer une autre séquence assez chère en calculs (mais ça passe) où je fais tomber plein de CAPTCHAs du ciel. Toutes les petites barres en bas représentent le temps mis pour exécuter une fonction, une partie du code._ -->
-
-<!--
-
-![Dev Tools](/news/10/media/fps.png)
-
-_ici j'étais en train d'auditer une séquence assez chère en calculs où je fais tomber plein de CAPTCHAs du ciel. Toutes les petites barres en bas représentent le temps mis pour exécuter une fonction, une partie du code._
-
-J'ai utilisé les outils de Google Chrome pour analyser mon code et essayer de comprendre si j'avais de la marge de manoeuvre pour le rendre plus efficace. Dans Chrome, on peut enregistrer une session de navigation, et exporter les données brutes au format json (c'est une sorte de gros fichier texte). J'ai collé ce fichier dans _gloups_ chatGPT pour identifier les parties les plus gourmandes en calculs de mon programme. J'ai alors entrepris plusieurs optimisations, mais les gains en performance n'étaient pas suffisants et j'ai dû abandonner cette séquence (pour obtenir une amélioration suffisante il aurait fallu entièrement reprendre la base de code à partir de zéro, en utilisant d'autres langages et une logique toute autre).
-
-Ce n'est pas difficile en soi pour un ordinateur d'afficher plein de souris qui bougent. Je pourrais faire une vidéo avec des millions de souris qui bougent, et hop l'ordinateur pourrait l'afficher sans problème. Là, le problème, c'est que ce ne sont pas juste des _images_ de souris qui bougent, mais que ce sont des systèmes réactifs qui peuvent _faire des choses_ et qui _obéissent_ à un flux de données, ce qui est plus lourd en terme de calculs. Par ailleurs, j'utilise un outil très généraliste (le navigateur web) et des langages mal adaptés (javascript, html & css) pour les effets visuels.
-
-La raison pour laquelle j'ai choisi cette approche in the first place, c'est que comme ma pièce parle des CAPTCHAs, qui sont réalisés avec les mêmes langages, j'ai pu prototyper très rapidement mes premières séquences ; c'était une bonne approche tant que je faisais pas trop des trucs de malades avec mes pointeurs de souris et les cases à cocher des CAPTCHAs. Mais plus j'avais envie d'expérimenter avec la gravité, la collision, ou des effets visuels plus lourds, plus mes choix technologiques du début me tiraient en arrière. -->
-
 ## Conclusion
 
 Comme souvent en informatique, il n’y a pas de solution parfaite, mais des compromis ; il faut trouver un équilibre entre complexité-lisibilité du code, rapidité de mise en oeuvre, et performance. C'est aussi pour ça qu'on se retrouve régulièrement à tout réécrire, ou réécrire une partie de son code ; à mesure que la situation change, les paramètres de l'équation se déplacent et modifient la "désirabilité" d'une option.
 
 C'est tout pour cette fois! Merci d'avoir tout lu, wow!!! J'ai l'impression d'avoir [pair-programmé](https://en.wikipedia.org/wiki/Pair_programming) avec vous, c'était cool.
 
-Merci encore à [Stéphanie Aflalo](https://www.instagram.com/stephanie.aflalo), qui m'a accompagné de l'α à l'Ω durant l'écriture de la pièce, Étienne Boutin, qui m'a donné le courage de faire le premier prototype, Thomas Riou qui a assuré la production de la pièce, et Diane Landais, qui a écrit une partie de la base de code, et m'a conseillé face aux problèmes de performance.
+Merci encore à [Stéphanie Aflalo](https://www.instagram.com/stephanie.aflalo), qui m'a accompagné de l'α à l'Ω durant la conception de la pièce, Étienne Boutin, qui m'a donné le courage de faire le premier prototype, Thomas Riou qui a assuré la production à l'Amicale, et Diane Landais, qui a écrit une partie de la base de code, et m'a conseillé face aux problèmes de performance.
 
 <3 <3 <3
 
