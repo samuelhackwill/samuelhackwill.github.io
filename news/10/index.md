@@ -14,7 +14,7 @@ Chères et chers camarades,
 
 c'est le dixième numéro de cette newsletter soi-disant biannuelle. Bienvenue à celleux qui nous rejoignent.
 
-La dernière fois que je vous ai écrit, c'était en Septembre 2024 et [je vous avais parlé beaucoup trop en détail](https://samuelhackwill.github.io/news/9/#un-bouddhiste-un-musulman-un-protestant-deux-catholiques-et-un-orthodoxe-sont-à-lassemblée-nationale) du projet de loi sur la fin de vie en France, et ce que les représentants du culte avaient à en dire (c'est-à-dire : "la vie est la propriété de dieu donc pas touche minouche"). Enfin, pour être plus spécifique, c'est ce qu'a dit le représentant des Orthodoxes de France (il a pas dit le mot "minouche" mais il a quand même réussi à traiter les députés de _païens_). Les autres étaient moins maladroits et ont mieux réussi à faire semblant que leurs arguments jouaient sur un plan rationnel. Le texte a été adopté cette semaine à l'AN, et maintenant c'est au tour du Sénat de l'examiner. Je ne sais pas quoi vous dire d'autre à ce sujet, j'oscille entre "c'est un petit progrès dans la bonne direction" et "c'est tellement infime que ça vaut même pas la peine d'en parler".
+La dernière fois que je vous ai écrit, c'était en Septembre 2024 et [je vous avais parlé beaucoup trop en détail](https://samuelhackwill.github.io/news/9/#un-bouddhiste-un-musulman-un-protestant-deux-catholiques-et-un-orthodoxe-sont-à-lassemblée-nationale) du projet de loi sur la fin de vie en France, et ce que les représentants du culte avaient à en dire (c'est-à-dire : "la vie est la propriété de dieu donc pas touche minouche"). Enfin, pour être plus spécifique, c'est ce qu'a dit le représentant des Orthodoxes de France (il a pas dit le mot "minouche" mais il a quand même réussi à traiter les députés de _païens_). Les autres étaient plus adroits et ont mieux réussi à faire semblant que leurs arguments jouaient sur un plan rationnel. Le texte a été adopté cette semaine à l'AN, et maintenant c'est au tour du Sénat de l'examiner. Je ne sais pas quoi vous dire d'autre à ce sujet, j'oscille entre "c'est un petit progrès dans la bonne direction" et "c'est tellement infime que ça vaut même pas la peine d'en parler".
 
 Anyway!
 
@@ -22,13 +22,16 @@ Cette newsletter va être assez _technique_, parce que j'ai envie de vous racont
 
 ![Stéphanie entourée de souris qui cliqueu cliqueu cliqueu](/news/10/media/playsteph.jpg)
 
+_↑ J'ai eu le bonheur de travailler avec Stéphanie sur cette création. Là on était en train de débugger une fonction qui sélectionne les pointeurs de souris les uns après les autres, dans l'ordre (les tapis de souris sont numérotés de 1 à 56)._
+
 ## Tryhard
 
 Cette saison j'ai donc passé beaucoup de temps à programmer des ordinateurs pour _Tryhard_, qui est une performance pour 56 pointeurs de souris, où le public complète une série de CAPTCHAs ("je ne suis pas un robot").
 
-j'ai faut un teaser ici si vous voulez voir à quoi ça ressemble =>
+j'ai fait un teaser ici si vous voulez voir à quoi ça ressemble ↓
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zJ4_k_tVlSc?si=4SX-Ngzw4bncGjvN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 Écrire cette pièce était un challenge passionnant sur le plan technique et expressif. J'ai appris plein de choses! J'ai envie de partager avec vous les 3 obstacles _techniques_ les plus intéressants que j'ai rencontré en cours de route, et les méthodes que j'ai mises en place pour les résoudre ou les contourner.
 
@@ -60,9 +63,11 @@ Mon but était éventuellement de faire mieux que le distributeur de billets de 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8Z8ORJYKFIU?si=jpboFxB_bpGyMVVj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
 Le stack (qui est une autre façon de dire : "sandwich technique") était biennnn différent à cette époque, j'ai tout réécrit depuis. Vous pouvez checker cette conversation [ici](https://github.com/function61/screen-server/discussions/10) si vous savoir comment j'ai fabriqué le tout premier prototype, avec l'aide d'un développeur Finlandais et de mon ami Etienne Boutin, qui est dev également. À l'époque il y avait plein de couches de virtualisation en plus, c'était vraiment une usine à gaz. Mais ça m'a mis sur la bonne voie et c'était la confirmation que mon approche était plausible.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Cqm0_0RljFg?si=Jp-SbneHYh9f22H8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 J'ai essayé de mesurer la latence approximative qu'il y a dans Tryhard (dans sa version actuelle), de la manière suivante : j'ai filmé mon écran au ralenti avec un téléphone (240 images / seconde), et j'ai utilisé [ffmpeg](https://fr.wikipedia.org/wiki/FFmpeg) pour décomposer la vidéo en fichiers jpeg, 1 image / frame. J'ai ensuite compté les images avec les doigts de ma main entre le moment où je frappe ma souris et le moment où le pointeur se décide à bouger (j'ai compté 28 frames, donc ça fait une latence de 28 x (1000/240) = ~104 ms). Not _that_ bad.
 
