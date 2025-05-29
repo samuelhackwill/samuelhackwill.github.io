@@ -76,13 +76,15 @@ La première fois que j'ai fait un test en conditions réelles avec 14 raspberry
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M6oVb8VxIsw?si=t9gcmfeq4j4JnqP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+_↑ fun fact : c'est Stéphanie qui est au bout de ce pointeur de souris!!!!! <3 <3 <3_
+
 ci-dessus j'ai mis une tite flèche à côté d'un curseur (EMO), pour qui tout se passe plutôt bien initialement, mais à un moment il semble tétanisé, avant de sauter subitement à une autre position. C'est ça le jitter. D'autres curseurs ont une latence qui varie encore plus vite, et la majorité d'entre eux n'ont pas un déplacement fluide.
 
 Cette fois-ci on ne parle pas seulement d'un problème qui est désagréable, mais qui rend tout à fait impossible de repérer et de suivre son curseur à l'écran. J'étais obligé de résoudre ce problème si je voulais qu'il y ait un moment dans la performance où tout le monde joue ensemble, et plus globalement si je voulais que l'expérience soit confortable.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dd-tWj8EB-c?si=aNuHfIR-uX5kArK6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-_Un détail intéressant dans la vidéo : à côté de chaque curseur s'affiche la latence maximum observée pour ce client ; vous remarquerez qu'il y a des valeurs négatives, ce qui est impossible (on ne peut pas remonter dans le temps, tout ça tout ça). Après avoir résolu mon problème de Jitter, j'ai été tenté de comprendre ce qui se passait avec ces valeurs aberrantes (probablement des problèmes d'horloge sur les rasps), et j'ai gaspillé une journée entière à essayer (en vain) de résoudre le "problème" - qui n'en était pas un puisque je n'avais pas du tout besoin de connaître ces valeurs (mon seul problème c'était le jitter). Qué s'apelerio, la différence subtile entre faire un pas de côté essentiel et le moment où on oublie quel était le problème à la base pour s'engouffrer dans une fiévreuse procrastination de code._
+_↑ Un détail intéressant dans la vidéo : à côté de chaque curseur s'affiche la latence maximum observée pour ce client ; vous remarquerez qu'il y a des valeurs négatives, ce qui est impossible (on ne peut pas remonter dans le temps, tout ça tout ça). Après avoir résolu mon problème de Jitter, j'ai été tenté de comprendre ce qui se passait avec ces valeurs aberrantes (probablement des problèmes d'horloge sur les rasps), et j'ai gaspillé une journée entière à essayer (en vain) de résoudre le "problème" - qui n'en était pas un puisque je n'avais pas du tout besoin de connaître ces valeurs (mon seul problème c'était le jitter). Qué s'apelerio, la différence subtile entre faire un pas de côté essentiel et le moment où on oublie quel était le problème à la base pour s'engouffrer dans une fiévreuse procrastination de code._
 
 Dans la mesure où je ne pouvais pas séquestrer le public pendant un mois pour leur demander de faire bouger les souris à chaque fois que j'avais besoin d'éprouver une nouvelle version du code, j'ai dû mettre en place un environnement de test automatisé pour comprendre d'où ces variations de latence venaient. Dans la vidéo ci-dessus on voit le _jitter_ en action : certains curseurs font subitement une sorte de pause pendant que d'autres ont un déplacement fluide. Quand j'ai vu ça j'étais à la fois content (youpi j'ai réussi à répliquer le bug!) et dubitatif (pourquoi y'en a qui sont en bonne santé mais pas les autres alors que c'est le même code, les mêmes ordinateurs, les mêmes souris? huUuhH)
 
@@ -96,7 +98,7 @@ Le dernier problème que j'ai rencontré est arrivé assez tard dans le projet (
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tAeU1XIyIP8?si=C0JLlOEYWCuM64Pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-_Alors dans cette vidéo on ne voit pas de ralentissement du framerate parce que je jouais tout seul ; mais quand je l'ai fait en live avec une vingtaine de personnes ça a tout pété. Je n'ai pas de vidéo malheureusement, mais imaginez un écran saturé de pointeurs de souris grabataires avec des déplacements tout saccadés. J'avais aussi rajouté un effet de flammes en fond d'écran. ET des explosions._
+_↑ Alors dans cette vidéo on ne voit pas de ralentissement du framerate parce que je jouais tout seul ; mais quand je l'ai fait en live avec une vingtaine de personnes ça a tout pété. Je n'ai pas de vidéo malheureusement, mais imaginez un écran saturé de pointeurs de souris grabataires avec des déplacements tout saccadés. J'avais aussi rajouté un effet de flammes en fond d'écran. ET des explosions._
 
 Ce phénomène survient parce que tout programme voulant afficher des choses sur un écran dispose d'un budget de 16,66 millisecondes pour faire tous ses calculs. Ce chiffre est obtenu en divisant 1 seconde par la fréquence d'affichage de l'écran (qui est le nombre maximum d'images que l'écran/le vidéoprojecteur peut afficher par seconde, 60 dans mon cas).
 
@@ -112,21 +114,27 @@ Considérons un problème pratique que j'avais dans Tryhard. J'ai plein de point
  }
 ```
 
-_ce bout de code dit au navigateur web que tous les élements de type "button" doivent dire au pointeur de souris ("cursor") de changer son apparence ("pointer") quand ils sont survolés (":hover")._
+_↑ ce bout de code dit au navigateur web que tous les élements de type "button" doivent dire au pointeur de souris ("cursor") de changer son apparence ("pointer") quand ils sont survolés (":hover")._
 
 ...et je peux dormir sur mes deux oreilles, parce que je sais que les coûts de performance sont infimes. Cette ligne de code marchera parfaitement, même s'il y a 10000 boutons à l'écran, même si je bouge ma souris très vite, etc. Pourquoi? Parce que j'utilise une fonction "native" du navigateur web, qui agit sur le curseur "natif" de mon système d'exploitation. "Natif", dans notre cas, ça veut dire "bien foutu". "Bien foutu", ça veut dire que ça a été codé par des ingénieurs expérimenté.e.s avec des langages _bas niveau_ comme C ou C++, qui sont plus _abstraits_ que les langages que j'utilise moi, mais beaucoup plus performants.
 
 MAIS. Vous vous rappelez peut-être que je disais en exergue qu'il n'y a pas de "vrais" pointeurs de souris dans Tryhard ; seulement des _simulations_ de pointeurs de souris. Des souris-frankenstein. C'est la raison pour laquelle je ne peux pas profiter "gratuitement" des fonctions natives du navigateur. Je dois tout ré-écrire moi-même a grands coups de Javascript, un langage plus accessible que le C ou le C++, mais beaucoup moins performant. Si je veux mon petit effet de je-survole-un-truc-et-hop-je-deviens-une-main-gantée, je dois effectivement écrire une fonction qui fait un truc comme ça :
 
 ```
-"surveille les coordonnées des 56 simulations de pointeurs à l'écran et croise ces coordonnées avec celles des x boutons affichés à l'écran ; si il y a une intersection entre les coordonnées d'un pointeur et celles d'un bouton, change l'apparence de ce pointeur de souris en un joli gant blanc de mickey mouse. Ah oui et au fait, fais ça *60 fois par seconde* stp"
+"surveille les coordonnées des 56 simulations de pointeurs
+à l'écran et croise ces coordonnées avec celles des x boutons
+affichés à l'écran ; si il y a une intersection entre les
+coordonnées d'un pointeur et celles d'un bouton, change
+l'apparence de ce pointeur de souris en un joli
+gant blanc de mickey mouse. Ah oui et au fait,
+fais ça *60 fois par seconde* stp"
 ```
 
 la grosse différence ici, c'est que contrairement à notre pti bout de CSS tout à l'heure, le _coût en calculs de notre fonction croît (de manière linéaire) avec le nombre d'éléments affichés sur la page_. Au bout d'un moment, la quantité de calculs croît trop, et le navigateur web n'arrive plus à faire son taff en 16,66ms, ce qui finit par ralentir la fréquence d'affichage (ça _jank_).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-2ktIHGBCU4?si=v40TwbnG7Y9Jw8hY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-_ça c'est un "stress test" que j'ai programmé assez tôt dans l'écriture de Tryhard pour vérifier que mon code moyennement optimisé pouvait quand même tourner à 60Hz. Ça m'a rassuré et a confirmé que même si ma stratégie n'était pas optimale, elle était suffisamment performante pour la majorité de mes besoins. Ici on ne voit presque pas de jank alors qu'il se passe pas mal de trucs._
+_↑ ça c'est un "stress test" que j'ai programmé assez tôt dans l'écriture de Tryhard pour vérifier que mon code moyennement optimisé pouvait quand même tourner à 60Hz. Ça m'a rassuré et a confirmé que même si ma stratégie n'était pas optimale, elle était suffisamment performante pour la majorité de mes besoins. Ici on ne voit presque pas de jank alors qu'il se passe pas mal de trucs._
 
 Je précise ici que tout n'est pas de la faute de Javascript, qui demeure un langage puissant avec lequel on peut faire plein de choses très vite. En réalité, il y a des manières plus ou moins _performantes_ de résoudre un problème de programmation, et par exemple, la stratégie que je viens de décrire pour changer l'apparence d'un pointeur de souris n'est pas la plus optimisée.
 
@@ -158,7 +166,7 @@ Comme souvent en informatique, il n’y a pas de solution parfaite, mais des com
 
 C'est tout pour cette fois! Merci d'avoir tout lu, wow!!! J'ai l'impression d'avoir [pair-programmé](https://en.wikipedia.org/wiki/Pair_programming) avec vous, c'était cool.
 
-Merci encore à [Stéphanie Aflalo](https://www.instagram.com/stephanie.aflalo), qui m'a accompagné tout au long de l'écriture de la pièce, Étienne Boutin, qui m'a donné le courage de faire le premier prototype, Thomas Riou qui a assuré la production de la pièce, et Diane Landais, qui a écrit une partie de la base de code, et m'a conseillé face aux problèmes de performance.
+Merci encore à [Stéphanie Aflalo](https://www.instagram.com/stephanie.aflalo), qui m'a accompagné de l'α à l'Ω durant l'écriture de la pièce, Étienne Boutin, qui m'a donné le courage de faire le premier prototype, Thomas Riou qui a assuré la production de la pièce, et Diane Landais, qui a écrit une partie de la base de code, et m'a conseillé face aux problèmes de performance.
 
 <3 <3 <3
 
