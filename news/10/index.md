@@ -10,19 +10,19 @@ locale: "fr"
 header: /news/10/media/montage.jpeg
 ---
 
-(temps de lecture : 15-20 minutes)
+_(temps de lecture : 15-20 minutes)_
 
 Chères et chers camarades,
 
 c'est le dixième numéro de cette newsletter soi-disant biannuelle. Bienvenue à celleux qui nous rejoignent.
 
-La dernière fois que je vous ai écrit, c'était en Septembre 2024 et [je vous avais parlé beaucoup trop en détail](https://samuelhackwill.github.io/news/9/#un-bouddhiste-un-musulman-un-protestant-deux-catholiques-et-un-orthodoxe-sont-à-lassemblée-nationale) du projet de loi sur la fin de vie en France, et ce que les représentants du culte avaient à en dire (c'est-à-dire : "la vie est la propriété de dieu donc pas touche minouche"). Enfin, pour être plus spécifique, c'est ce qu'a dit le représentant des Orthodoxes de France (il a pas dit le mot "minouche" mais il a quand même réussi à traiter les députés de _païens_). Les autres étaient plus adroits et ont mieux réussi à faire semblant que leurs arguments jouaient sur un plan rationnel. Le texte a été adopté cette semaine à l'AN, et maintenant c'est au tour du Sénat de l'examiner. Je ne sais pas quoi vous dire d'autre à ce sujet, j'oscille entre "c'est un petit progrès dans la bonne direction" et "c'est tellement infime que ça vaut même pas la peine d'en parler".
+La dernière fois que je vous ai écrit, c'était en Septembre 2024 et [je vous avais parlé beaucoup trop en détail](https://samuelhackwill.github.io/news/9/#un-bouddhiste-un-musulman-un-protestant-deux-catholiques-et-un-orthodoxe-sont-à-lassemblée-nationale) du projet de loi sur la fin de vie en France, et ce que les représentants du culte avaient à en dire : "la vie est la propriété de dieu donc pas touche minouche". Enfin, pour être plus spécifique, c'est ce qu'a dit le représentant des Orthodoxes de France (il a pas dit le mot "minouche" mais il a quand même réussi à traiter les députés de _païens_). Les autres étaient plus adroits et ont mieux réussi à faire semblant que leurs arguments jouaient sur un plan rationnel, plutôt que confessionnel. Le texte a été adopté cette semaine à l'AN, et maintenant c'est au tour du Sénat de l'examiner. Je ne sais pas quoi vous dire d'autre à ce sujet, j'oscille entre "c'est un petit progrès dans la bonne direction" et "c'est tellement infime que ça vaut même pas la peine d'en parler".
 
 Anyway!
 
 Cette newsletter va être assez technique, parce que j'ai envie de vous raconter comment j'ai fabriqué mon nouveau spectacle (que j'ai créé ce mois d'Avril).
 
-![Stéphanie entourée de souris qui cliqueu cliqueu cliqueu](/news/10/media/playsteph.jpg)
+![Stéphanie entourée de souris qui cliqueu cliqueu cliqueu](/news/10/media/playsteph.jpeg)
 
 _↑ Ici on voit Stéphanie, à gauche, mienne dramaturge aux mains de pianiste, et le dispositif de Tryhard autour d'elle. Fait intéressant : tout ça rentre dans un sac 120L qui va sur mon dos quand mon corps se déplace pour tourner la pièce._
 
@@ -134,7 +134,9 @@ si il y a une intersection entre les
 coordonnées d'un pointeur et celles d'un bouton,
 change l'apparence de ce pointeur de souris en un joli
 gant blanc de mickey mouse. Ah oui et au fait,
-fais ça *60 fois par seconde* stp."
+fais ça *60 fois par seconde* stp. Oui c'est beaucoup
+mais que voulez vous y'a l'écran qui veut manger son
+image toutes les 16,66ms je vous rappelle."
 ```
 
 la grosse différence ici, c'est que contrairement à notre pti bout de CSS tout à l'heure, le _coût en calculs de notre fonction croît (de manière linéaire) avec le nombre d'éléments affichés sur la page_. Au bout d'un moment, la quantité de calculs croît trop, et le navigateur web n'arrive plus à faire son taff en 16,66ms, ce qui finit par ralentir la fréquence d'affichage (ça _jank_).
@@ -143,7 +145,7 @@ la grosse différence ici, c'est que contrairement à notre pti bout de CSS tout
 
 _↑ ça c'est un "stress test" que j'ai programmé assez tôt dans l'écriture de Tryhard pour vérifier que mon code moyennement optimisé pouvait quand même tourner à 60Hz. Ça m'a rassuré et a confirmé que même si ma stratégie n'était pas optimale, elle était suffisamment performante pour la majorité de mes besoins. Ici on ne voit presque pas de jank alors qu'il se passe pas mal de trucs._
 
-Je précise ici que contrairement à ce que mon ton pourrait suggérer, tout n'est pas de la faute de _Javascript_, le pauvre, qui demeure un langage très puissant avec lequel on peut faire plein de choses très vite. En réalité, il y a des manières plus ou moins _performantes_ de résoudre un problème de programmation, et par exemple, la stratégie que je viens de décrire pour changer l'apparence d'un pointeur de souris n'est pas la plus optimisée. On pourrait faire plus efficace, même avec _Javascript_. Par exemple :
+Je précise ici que contrairement à ce que mon ton pourrait suggérer, tout n'est pas de la faute de _Javascript_, le pauvre, qui demeure un langage très puissant avec lequel on peut faire plein de choses très vite. En réalité, il y a des manières plus ou moins _performantes_ de résoudre un problème de programmation, quelle que soit la langue, et par exemple, la stratégie que je viens de décrire pour changer l'apparence d'un pointeur de souris n'est pas la plus optimisée. On pourrait faire plus efficace, même avec _Javascript_. Par exemple :
 
 ```
 "comme les boutons ne bougent pas, plutôt que de
@@ -154,23 +156,23 @@ pointeurs se déplacent dans les mêmes
 plages de coordonnées. Et un café s'il vous plaît"
 ```
 
-Ou même :
+Ou :
 
 ```
-c'est lent de chercher dans une graaaande liste
+"c'est lent de chercher dans une graaaande liste
 contenant tous les boutons à chaque fois
 pour chaque pointeur : divise l'espace en 4 régions
 (en haut à gauche, en haut à droite, en bas à gauche,
 en bas à droite), met les boutons de chaque région dans la
-variable statique correspondante, et regarde uniquement dans
+variable correspondante, et regarde uniquement dans
 la variable qui contient les boutons du coin de l'image où
 se trouve le pointeur de souris, comme ça tu cherches
-dans une liste qui est 4 fois moins longue, duh.
+dans une liste qui est 4 fois moins longue, duh."
 ```
 
 On voit que potentiellement, à mesure que le code devient plus performant, il devient aussi plus complexe et peut être plus difficile à lire (bon là en l’occurrence c'est pas du code mais on voit que mes petites instructions deviennent de plus en plus _convoluted_ comme on dit dans le métier.)
 
-Anyways! Concluons : il me restait 30 jours pour terminer la pièce, les effets visuels les plus importants fonctionnaient bien et à 60Hz (que je ne vous montre pas pour pas vous spoiler!), j'ai donc décidé de renoncer à la séquence qui était trop gourmande en calculs. Pour que cette séquence fonctionne bien, j'aurais dû profondément changer mon approche, peut-être même utiliser des langages différents, mais quoi qu'il en soit replonger pendant des semaines dans ma base de code pour la réécrire (on parle de "Refactoring").
+Anyways! Concluons : il me restait 30 jours pour terminer la pièce, les effets visuels les plus importants (que je ne vous montre pas pour pas vous spoiler!) fonctionnaient bien et à 60Hz, j'ai donc décidé de renoncer à la séquence qui était trop gourmande en calculs. Pour que cette séquence fonctionne bien, j'aurais dû profondément changer mon approche, peut-être même utiliser des langages différents, mais quoi qu'il en soit replonger pendant des semaines dans ma base de code pour la réécrire (on parle de "Refactoring").
 
 ## Conclusion
 
@@ -178,11 +180,13 @@ Comme souvent en informatique, il n’y a pas de solution parfaite, mais des com
 
 C'est tout pour cette fois! Merci d'avoir tout lu, wow!!! J'ai l'impression d'avoir [pair-programmé](https://en.wikipedia.org/wiki/Pair_programming) avec vous, c'était cool.
 
-Merci encore à [Stéphanie Aflalo](https://www.instagram.com/stephanie.aflalo), qui m'a accompagné de l'α à l'Ω durant la conception de la pièce, Étienne Boutin, qui m'a donné le courage de faire le premier prototype, Thomas Riou qui a assuré la production à l'Amicale, et Diane Landais, qui a écrit une partie de la base de code, et m'a conseillé face aux problèmes de performance.
+<3 <3 <3
+
+Merci à [Stéphanie Aflalo](https://www.instagram.com/stephanie.aflalo), qui m'a accompagné de l'α à l'Ω durant la conception de la pièce, Étienne Boutin, qui m'a aidé à faire le premier prototype, Thomas Riou qui a assuré la production à l'Amicale, et Diane Landais, qui a écrit une partie de la base de code, et m'a conseillé face aux problèmes de performance.
 
 <3 <3 <3
 
 merci également à : Julie Holin, Célestine Dahan, Marine Thevenet, Pierre Pedinotti, les playtesteur.euse.s, Cédric Jouniaux, les contributeur.ice.s de Meteor.js, les allié.e.s, Camille Lamy, Joonas “Fi”, Jacques-Daniel Pillon, Victor Pauly, Jacob Lyon.
 
 ![Le gros sac contenant l'intégralité du dispositif](/news/10/media/bag.jpeg)
-_↑ ça c'est le sac dont je parlais au début ; il contient l'intégralité du dispositif, sauf les tapis de souris qui sont envoyés par la poste._
+_↑ ça c'est le sac dont je parlais au début ; il contient l'intégralité du dispositif, sauf les tapis de souris qui sont envoyés par la poste. Not bad huh_
