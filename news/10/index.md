@@ -24,7 +24,7 @@ Cette newsletter va être assez technique, parce que j'ai envie de vous raconter
 
 ![Stéphanie entourée de souris qui cliqueu cliqueu cliqueu](/news/10/media/playsteph.jpeg)
 
-_↑ Ici on voit Stéphanie, à gauche, mienne dramaturge aux mains de pianiste, et le dispositif de Tryhard autour d'elle. Fait intéressant : tout ça rentre dans un sac 120L qui va sur mon dos quand mon corps se déplace pour tourner la pièce._
+_↑ Ici on voit Stéphanie, à gauche, mienne dramaturge aux mains de pianiste, et le dispositif de Tryhard autour d'elle._
 
 ## Tryhard
 
@@ -189,4 +189,4 @@ Merci à [Stéphanie Aflalo](https://www.instagram.com/stephanie.aflalo), qui m'
 merci également à : Julie Holin, Célestine Dahan, Marine Thevenet, Pierre Pedinotti, les playtesteur.euse.s, Cédric Jouniaux, les contributeur.ice.s de Meteor.js, les allié.e.s, Camille Lamy, Joonas “Fi”, Jacques-Daniel Pillon, Victor Pauly, Jacob Lyon.
 
 ![Le gros sac contenant l'intégralité du dispositif](/news/10/media/bag.jpeg)
-_↑ ça c'est le sac dont je parlais au début ; il contient l'intégralité du dispositif, sauf les tapis de souris qui sont envoyés par la poste. Not bad huh_
+_↑ ça c'est le sac où je mets Tryhard ; il contient l'intégralité du dispositif, sauf les tapis de souris qui sont envoyés par la poste. Not bad huh_
