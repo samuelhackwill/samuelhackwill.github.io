@@ -34,7 +34,7 @@ Cette saison j'ai donc passé beaucoup de temps à programmer des ordinateurs po
 
 j'ai fait un teaser ici si vous voulez voir à quoi ça ressemble ↓
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zJ4_k_tVlSc?si=4SX-Ngzw4bncGjvN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" enablejsapi=1  src="https://www.youtube.com/embed/zJ4_k_tVlSc?si=4SX-Ngzw4bncGjvN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br/>
 
 Écrire cette pièce était un challenge passionnant sur le plan technique et expressif. J'ai appris plein de choses! J'ai envie de partager avec vous les _3 obstacles techniques_ les plus intéressants que j'ai rencontré en cours de route, et les méthodes que j'ai mises en place pour les résoudre ou les contourner.
