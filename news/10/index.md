@@ -26,7 +26,7 @@ Cette newsletter va être assez technique, parce que j'ai envie de vous raconter
 
 ![Stéphanie entourée de souris qui cliqueu cliqueu cliqueu](/news/10/media/playsteph.jpeg)
 
-_↑ Ici on voit Stéphanie, à gauche, mienne dramaturge aux mains de pianiste, et le dispositif de Tryhard autour d'elle._
+_↑ Ici on voit Stéphanie, avec qui j'ai la chance de travailler, et le dispositif tout autour d'elle._
 
 ## Tryhard
 
