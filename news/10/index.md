@@ -10,15 +10,15 @@ locale: "fr"
 header: /news/10/media/montage.jpeg
 ---
 
-_(temps de lecture : 15-20 minutes)_
+_(temps de lecture : 20 minutes)_
 
 Chères et chers camarades,
 
 c'est le dixième numéro de cette newsletter soi-disant biannuelle. Bienvenue à celleux qui nous rejoignent.
 
-La dernière fois que je vous ai écrit, c'était en Septembre 2024 et [je vous avais parlé beaucoup trop en détail](https://samuelhackwill.github.io/news/9/#un-bouddhiste-un-musulman-un-protestant-deux-catholiques-et-un-orthodoxe-sont-à-lassemblée-nationale) du projet de loi sur la fin de vie en France, et ce que les représentants du culte avaient à en dire : "la vie est la propriété de dieu donc pas touche minouche". Enfin, pour être plus spécifique, c'est ce qu'a dit le représentant des Orthodoxes de France (il a pas dit le mot "minouche" mais il a quand même réussi à traiter les députés de _païens_). Les autres étaient plus adroits et ont mieux réussi à faire semblant que leurs arguments jouaient sur un plan rationnel, plutôt que confessionnel. Le texte a été adopté cette semaine à l'AN, et maintenant c'est au tour du Sénat de l'examiner.
+La dernière fois que je vous ai écrit, c'était en Septembre 2024 et [je vous avais parlé beaucoup trop en détail](https://samuelhackwill.github.io/news/9/#un-bouddhiste-un-musulman-un-protestant-deux-catholiques-et-un-orthodoxe-sont-à-lassemblée-nationale) du projet de loi sur la fin de vie en France, et ce que les représentants du culte avaient à en dire : "la vie est la propriété de dieu donc pas touche minouche". Enfin, pour être plus spécifique, c'est ce qu'a dit le représentant des Orthodoxes de France (il a pas dit le mot "minouche" mais il a quand même réussi à traiter les députés de _païens_). Le texte a été adopté cette semaine à l'AN, et maintenant c'est au tour du Sénat de l'examiner.
 
-<!-- Je ne sais pas quoi vous dire d'autre à ce sujet, j'oscille entre "c'est un petit progrès dans la bonne direction" et "c'est tellement infime que ça vaut même pas la peine d'en parler". -->
+<!-- Je ne sais pas quoi vous dire d'autre à ce sujet, j'oscille entre "c'est un petit progrès dans la bonne direction" et "c'est tellement infime que ça vaut même pas la peine d'en parler". https://x.com/samhackwill/status/1928428707938463816 -->
 
 Anyway!
 
