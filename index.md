@@ -11,4 +11,10 @@ bienvenue sur cette page? qui contient des liens? vers des trucs?
 - [newsletter #9](/news/9)
 - [newsletter #10](/news/10)
 
+## SFPC games
+
+- [tinychoice games](/sfpc_games)
+
+
+
 [abonnez-vous à ma newsletterrrrhhhhsss](https://shh.ovh) si vous voulez

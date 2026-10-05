@@ -1,0 +1,134 @@
+﻿<!--save as html file-->
+<html  dir="auto" >
+<head>
+<link rel="icon" 
+      type="image/png" 
+      href="favicon.png">
+<title>game</title>
+<style>
+	body {
+		margin:40px;
+		padding:40px;
+	}
+</style>
+<script>
+
+var embedDat = "%7B%22START%22:%5B%5B%22you%20are%20in%20your%20office.%22%5D,%5B%22%22%5D,%5B%22where's%20my%20office?%22,%22HOUSE%22%5D,%5B%22what's%20in%20my%20office?%22,%22OFFICE%22%5D,%5B%22%22%5D%5D,%22__STARTSECTION__%22:%22START%22,%22HOUSE%22:%5B%5B%22your%20office%20is%20in%20your%20house,%20in%20france,%20in%20the%20world,%20in%20the%20solar%20system.%22%5D,%5B%22%22%5D,%5B%22ok%22,%22START%22%5D,%5B%22%22%5D%5D,%22OFFICE%22:%5B%5B%22in%20the%20office,%20there%20is%20:%20dust,%20second-hand%20equipment,%20noise,%20solitude.%22%5D,%5B%22%22%5D,%5B%22talk%20with%20the%20dust%22,%22DUST%22%5D,%5B%22talk%20with%20the%20second%20hand%20equiment%22,%22EQUIPMENT%22%5D,%5B%22talk%20with%20the%20noise%22,%22NOISE%22%5D,%5B%22talk%20with%20solitude%22,%22SOLITUDE%22%5D,%5B%22remain%20silent%20(conclude)%22,%22CONCLUSION%22%5D,%5B%22%22%5D%5D,%22DUST%22:%5B%5B%22dust%20is%20your%20friend.%22%5D,%5B%22%22%5D,%5B%22it%20will%20always%20come%20back%22,%22OFFICE%22%5D,%5B%22%22%5D%5D,%22EQUIPMENT%22:%5B%5B%22you%20wonder%20who%20else%20used%20this%20desk%20before.%22%5D,%5B%22%22%5D,%5B%22you%20hope%20they%20had%20fun%20in%20the%20process%22,%22OFFICE%22%5D,%5B%22%22%5D%5D,%22NOISE%22:%5B%5B%22you%20try%20to%20argue%20noise%20out%20of%20existence%20but%20it%20doesn't%20work.%22%5D,%5B%22%22%5D,%5B%22guess%20you'll%20have%20to%20deal%20with%20it%22,%22OFFICE%22%5D,%5B%22%22%5D%5D,%22SOLITUDE%22:%5B%5B%22that's%20what%20the%20office%20is%20for.%22%5D,%5B%22%22%5D,%5B%22ok%22,%22SOLITUDE%22%5D,%5B%22%22%5D%5D,%22CONCLUSION%22:%5B%5B%22enjoy%20your%20dayyyyyy%22%5D%5D%7D";
+
+var gameState = null;
+
+
+var aurl = document.createElement('a');
+function qualifyURL(url) {
+ aurl.href = url;
+ return aurl.href;
+}
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+function strip_http(url) {
+   url = url.replace(/^https?:\/\//,'');
+   return url;
+}
+
+function startSection(){
+  if (gameState==null){
+    return "";
+  }
+  var param = getParameterByName("section");
+
+  var result = "__STARTSECTION__" in gameState ? gameState["__STARTSECTION__"] : "START";
+  if (param.length>0){
+    result=param;
+  }
+
+  return result;
+}
+
+function init(){
+	if (embedDat.length>0 && embedDat[0]!=='_'){
+		var dat = decodeURI(embedDat);
+		gameState = JSON.parse(dat);
+    var startKey = startSection();
+		goTo(startKey);
+		return;
+	}
+
+var id = getParameterByName("p").replace(/[\\\/]/,"");
+  if (id===null||id.length===0) {
+    console.log("No ID specified in URL.")
+    return;
+  }
+
+  var githubURL = 'https://api.github.com/gists/'+id;
+
+  var githubHTTPClient = new XMLHttpRequest();
+  githubHTTPClient.open('GET', githubURL);
+  githubHTTPClient.onreadystatechange = function() {
+    if(githubHTTPClient.readyState!=4) {
+      return;
+    }   
+    var result = JSON.parse(githubHTTPClient.responseText);
+    if (githubHTTPClient.status===403) {
+      console.log(result.message);
+    } else if (githubHTTPClient.status!==200&&githubHTTPClient.status!==201) {
+      console.log("HTTP Error "+ githubHTTPClient.status + ' - ' + githubHTTPClient.statusText);
+    }
+    var result = JSON.parse(githubHTTPClient.responseText);
+    var code=result["files"]["game.txt"]["content"];
+    console.log(code);
+
+	gameState = JSON.parse(code);
+	goTo(startSection());
+  }
+  githubHTTPClient.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+  githubHTTPClient.send();
+
+	goTo(startSection());
+}	
+
+function escapeHtmlEntities (str) {
+  if (typeof jQuery !== 'undefined') {
+    // Create an empty div to use as a container,
+    // then put the raw text in and get the HTML
+    // equivalent out.
+    return jQuery('<div/>').text(str).html();
+  }
+
+  // No jQuery, so use string replace.
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/>/g, '&gt;')
+    .replace(/</g, '&lt;')
+    .replace(/"/g, '&quot;');
+}
+
+function goTo(targetState){
+  if (gameState==null){
+    return;
+  }
+	var curstate = gameState[targetState];
+	var gameArea = document.getElementById("gameArea");
+	var str = "";
+	for (var i=0;i<curstate.length;i++){
+		var l = curstate[i];
+		if (l.length==1){			
+			str+=escapeHtmlEntities(l[0])+"<br>";
+		} else if (l.length==2){
+			str+='<a href="#" onclick="goTo(\''+escapeHtmlEntities(l[1])+'\');return false;">'+escapeHtmlEntities(l[0])+'</a><br>';
+		}	
+	}
+	gameArea.innerHTML=str;
+}
+
+</script>
+</head>
+<body onload="init();" dir="auto">
+<div id="gameArea" dir="auto"></div>
+</body>
+</html>
