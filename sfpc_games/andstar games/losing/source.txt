@@ -1,0 +1,47 @@
+@title losing
+@author anonymous
+@reveal click
+
+stat cigs = 3 max 3
+
+== start
+
+chose something to think about
+
+* money -> money
+* death -> death
+* pasta -> pasta
+
+== pasta
+you think about pasta.
+so many funny shapes.
+so many textures.
+so many sauce combinations.
+
+* think about something else -> start
+
+== money
+
+you think about money. 
+Looking for money will injure your mind
+Neglecting money will destroy you.
+
+* [cigs > 0] smoke these thoughts away -> smokey
+* [cigs < 1] you cannot smoke any more -> die
+
+== smokey
+~ set cigs = cigs - 1
+
+* think about something else -> start
+
+== death
+
+you think about death. 
+Not thinking about death makes one pursue futile activities
+Thinking about death makes everything futile
+
+* [cigs > 0] smoke these thoughts away -> smokey
+* [cigs < 1] you cannot smoke any more -> die
+
+== die
+you died (thought too much)

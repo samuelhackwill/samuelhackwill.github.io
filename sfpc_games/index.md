@@ -32,3 +32,10 @@ here is a list of the games i made during class, monday october the 5th. These g
 ## 120 minutes
 
 - [Pascal](tinychoice/120mns/pascal.html)
+
+## Andstar games
+
+- [Losing](andstar%20games/losing/)
+- [Pasta](andstar%20games/pasta/)
+- [Quizz](andstar%20games/quizz/)
+- [Reksai](andstar%20games/reksai/)

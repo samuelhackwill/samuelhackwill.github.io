@@ -1,0 +1,65 @@
+@title Untitled
+@author anonymous
+
+stat score = 0 max 3
+skill logic "Logic" #6cb9ff = 3
+
+char someone "Someone" #f0c987
+
+== start
+QUIZZZZ why did the guy working at the shop downstairs my place leave?
+* he went to do a PHD -> good
+* he went to live in the forest -> wrong
+* he just went for a long walk and i misinterpreted things -> wrong
+
+== wrong
+glad to see you're paying attention
+
+* what's going on in samuel's grocery store is not really the point of this class -> fair
+
+== fair
+fair enough
+
+* next question -> q2
+
+== good
+~ set score = score + 1
+well done!!
+* next question -> q2
+
+== q2
+WHERE did he go
+* he went to Lyon -> wrong2
+* he went to Poitiers -> good2
+* he went to Nanteuil-le-haudouin -> wrong2
+
+== wrong2
+it's fine, i don't know much about USA's geography either
+
+* you don't need to be salty about this -> q3
+
+== good2
+~ set score = score + 1
+well done!!
+* next question -> q3
+
+== q3
+what's his name?
+
+* unfair question -> unfair
+* Ali -> ali
+* Samuel -> samuel
+* Rek Sai -> reksai
+
+== unfair
+yeah true. his name is Ali
+
+== ali
+~ set score = score + 1
+yes absolutely!
+
+== reksai
+that's not even a name!!!
+
+== samuel
+that's my name

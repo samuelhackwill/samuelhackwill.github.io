@@ -1,0 +1,167 @@
+@title Untitled
+@author anonymous
+@points 6 max 8
+@wardrobe open      
+currency real "gold" = 20
+item linguine "Linguine" Dexterity+10
+item keys "Keys" Dexterity+100
+item farfale "Farfale" classAnxiety-1
+item ketchup "Ketchup" classAnxiety+1
+item ketchupp "Panic flavoured ketchup" classAnxiety+10
+
+skill classAnxiety "Class Anxiety" #EE86FC = 3
+skill mentalDrive "Mental drive" #EE86FC = 3
+skill dexterity "Dexterity" #FCE886 = 3
+
+char someone "Someone" #f0c987
+
+== start
+mentalDrive: "It's 7PM, you are hungry. Time to go get pasta at the grocery store downstairs."
+* ok i guess i should get my shoes on -> shoes
+
+== shoes
+Your shoes are on. You chose crocs for practicality and to remind any person you meet in the street that they can't control you
+* open the front door and go out -> happiness
+* panic -> panic
+
+== panic
+What are you stressed about?
+
+* [red classAnxiety 12] wait, what happens to my HOUSE once i go outside? -> house | rent
+* actually i'm feeling fine -> shoes
+
+== house
+ClassAnxiety : "While you're out, people will break in and vandalize your house, which will look bad and your neighbors will secretly blame you for it"
+
+* try to find a solution to that problem -> keys
+* wait, am i not renting that place? -> rent
+
+== keys
+~ give keys
+You remember that a technology was invented to protect you : keys.
+
+* take your keys on the way out -> theEndGood
+
+== rent
+You remember that you don't own your flat
+
+* right, who cares man? -> happiness
+
+== happiness
+you leave the house. Which pasta are you going to get?
+
+* [pay 3] linguine -> linguine
+* [pay 3] farfale -> farfale
+* [pay 5] [red classAnxiety 10] ketchup -> ketchupFail | ketchup
+
+== ketchupFail
+classAnxiety: you cannot buy ketchup!!! your food preferences are the last thing standing between you and downward social mobility
+
+* [pay 5] but i like ketchup -> ketchupFail2
+
+== ketchupFail2
+~ give ketchupp
+You put your guilt and anxiety flavoured ketchup in your bag
+* checkout -> exit
+
+== linguine
+~ give linguine
+Linguine are long, thin, flat ribbons of pasta, narrower than fettuccine but wider than spaghetti.
+
+* cool -> exit
+
+== farfale
+~ give farfale
+farfalle are small, bow-tie-shaped pasta with pinched centers and delicate, ruffled edges.
+
+* cool -> exit
+
+== ketchup
+~ give ketchup
+you haven't got a worry in the world. Oblivious to your own needs, you just buy whatever.
+
+* checkout -> exit
+
+== exit
+You checkout and chat with the new shop tender. Walking up the stairs on your way back, you relize you forgot your keys inside.
+
+* fuck -> fuck
+
+== fuck
+You blew it. No one else has the keys, apart from Deborah who's a good 600 miles away working on a movie set. 
+
+* *Fuck* -> fuckfuck
+* [red mentalDrive 12] i can drive 600 miles -> drive | driveFail
+* i'm so proud of Deborah!! -> proud
+* [has(linguine)]try to pick the lock with your linguine -> pasta
+* [has(farfale)]try to pick the lock with your farfale -> pasta
+
+==driveFail
+
+you walk the 30 minutes to go get your car but you car keys are also in the flat
+
+* it's not my day -> theEnd3
+
+==pasta
+* [red Dexterity 22] try picking the lock with your pasta -> pastaSuccess | pastaFail
+
+==pastaSuccess
+you manage to unlock your door, at the sacrifice of breaking a couple of pasta in your endeavor
+
+*well it was worth it, even taking into acount inflation -> theEndGood
+
+==pastaFail
+well, what did you expect. What do you think the lock is made of? pesto?
+
+*i tried -> loser
+
+==drive
+Victory - You drive all the way to Brittany in one go and spend a beautiful week-end with Deborah.
+
+==proud
+Deborah is such an absolute boss. 
+
+* You can't believe she's actualy willing to go out with a key-forgetting loser like you. -> loser
+
+== loser
+You go sleep at your friend's place for 15 days, waiting for Deborah to return, and decide you're just going to pretend you were out shopping when she comes back.
+
+*the end -> theEnd
+
+== fuckfuck
+
+you endulge in that sweet, sweet feeling of panic.
+
+* stop endulging -> fuck
+* continue endulging -> theEndBad
+
+== theEndBad
+You overindulge in the feeling that you are a loser, which is not good. People around you start beleiving it too, which sends you in a spiral of self-loathing.
+
+* not good -> theEnd2
+
+== theEnd
+
+Victory - Deborah never discovered you were a loser.
+
+== theEnd2
+
+Defeat - you are now wallowing in egotism and depression
+
+== theEnd3
+
+Defeat - you break in your own car out of desperation. Repairing that window will cost 200 euros.
+
+== theEndGood
+
+You eat. You go to bed. While you were asleep, people break in the flat and set it on fire. You die.
+
+* what -> what
+
+== what
+it was just a dream.
+
+* oh -> oh
+
+== oh
+Victory - you had dinner and everything's fine.

@@ -1,0 +1,62 @@
+@title Untitled
+@author anonymous
+
+var name = false
+var money = false   
+
+== start
+it's 7pm! time for dinner! what do you fancy?
+
+* bland pasta -> pasta
+
+== pasta
+ok that's cool but we're out of pasta
+
+* go to the store -> store
+* grab a 10€ note and go to the store -> getMoney
+
+== getMoney
+~ set money = true
+smart move
+
+* go to the store -> store
+
+== store
+you get pasta and checkout.
+
+* [money] pay -> endGood
+* oops -> oops
+
+== oops
+well it seems you forgot something important
+
+* try to remember the tender's name -> name
+
+== name 
+what's his name again?
+
+* it's Ali -> goodName
+* it's Samuel -> badName
+* it's Rek'Sai -> badName
+
+== goodName
+~ set name = true
+oh yeah that's right! name is Ali.
+
+* hey Ali can i have this pasta for free, i forgot my money upstairs -> try
+
+== try
+hell no
+
+* ok hope you don't mind me asking -> endBad
+
+== badName
+that's not a real name
+
+* sorry -> endBad
+
+== endGood
+you got pasta, good
+
+== endBad
+you failed, guess you'll eat a potato instead
