@@ -14,6 +14,7 @@ bienvenue sur cette page? qui contient des liens? vers des trucs?
 ## SFPC games
 
 - [tinychoice games](/sfpc_games)
+- [andstar games](/sfpc_games/andstar%20games/)
 
 
 
