@@ -5,6 +5,11 @@ layout: single
 
 here is a list of the games i made during class, monday october the 5th. These games were made with [tinychoice](https://www.tinychoice.net/). All but one of these games were made with a time contraint and theme.
 
+
+## Yoko
+
+- [Yoko](yokogames/yoko.md)
+
 ## 1 minute
 
 - [Warmup](tinychoice/1mns/0_warmup.html)
